@@ -13,7 +13,4 @@ class HomeController < ApplicationController
 
   def specialite
   end
-
-  def veille
-  end
 end
