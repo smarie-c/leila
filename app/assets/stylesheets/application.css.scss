@@ -4,7 +4,10 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "compass";
 
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:400,600,200,700);
+@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,400italic);
 
 body {
 	padding-top: 40px;
@@ -36,7 +39,7 @@ body {
 		margin-bottom: 15px;
 		padding: 7px 9px;
 	}
-	//END OF LUCCA
+//END OF LUCCA
 // IBRAHIM
 header {
 	font-family: 'Titillium Web', sans-serif;
@@ -81,15 +84,14 @@ header {
 }
 
 
-section {
-	margin: 50px;
+aside {
+	margin-top: 50px;
 }
-
 article {
-	padding-top: 20px;
+	margin-top: 20px;
 
 }
 
 article:first-child {
-	padding-top: 0;
+	padding-top: 70px;
 }
