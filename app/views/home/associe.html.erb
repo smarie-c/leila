@@ -1,2 +1,6 @@
-h1 Home#associe
-p Find me in app/views/home/associe.html.slim
+<%= will_paginate @associes %>
+<% @associes.each do |v| %>
+	<%= v.titre %><br/>
+	<%= v.texte %><br/>
+<% end %>
+<%= will_paginate @associes %>

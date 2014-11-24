@@ -1,2 +1,29 @@
+#contact
+
+<%= bootstrap_form_tag url: user_contact_update_path, method: "put" do |f| %>
+					<%= f.text_field :texte1, :value =>  @contact.texte1, required: true %>
+					<%= f.submit "update", class: "btn btn-success" %>
+<% end %>
 
 
+#honoraire
+<%= bootstrap_form_tag url: user_honoraire_update_path, method: "put" do |f| %>
+					<%= f.text_field :texte1, :value =>  @honoraire.texte1,required: true %>
+					<%= f.submit "update", class: "btn btn-success" %>
+<% end %>
+
+#specialite
+<%= bootstrap_form_tag url: user_specialite_update_path, method: "put" do |f| %>
+					<%= f.text_field :texte1, :value =>  @specialite.texte1,required: true %>
+					<%= f.submit "update", class: "btn btn-success" %>
+<% end %>
+
+#index
+<%= bootstrap_form_tag url: user_index_update_path, method: "put" do |f| %>
+					<%= f.text_field :texte1, :value =>  @index.texte1,required: true %>
+					<%= f.text_field :texte2, :value =>  @index.texte2,required: true %>
+					<%= f.text_field :texte3, :value =>  @index.texte3,required: true %>
+					<%= f.text_field :texte4, :value =>  @index.texte4,required: true %>
+
+					<%= f.submit "update", class: "btn btn-success" %>
+<% end %>
