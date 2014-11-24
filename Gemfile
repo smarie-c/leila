@@ -20,6 +20,9 @@ gem "therubyracer"
 gem 'bootstrap-sass', '~> 3.3.1'
 gem 'bootstrap_form'
 gem 'autoprefixer-rails'
+
+##bbruby
+gem 'bb-ruby', '~> 1.0.4'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 gem 'heroku'

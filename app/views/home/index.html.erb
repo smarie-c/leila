@@ -1,14 +1,14 @@
 <section>
 	<article>
-	<%= @index.texte1 %>
+	<%= @index.texte1.bbcode_to_html_with_formatting.html_safe %>
 	</article>
 	<article>
-	<%= @index.texte2 %>
+	<%= @index.texte2.bbcode_to_html_with_formatting.html_safe %>
 	</article>
 	<article>
-	<%= @index.texte3 %>
+	<%= @index.texte3.bbcode_to_html_with_formatting.html_safe %>
 	</article>
 	<article>
-	<%= @index.texte4 %>
+	<%= @index.texte4.bbcode_to_html_with_formatting.html_safe %>
 	</article>
 </section>

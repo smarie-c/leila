@@ -1,5 +1,5 @@
 <section>
 	<article>
-	<%= @contact.texte1 %>
+	<%= @contact.texte1.bbcode_to_html_with_formatting.html_safe %>
 	</article>
 </section>

@@ -1,6 +1,6 @@
 <%= will_paginate @veilles %>
 <% @veilles.each do |v| %>
 	<%= v.titre %><br/>
-	<%= v.texte %><br/>
+	<%= v.texte.bbcode_to_html_with_formatting.html_safe %><br/>
 <% end %>
 <%= will_paginate @veilles %>

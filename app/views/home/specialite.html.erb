@@ -1,6 +1,6 @@
 
 <section>
 	<article>
-<%= @specialite.texte1 %>
+<%= @specialite.texte1.bbcode_to_html_with_formatting.html_safe %>
 	</article>
 </section>

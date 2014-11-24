@@ -1,7 +1,7 @@
 <%= will_paginate @associes %>
 <% @associes.each do |v| %>
 	<%= v.name %><br/>
-	<%= v.description %><br/>
+	<%= v.description.bbcode_to_html_with_formatting.html_safe %><br/>
 	<% if v.pics %>
 		<%= v.pics %><br/>
 	<% end %>

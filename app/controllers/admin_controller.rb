@@ -1,6 +1,5 @@
 class AdminController < ApplicationController
   before_action :authenticate_user!
-
   def index
   	@index = Index.find(1)
   	@honoraire = Honoraire.find(1)
