@@ -45,4 +45,50 @@ class AdminController < ApplicationController
 	end
 	redirect_to user_path, :flash => { :notice => "la veille a été créé." } and return
   end
+
+  def associe
+  	@associe = Associe.all.order('name ASC, firstname ASC').paginate(:page => params[:page])
+  end
+
+  def update_associe
+  	begin
+	  	associe = Associe.find(param[:id])
+	rescue Exception => e
+		redirect_to user_path, :flash => { :alert => "l'associé cherché n'a pas été trouvé." } and return
+	end
+	associe.titre = params[:name]
+	associe.texte = params[:first]
+	begin
+	  	associe.save
+	rescue Exception => e
+		redirect_to user_path, :flash => { :alert => "l'associé n'a pas été mise à jour." } and return
+	end
+	redirect_to user_path, :flash => { :notice => "l'associé a été mise à jour." } and return
+  end
+
+  def delete_associe
+  	begin
+	  	associe = Associe.find(param[:id])
+	rescue Exception => e
+		redirect_to user_path, :flash => { :alert => "l'associé cherché n'a pas été trouvé." } and return
+	end
+	begin
+	  	associe.destroy
+	rescue Exception => e
+		redirect_to user_path, :flash => { :alert => "ll'associé n'a pas été supprimé." } and return
+	end
+	redirect_to user_path, :flash => { :notice => "l'associé a été supprimé." } and return
+  end
+
+  def create_associe
+  	associe = Associe.new
+  	associe.titre = params[:name]
+	associe.texte = params[:firstname]
+  	begin
+	  	associe.save
+	rescue Exception => e
+		redirect_to user_path, :flash => { :alert => "l'associé n'a pas été créé." } and return
+	end
+	redirect_to user_path, :flash => { :notice => "l'associé a été créé." } and return
+  end
 end
