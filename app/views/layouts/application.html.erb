@@ -6,7 +6,7 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body class="col-lg-6 col-lg-offset-2">
 <!-- header admin -->
 <% if params[:controller] == "admin" %>
 		<p>
@@ -29,7 +29,7 @@
 	  <p class="alert alert-danger"><%= alert %></p>
 	<% end %>
 <!-- header visiteurs -->
-<% else %>
+<% elsif params[:controller] == "home"%>
 	<header>
 	  	<div>
 			<div class="title">Laila El Halfi</div>
@@ -38,10 +38,12 @@
 	</header>
 	
 	<nav class="navtop">
-		<span class="submenu">Associes</span>
-		<span class="submenu">Lorem</span>
-		<span class="submenu">Contact</span>
-		<span class="submenu">Veille</span>
+		<span class="submenu"><%= link_to 'Acceuil', root_path, :class => 'navbar-link' %> </span>
+		<span class="submenu"><%= link_to 'Veille', veille_path, :class => 'navbar-link' %> </span>
+		<span class="submenu"><%= link_to 'Specialité', specialite_path, :class => 'navbar-link' %> </span>
+		<span class="submenu"><%= link_to 'Associé', associe_path, :class => 'navbar-link' %> </span>
+		<span class="submenu"><%= link_to 'Honoraire', honoraire_path, :class => 'navbar-link' %> </span>
+		<span class="submenu"><%= link_to 'Contact', contact_path, :class => 'navbar-link' %> </span>
 	</nav>
 	
 	<div class="separator col-xs-offest-6"></div>

@@ -11,7 +11,7 @@ body {
 	padding-bottom: 40px;
 	background-color: #f5f5f5;
 }
-
+//LUCCA DEVISE + FORM + ADMIN
 .form-signin {
 	max-width: 300px;
 	padding: 19px 29px 29px;
@@ -36,3 +36,60 @@ body {
 		margin-bottom: 15px;
 		padding: 7px 9px;
 	}
+	//END OF LUCCA
+// IBRAHIM
+header {
+	font-family: 'Titillium Web', sans-serif;
+	text-transform: uppercase;
+	color: #272926;
+	top: 50px;
+}
+
+.title {
+	font-weight: 200;
+	font-size: 42px;
+	letter-spacing: 3px;
+}
+
+.subtitle {
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.separator {
+	width: 40px;
+	height: 5px;
+	background: #fbc90d;
+	margin-top: 25px;
+}
+
+.navtop {
+	font-family: 'PT Serif', serif;
+	font-weight: '400';
+	font-style: italic;
+	margin-top: 30px;
+	font-size: 18px;
+}
+
+.submenu:first-child {
+	margin-left: 0;
+}
+
+.submenu {
+	margin: 40px;
+	margin-top: 20px;
+}
+
+
+section {
+	margin: 50px;
+}
+
+article {
+	padding-top: 20px;
+
+}
+
+article:first-child {
+	padding-top: 0;
+}

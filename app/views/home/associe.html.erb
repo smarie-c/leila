@@ -1,6 +1,12 @@
 <%= will_paginate @associes %>
 <% @associes.each do |v| %>
-	<%= v.titre %><br/>
-	<%= v.texte %><br/>
+	<%= v.name %><br/>
+	<%= v.description %><br/>
+	<% if v.pics %>
+		<%= v.pics %><br/>
+	<% end %>
+	<% if v.link %>
+		<%= link_to "son site", v.link %><br/>
+	<% end %>
 <% end %>
 <%= will_paginate @associes %>
