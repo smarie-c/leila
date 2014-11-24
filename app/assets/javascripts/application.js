@@ -15,3 +15,14 @@
 //= require bootstrap-sprockets
 //= require turbolinks
 //= require_tree .
+function display_update_post(i)
+{
+    document.getElementById('update_post' + i).style.display = "block";
+    document.getElementById('no_update_post' + i).onclick = function onclick(event) { no_display_update_post(i) };
+}
+
+function no_display_update_post(i)
+{
+    document.getElementById('update_post' + i).style.display = "none";
+    document.getElementById('no_update_post' + i).onclick = function onclick(event) { display_update_post(i) };
+}

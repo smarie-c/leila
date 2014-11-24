@@ -24,7 +24,9 @@
 
 <% end %>
 
-</br></br></br>
+</br>
+<%= will_paginate @veilles %>
+</br></br>
 
 		<% @veilles.each do |v|%>
 			<%= v.titre %>
@@ -32,22 +34,26 @@
 	</br>
 			<%= v.texte %>
 
+
+			<div id="no_update_post<%= v.id %>" onclick="display_update_post(<%= v.id %>)" class="glyphicon glyphicon-pencil">
+			</div>
+			<div id="update_post<%= v.id %>" style="display: none;">
+				<%= bootstrap_form_tag url: user_veille_update_path, method: "put" do |f| %>
+					<%= f.hidden_field :id, :value => v.id.to_s,required: true %>
+					<%= f.text_field :titre, :value =>  v.titre,required: true %>
+					<%= f.text_area :texte, :value =>  v.texte,size: "60x12",required: true %>
+					<%= f.submit "update", class: "btn btn-success" %>
+				<% end %>
+				<%= bootstrap_form_tag url: user_veille_delete_path, method: "delete" do |f| %>
+					<%= f.hidden_field :id, :value => v.id.to_s,required: true %>
+					<%= f.submit "delete", class: "btn btn-danger" %>
+				<% end %>
+			</div>
+
+
 	</br></br></br>
-
-			<%= bootstrap_form_tag url: user_veille_update_path, method: "put" do |f| %>
-				<%= f.hidden_field :id, :value => v.id.to_s,required: true %>
-				<%= f.text_field :titre, :value =>  v.titre,required: true %>
-				<%= f.text_area :texte, :value =>  v.texte,size: "60x12",required: true %>
-				<%= f.submit "update", class: "btn btn-success" %>
-			<% end %>
-
-	</br></br></br>
-
-			<%= bootstrap_form_tag url: user_veille_delete_path, method: "delete" do |f| %>
-				<%= f.hidden_field :id, :value => v.id.to_s,required: true %>
-				<%= f.submit "delete", class: "btn btn-danger" %>
-			<% end %>
-
 
 		<% end %>
+		
+<%= will_paginate @veilles %>
 </div>

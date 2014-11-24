@@ -15,5 +15,6 @@ class HomeController < ApplicationController
   end
 
   def veille
+  	@veilles = Veille.all.order('updated_at DESC').paginate(:page => params[:page])
   end
 end
