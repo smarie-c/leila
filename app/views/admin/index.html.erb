@@ -6,4 +6,38 @@
 <% else %>
   <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
 <% end %>
-</>
+</p>
+
+<%= bootstrap_form_tag url: user_veille_create_path do |f| %>
+	<%= f.text_field :titre, :value =>  "",required: true %>
+	<%= f.text_area :texte, :value =>  "",size: "60x12",required: true %>
+<%= f.submit "Creates", class: "btn btn-success" %>
+
+
+</br></br></br>
+
+	<% @veilles.each do |v|%>
+		<%= v.titre %>
+
+</br>
+		<%= v.texte %>
+
+</br></br></br>
+
+		<%= bootstrap_form_tag url: user_veille_update_path, method: "put" do |f| %>
+			<%= f.hidden_field :id, :value => v.id,required: true %>
+			<%= f.text_field :titre, :value =>  v.titre,required: true %>
+			<%= f.text_area :texte, :value =>  v.texte,size: "60x12",required: true %>
+			<%= f.submit "update", class: "btn btn-success" %>
+		<% end %>
+
+</br></br></br>
+
+		<%= bootstrap_form_tag url: user_veille_delete_path, method: "delete" do |f| %>
+			<%= f.hidden_field :id, :value => v.id,required: true %>
+			<%= f.submit "delete", class: "btn btn-danger" %>
+		<% end %>
+
+
+	<% end %>
+<% end %>

@@ -17,12 +17,9 @@ Rails.application.routes.draw do
    get '/veille' => 'home#veille'
    
    get '/user' => 'admin#index'
-
-  get '/veille/index' => 'veille#index'
-  get '/veille/show/:id' => 'veille#show'
-  put '/veille/update' => 'veille#update'
-  delete '/veille/delete' => 'veille#delete'
-  post '/veille/create' => 'veille#create'
+   post '/user/veille/create' => 'admin#create_veille'
+   delete '/user/veille/delete' => 'admin#delete_veille'
+   put '/user/veille/update' => 'admin#update_veille'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
