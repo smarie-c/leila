@@ -34,6 +34,12 @@ Rails.application.routes.draw do
    delete '/user/associe/delete' => 'admin#delete_associe'
    put '/user/associe/update' => 'admin#update_associe'
 
+##page
+   put '/user/index/update' => 'admin#update_index'
+   put '/user/honoraire/update' => 'admin#update_honoraire'
+   put '/user/contact/update' => 'admin#update_contact'
+   put '/user/specialite/update' => 'admin#update_specialite'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
