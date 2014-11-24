@@ -1,0 +1,5 @@
+<% @veilles.each do |v| %>
+	<%= v.titre %><br/>
+	<%= v.texte %><br/>
+<% end %>
+<%= will_paginate @veilles %>
