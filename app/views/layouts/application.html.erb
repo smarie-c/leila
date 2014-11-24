@@ -7,7 +7,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<!-- header admin -->
 <% if params[:controller] == "admin" %>
 		<p>
 	<% if user_signed_in? %>
@@ -28,6 +28,23 @@
 	<% if alert %>
 	  <p class="alert alert-danger"><%= alert %></p>
 	<% end %>
+<!-- header visiteurs -->
+<% else %>
+	<header>
+	  	<div>
+			<div class="title">Laila El Halfi</div>
+			<div class="subtitle">Avocat a la cour</div>
+		</div>
+	</header>
+	
+	<nav class="navtop">
+		<span class="submenu">Associes</span>
+		<span class="submenu">Lorem</span>
+		<span class="submenu">Contact</span>
+		<span class="submenu">Veille</span>
+	</nav>
+	
+	<div class="separator col-xs-offest-6"></div>
 <% end %>
 
 
@@ -37,11 +54,6 @@
 
 
 <%= yield %>
-
-
-
-
-
 
 
 
