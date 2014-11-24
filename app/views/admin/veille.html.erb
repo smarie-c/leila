@@ -13,7 +13,7 @@
 			<%= v.titre %>
 
 	</br>
-			<%= v.texte %>
+			<%= v.texte.bbcode_to_html_with_formatting.html_safe %>
 
 
 			<div id="no_update_post<%= v.id %>" onclick="display_update_post(<%= v.id %>)" class="glyphicon glyphicon-pencil">

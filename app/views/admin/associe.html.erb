@@ -15,7 +15,7 @@
 			<%= v.name %>
 
 	</br>
-			<%= v.description %>
+			<%= v.description.bbcode_to_html_with_formatting.html_safe %>
 
 			<% if v.pics %>
 				<%= v.pics %>
