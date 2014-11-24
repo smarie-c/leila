@@ -11,10 +11,12 @@
 <%= bootstrap_form_tag url: user_veille_create_path do |f| %>
 	<%= f.text_field :titre, :value =>  "",required: true %>
 	<%= f.text_area :texte, :value =>  "",size: "60x12",required: true %>
-<%= f.submit "Creates", class: "btn btn-success" %>
+	<%= f.submit "Creates", class: "btn btn-success" %>
+<% end %>
 
-
-</br></br></br>
+</br>
+<%= will_paginate @veilles %>
+</br></br>
 
 	<% @veilles.each do |v|%>
 		<%= v.titre %>
@@ -40,4 +42,4 @@
 
 
 	<% end %>
-<% end %>
+<%= will_paginate @veilles %>
