@@ -6,7 +6,7 @@ class AdminController < ApplicationController
 
   def update_veille
   	begin
-	  	veille = Veille.find(param[:id])
+	  	veille = Veille.find(params[:id])
 	rescue Exception => e
 		redirect_to user_path, :flash => { :alert => "la veille cherché n'a pas été trouvée." } and return
 	end
@@ -22,7 +22,7 @@ class AdminController < ApplicationController
 
   def delete_veille
   	begin
-	  	veille = Veille.find(param[:id])
+	  	veille = Veille.find(params[:id])
 	rescue Exception => e
 		redirect_to user_path, :flash => { :alert => "la veille cherché n'a pas été trouvée." } and return
 	end
