@@ -8,7 +8,44 @@
 </head>
 <body>
 
+<% if params[:controller] == "admin" %>
+		<p>
+	<% if user_signed_in? %>
+	  Bonjour <strong><%= current_user.username %></strong>.
+	  <%= link_to 'Editer Associe', user_associe_path, :class => 'navbar-link' %> |
+	  <%= link_to 'Editer veille', user_veille_path, :class => 'navbar-link' %> |
+	  <%= link_to 'Editer vos pages', user_path, :class => 'navbar-link' %> |
+	  <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
+	  <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+	<% else %>
+	  <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+	<% end %>
+	</p>
+
+	<% if notice %>
+	  <p class="alert alert-success"><%= notice %></p>
+	<% end %>
+	<% if alert %>
+	  <p class="alert alert-danger"><%= alert %></p>
+	<% end %>
+<% end %>
+
+
+<div class="container">
+
+
+
+
 <%= yield %>
+
+
+
+
+
+
+
+
+</div>
 
 </body>
 </html>

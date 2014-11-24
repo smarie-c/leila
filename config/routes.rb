@@ -16,10 +16,23 @@ Rails.application.routes.draw do
    get '/specialite' => 'home#specialite'
    get '/veille' => 'home#veille'
    
+
+   #panneau admin
+
+
    get '/user' => 'admin#index'
+
+##veille
+   get '/user/veille' => 'admin#veille'
    post '/user/veille/create' => 'admin#create_veille'
    delete '/user/veille/delete' => 'admin#delete_veille'
    put '/user/veille/update' => 'admin#update_veille'
+
+##associe
+   get '/user/associe' => 'admin#associe'
+   post '/user/associe/create' => 'admin#create_associe'
+   delete '/user/associe/delete' => 'admin#delete_associe'
+   put '/user/associe/update' => 'admin#update_associe'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

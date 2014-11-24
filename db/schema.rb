@@ -11,7 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141124125700) do
+ActiveRecord::Schema.define(version: 20141124162129) do
+
+  create_table "associes", force: true do |t|
+    t.string   "pics"
+    t.string   "name"
+    t.string   "description"
+    t.string   "link"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", force: true do |t|
     t.string   "encrypted_password",     default: "", null: false

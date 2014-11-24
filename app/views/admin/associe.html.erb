@@ -1,0 +1,50 @@
+<%= bootstrap_form_tag url: user_associe_create_path do |f| %>
+	<%= f.text_field :link %>
+	<%= f.text_field :pics %>
+	<%= f.text_field :name, :value =>  "",required: true %>
+	<%= f.text_area :description, :value =>  "",size: "60x12",required: true %>
+<%= f.submit "Creates", class: "btn btn-success" %>
+
+<% end %>
+
+</br>
+<%= will_paginate @associes %>
+</br></br>
+
+		<% @associes.each do |v|%>
+			<%= v.name %>
+
+	</br>
+			<%= v.description %>
+
+			<% if v.pics %>
+				<%= v.pics %>
+			<% end %>
+			<% if v.link %>
+				<%= link_to "son site", v.link %>
+			<% end %>
+
+
+			<div id="no_update_post<%= v.id %>" onclick="display_update_post(<%= v.id %>)" class="glyphicon glyphicon-pencil">
+			</div>
+			<div id="update_post<%= v.id %>" style="display: none;">
+				<%= bootstrap_form_tag url: user_associe_update_path, method: "put" do |f| %>
+					<%= f.hidden_field :id, :value => v.id.to_s,required: true %>
+					<%= f.text_field :pics %>
+					<%= f.text_field :link, :value =>  v.link %>
+					<%= f.text_field :name, :value =>  v.name,required: true %>
+					<%= f.text_area :description, :value =>  v.description,size: "60x12",required: true %>
+					<%= f.submit "update", class: "btn btn-success" %>
+				<% end %>
+				<%= bootstrap_form_tag url: user_associe_delete_path, method: "delete" do |f| %>
+					<%= f.hidden_field :id, :value => v.id.to_s,required: true %>
+					<%= f.submit "delete", class: "btn btn-danger" %>
+				<% end %>
+			</div>
+
+
+	</br></br></br>
+
+		<% end %>
+		
+<%= will_paginate @associes %>
