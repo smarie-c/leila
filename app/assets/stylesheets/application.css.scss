@@ -66,31 +66,46 @@ header {
 	margin-top: 25px;
 }
 
-.navtop {
-	font-family: 'PT Serif', serif;
-	font-weight: '400';
-	font-style: italic;
-	margin-top: 30px;
-	font-size: 18px;
+.active {
+
 }
 
-.submenu:first-child {
-	margin-left: 0;
+nav {
+	width: 100%;
 }
 
 .submenu {
-	margin: 40px;
-	margin-top: 20px;
+	font-family: 'PT Serif', serif;
+	font-weight: '400';
+	font-style: italic;
+	font-size: 18px;
 }
 
+.vtitle {
+	font-family: 'PT Serif', serif;
+	font-size: 18px;
+	padding-bottom: 10px;
+}
+.veille {
+	padding-left: 5px;
+}
 
 aside {
 	margin-top: 50px;
+
 }
 article {
 	margin-top: 20px;
 
+	.email {}
+	.adresse {}
+	.postal {}
 }
+
+	.name {
+	font-family: 'Titillium Web', sans-serif;
+	letter-spacing: 1px;
+	}	
 
 article:first-child {
 	padding-top: 70px;
