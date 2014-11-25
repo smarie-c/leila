@@ -16,35 +16,56 @@ ActiveRecord::Schema.define(version: 20141124173749) do
   create_table "associes", force: true do |t|
     t.string   "pics"
     t.string   "name"
-    t.string   "description"
+    t.text     "description"
     t.string   "link"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "contacts", force: true do |t|
-    t.string   "texte1"
+    t.text     "texte1"
+    t.text     "texte1en"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "honoraires", force: true do |t|
-    t.string   "texte1"
+    t.text     "texte1"
+    t.text     "texte1en"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "indices", force: true do |t|
-    t.string   "texte1"
-    t.string   "texte2"
-    t.string   "texte3"
-    t.string   "texte4"
+    t.text     "texte1"
+    t.text     "texte2"
+    t.text     "texte3"
+    t.text     "texte4"
+    t.text     "texte5"
+    t.text     "texte6"
+    t.text     "texte7"
+    t.text     "texte8"
+    t.text     "texte9"
+    t.text     "texte10"
+    t.text     "texte11"
+    t.text     "texte1en"
+    t.text     "texte2en"
+    t.text     "texte3en"
+    t.text     "texte4en"
+    t.text     "texte5en"
+    t.text     "texte6en"
+    t.text     "texte7en"
+    t.text     "texte8en"
+    t.text     "texte9en"
+    t.text     "texte10en"
+    t.text     "texte11en"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "specialites", force: true do |t|
-    t.string   "texte1"
+    t.text     "texte1"
+    t.text     "texte1en"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

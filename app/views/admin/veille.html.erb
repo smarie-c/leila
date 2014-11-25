@@ -10,10 +10,9 @@
 </br></br>
 
 		<% @veilles.each do |v|%>
-			<%= v.titre %>
-
-	</br>
-			<%= v.texte.bbcode_to_html_with_formatting.html_safe %>
+		<div class="vtitle"><%= v.titre %><br/></div>
+	<div class="veille"><%= v.texte.bbcode_to_html_with_formatting.html_safe %><br/></div>
+	<div class="separator-article"></div>
 
 
 			<div id="no_update_post<%= v.id %>" onclick="display_update_post(<%= v.id %>)" class="glyphicon glyphicon-pencil">

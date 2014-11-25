@@ -98,8 +98,13 @@
 		<div class="separator"></div>
 
 	<% end %>
-
+<% if params[:controller] == "admin" || params[:controller] == "devise/sessions" %>
+		<div class="container">
 				<%= yield %>
+		</div>
+<% else %>
+	<%= yield %>
+<% end %>
 	</div>
 
 </body>
