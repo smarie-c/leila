@@ -69,9 +69,9 @@ header {
 
 
 .separator-article {
-	width: 40px;
+	width: 100px;
 	height: 5px;
-	background: #fbc90d;
+	background: #ddddd5;
 	margin-bottom: 15px;
 }
 
@@ -107,16 +107,13 @@ article {
 	margin-top: 20px;
 }
 	
-	.name {
-	font-family: 'Titillium Web', sans-serif;
-	letter-spacing: 1px;
-	text-align: center;
-	}
-	.email {}
-	.adresse {}
-	.postal {}
-
-
-article:first-child {
-	padding-top: 70px;
+.name {
+font-family: 'Titillium Web', sans-serif;
+letter-spacing: 1px;
+text-align: center;
 }
+.email {}
+.adresse {}
+.postal {}
+
+
