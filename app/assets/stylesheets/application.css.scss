@@ -13,6 +13,7 @@ body {
 	padding-top: 40px;
 	padding-bottom: 40px;
 	background-color: #f5f5f5;
+
 }
 //LUCCA DEVISE + FORM + ADMIN
 .form-signin {
@@ -66,6 +67,14 @@ header {
 	margin-top: 25px;
 }
 
+
+.separator-article {
+	width: 40px;
+	height: 5px;
+	background: #fbc90d;
+	margin-bottom: 15px;
+}
+
 .active {
 
 }
@@ -96,16 +105,17 @@ aside {
 }
 article {
 	margin-top: 20px;
-
-	.email {}
-	.adresse {}
-	.postal {}
 }
-
+	
 	.name {
 	font-family: 'Titillium Web', sans-serif;
 	letter-spacing: 1px;
-	}	
+	text-align: center;
+	}
+	.email {}
+	.adresse {}
+	.postal {}
+
 
 article:first-child {
 	padding-top: 70px;

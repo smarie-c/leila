@@ -1,3 +1,10 @@
+ 		<aside class="col-sm-2 profil">
+			<img src="<%= asset_path( 'carlton.gif' ) %>" class="img-responsive img-rounded" alt="Laila El Halfi" />
+			<article>
+				<%= @index.texte4.bbcode_to_html_with_formatting.html_safe %>
+			</article>
+		</aside>
+				<div class="col-sm-8">
 <section>
 	<h3>
 	<%= @index.texte1.bbcode_to_html_with_formatting.html_safe %>
@@ -8,7 +15,6 @@
 	<article>
 	<%= @index.texte3.bbcode_to_html_with_formatting.html_safe %>
 	</article>
-	<article>
-	<%= @index.texte4.bbcode_to_html_with_formatting.html_safe %>
-	</article>
+
 </section>
+</div>
