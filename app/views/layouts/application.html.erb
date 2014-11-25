@@ -103,6 +103,12 @@
 				<%= yield %>
 		</div>
 <% else %>
+						<%= bootstrap_form_tag url: en_path, method: "post" do |f| %>
+							<%= f.submit "EN", class: "btn btn-success" %>
+						<% end %>
+						<%= bootstrap_form_tag url: fr_path, method: "post" do |f| %>
+							<%= f.submit "FR", class: "btn btn-success" %>
+						<% end %>
 	<%= yield %>
 <% end %>
 	</div>

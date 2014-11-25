@@ -114,6 +114,24 @@ class AdminController < ApplicationController
 	index.texte2 = params[:texte2]
 	index.texte3 = params[:texte3]
 	index.texte4 = params[:texte4]
+	index.texte5 = params[:texte5]
+	index.texte6 = params[:texte6]
+	index.texte7 = params[:texte7]
+	index.texte8 = params[:texte8]
+	index.texte9 = params[:texte9]
+	index.texte10 = params[:texte10]
+	index.texte11 = params[:texte11]
+	index.texte1en = params[:texte1en]
+	index.texte2en = params[:texte2en]
+	index.texte3en = params[:texte3en]
+	index.texte4en = params[:texte4en]
+	index.texte5en = params[:texte5en]
+	index.texte6en = params[:texte6en]
+	index.texte7en = params[:texte7en]
+	index.texte8en = params[:texte8en]
+	index.texte9en = params[:texte9en]
+	index.texte10en = params[:texte10en]
+	index.texte11en = params[:texte11en]
 	begin
 	  	index.save
 	rescue Exception => e
@@ -129,6 +147,7 @@ class AdminController < ApplicationController
 		redirect_to user_path, :flash => { :alert => "l'associé cherché n'a pas été trouvé." } and return
 	end
 	honoraire.texte1 = params[:texte1]
+	honoraire.texte1en = params[:texte1en]
 	begin
 	  	honoraire.save
 	rescue Exception => e
@@ -144,6 +163,7 @@ class AdminController < ApplicationController
 		redirect_to user_path, :flash => { :alert => "l'associé cherché n'a pas été trouvé." } and return
 	end
 	contact.texte1 = params[:texte1]
+	contact.texte1en = params[:texte1en]
 	begin
 	  	contact.save
 	rescue Exception => e
@@ -159,6 +179,7 @@ class AdminController < ApplicationController
 		redirect_to user_path, :flash => { :alert => "l'associé cherché n'a pas été trouvé." } and return
 	end
 	specialite.texte1 = params[:texte1]
+	specialite.texte1en = params[:texte1en]
 	begin
 	  	specialite.save
 	rescue Exception => e

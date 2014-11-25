@@ -40,6 +40,12 @@ Rails.application.routes.draw do
    put '/user/contact/update' => 'admin#update_contact'
    put '/user/specialite/update' => 'admin#update_specialite'
 
+
+#i18n
+
+  post '/en' => 'home#turn_en'
+  post '/fr' => 'home#turn_fr'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
