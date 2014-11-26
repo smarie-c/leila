@@ -68,9 +68,14 @@ header {
 	margin-top: 25px;
 }
 
+article {
+	border: solid 5px #ddddd5;
+	padding: 8px;
+}
 
 .separator-article {
-	width: 100px;
+	width: 33%;
+	margin-left: 33%;
 	height: 5px;
 	background: #ddddd5;
 	margin-bottom: 15px;
@@ -108,8 +113,10 @@ li:hover {
 
 .vtitle {
 	font-family: 'PT Serif', serif;
-	font-size: 18px;
+	font-size: 20px;
 	padding-bottom: 10px;
+	text-align: center;
+
 }
 
 .veille {
