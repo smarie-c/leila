@@ -10,13 +10,7 @@ User.create(:username => "pokemon", :password => "aaaaaaaa", :password_confirmat
 Contact.create(:texte1 => "Pour me contacter veuillez remplir les champs suivants", :texte1en => "To contact me please fill in the following fields")
 Honoraire.create(:texte1 => "french example 1", :texte1en => "en example 1")
 Specialite.create(:texte1 => "french example 1", :texte1en => "en example 1")
-Index.create(:texte1 => "laila",:texte2 => "EL HALFI",:texte3 => "36 Avenue Bugeaud,",:texte4 => "75016 paris",
-	:texte5 => "09 65 03 61 65",:texte6 => "lawyer specializing in labor law ,",
-	:texte7 => "right to social security and criminal labor law . Expertise in consulting / litigation / social audit / corporate restructuring",
-	:texte8 => "french example 1 8",:texte9 => "french example 1 9",:texte10 => "french example 1 10",:texte11 => "french example 1 11",
-	:texte1en => "laila",:texte2en => "EL HALFI",:texte3en => "36 Avenue Bugeaud,",:texte4en => "75016 paris"
-	,:texte5en => "09 65 03 61 65",:texte6en => "en example 1 6",:texte7en => "en example 1 7",:texte8en => "en example 1 8"
-	,:texte9en => "en example 1 9",:texte10en => "en example 1 10",:texte11en => "en example 1 11")
+Index.create(:texte1 => "laila",:texte2 => "EL HALFI",:texte3 => "36 Avenue Bugeaud,",:texte4 => "75016 paris",:texte5 => "09 65 03 61 65",:texte6 => "lawyer specializing in labor law ,",:texte7 => "right to social security and criminal labor law . Expertise in consulting / litigation / social audit / corporate restructuring",:texte8 => "french example 1 8",:texte9 => "french example 1 9",:texte10 => "french example 1 10",:texte11 => "french example 1 11",:texte1en => "laila",:texte2en => "EL HALFI",:texte3en => "36 Avenue Bugeaud,",:texte4en => "75016 paris",:texte5en => "09 65 03 61 65",:texte6en => "en example 1 6",:texte7en => "en example 1 7",:texte8en => "en example 1 8",:texte9en => "en example 1 9",:texte10en => "en example 1 10",:texte11en => "en example 1 11")
 
 30.times do
 Veille.create(:titre => "Renouvellement du CHSCT : l’anticipation est enfin possible !", :texte => "Selon l’article R.4613-6 du code du travail, le collège chargé de désigner les membres du CHSCT doit être réuni dans les 15 jours de l’expiration des mandats des représentants de cette institution. Cette disposition était interprétée littéralement par la jurisprudence depuis un arrêt du 14 janvier 2004 de sorte qu’organiser un scrutin quelques jours avant l’échéance des mandats emportait la nullité des élections.
