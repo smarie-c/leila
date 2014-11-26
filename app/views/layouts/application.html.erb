@@ -109,6 +109,7 @@
 		function ft_add_active_to_header(str)
 		{
 			document.getElementById(str).className += "act";
+			document.getElementById(str).childNodes[0].style.color = "black"
 		}
 		ft_add_active_to_header("<%= params[:action] %>");
 	</script>
