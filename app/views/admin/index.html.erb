@@ -1,34 +1,41 @@
 #contact
 
 <%= bootstrap_form_tag url: user_contact_update_path, method: "put" do |f| %>
+<% if locale == :fr %>
 					<%= f.text_field :texte1, :value =>  @contact.texte1, required: true %>
-
+<% elsif locale == :en %>
 #en anglais
 					<%= f.text_field :texte1en, :value =>  @contact.texte1en, required: true %>
+<% end %>
 					<%= f.submit "update", class: "btn btn-success" %>
 <% end %>
 
 
 #honoraire
 <%= bootstrap_form_tag url: user_honoraire_update_path, method: "put" do |f| %>
+<% if locale == :fr %>
 					<%= f.text_field :texte1, :value =>  @honoraire.texte1,required: true %>
-
+<% elsif locale == :en %>
 #en anglais
 					<%= f.text_field :texte1en, :value =>  @honoraire.texte1en,required: true %>
+<% end %>
 					<%= f.submit "update", class: "btn btn-success" %>
 <% end %>
 
 #specialite
 <%= bootstrap_form_tag url: user_specialite_update_path, method: "put" do |f| %>
+<% if locale == :fr %>
 					<%= f.text_field :texte1, :value =>  @specialite.texte1,required: true %>
-
+<% elsif locale == :en %>
 #en anglais
 					<%= f.text_field :texte1en, :value =>  @specialite.texte1en,required: true %>
+<% end %>
 					<%= f.submit "update", class: "btn btn-success" %>
 <% end %>
 
 #index
 <%= bootstrap_form_tag url: user_index_update_path, method: "put" do |f| %>
+<% if locale == :fr %>
 					<%= f.text_field :texte1, :value =>  @index.texte1,required: true %>
 					<%= f.text_field :texte2, :value =>  @index.texte2,required: true %>
 					<%= f.text_field :texte3, :value =>  @index.texte3,required: true %>
@@ -40,7 +47,7 @@
 					<%= f.text_field :texte9, :value =>  @index.texte9,required: true %>
 					<%= f.text_field :texte10, :value =>  @index.texte10,required: true %>
 					<%= f.text_field :texte11, :value =>  @index.texte11,required: true %>
-
+<% elsif locale == :en %>
 #en anglais
 					<%= f.text_field :texte1en, :value =>  @index.texte1en,required: true %>
 					<%= f.text_field :texte2en, :value =>  @index.texte2en,required: true %>
@@ -53,6 +60,6 @@
 					<%= f.text_field :texte9en, :value =>  @index.texte9en,required: true %>
 					<%= f.text_field :texte10en, :value =>  @index.texte10en,required: true %>
 					<%= f.text_field :texte11en, :value =>  @index.texte11en,required: true %>
-
+<% end %>
 					<%= f.submit "update", class: "btn btn-success" %>
 <% end %>

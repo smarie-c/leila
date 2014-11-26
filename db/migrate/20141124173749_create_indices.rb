@@ -1,28 +1,28 @@
 class CreateIndices < ActiveRecord::Migration
   def change
     create_table :indices do |t|
-      t.text :texte1
-      t.text :texte2
-      t.text :texte3
-      t.text :texte4
-      t.text :texte5
-      t.text :texte6
-      t.text :texte7
-      t.text :texte8
-      t.text :texte9
-      t.text :texte10
-      t.text :texte11
-      t.text :texte1en
-      t.text :texte2en
-      t.text :texte3en
-      t.text :texte4en
-      t.text :texte5en
-      t.text :texte6en
-      t.text :texte7en
-      t.text :texte8en
-      t.text :texte9en
-      t.text :texte10en
-      t.text :texte11en
+      t.text :texte1, null: false, default: ""
+      t.text :texte2, null: false, default: ""
+      t.text :texte3, null: false, default: ""
+      t.text :texte4, null: false, default: ""
+      t.text :texte5, null: false, default: ""
+      t.text :texte6, null: false, default: ""
+      t.text :texte7, null: false, default: ""
+      t.text :texte8, null: false, default: ""
+      t.text :texte9, null: false, default: ""
+      t.text :texte10, null: false, default: ""
+      t.text :texte11, null: false, default: ""
+      t.text :texte1en, null: false, default: ""
+      t.text :texte2en, null: false, default: ""
+      t.text :texte3en, null: false, default: ""
+      t.text :texte4en, null: false, default: ""
+      t.text :texte5en, null: false, default: ""
+      t.text :texte6en, null: false, default: ""
+      t.text :texte7en, null: false, default: ""
+      t.text :texte8en, null: false, default: ""
+      t.text :texte9en, null: false, default: ""
+      t.text :texte10en, null: false, default: ""
+      t.text :texte11en, null: false, default: ""
 
       t.timestamps
     end
