@@ -128,18 +128,19 @@ body {
 	border-radius: 0;
 	padding: 0;
 }
-a {
-	color: black !important;
-}
 
 li:hover {
-	border-bottom: 5px solid #fbc90d;
+	border-bottom: 5px solid #7F051C;
 }
 
 .act {
 	border-bottom: 5px solid #fbc90d;
-	color: black;
 }
+
+.act:focus {
+	color: black !important;
+}
+
 // fin Barre navigation
 
 .submenu {
