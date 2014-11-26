@@ -11,11 +11,34 @@
 @import url(http://fonts.googleapis.com/css?family=PT+Serif:400,400italic);
 
 body {
-	padding-top: 40px;
-	padding-bottom: 40px;
 	background-color: #f5f5f5;
+	.container {
+		padding: 0;
 
+	}
+	header	{
+		background-color: white;
+		font-family: 'Titillium Web', sans-serif;
+		text-transform: uppercase;
+		color: #272926;
+		top: 50px;
+		.btn {
+			background-color: white;
+			font-family: 'PT Serif', serif;
+			font-weight: '700';
+		}
+		.fix-header{
+			padding-top: 50px;
+		}
+		form {
+			display: inline;
+		}
+	}
 }
+
+.visible-xs-block {
+}
+
 //LUCCA DEVISE + FORM + ADMIN
 .form-signin {
 	max-width: 300px;
@@ -44,10 +67,7 @@ body {
 //END OF LUCCA
 // IBRAHIM
 header {
-	font-family: 'Titillium Web', sans-serif;
-	text-transform: uppercase;
-	color: #272926;
-	top: 50px;
+
 }
 
 .title {
@@ -134,11 +154,5 @@ article {
 .postal {}
 
 .lang form {
-	display: inline;
 }
 
-.lang .btn {
-	background-color: #f5f5f5;
-	font-family: 'PT Serif', serif;
-	font-weight: '700';
-}
