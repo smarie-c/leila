@@ -3,9 +3,8 @@
 	<% @veilles.each do |v| %>
 	<section>
 		<article>
-			<div class="vtitle"><%= v.titre %><br/></div>
+			<strong><div class="vtitle"><%= v.titre %><br/></div></strong><div class="separator-article"></div>
 			<div class="veille"><%= v.texte.bbcode_to_html_with_formatting.html_safe %><br/></div>
-			<div class="separator-article"></div>
 		</article>
 	</section>
 	<% end %>
