@@ -4,6 +4,7 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
 @import "compass";
 
 @import url(http://fonts.googleapis.com/css?family=Titillium+Web:400,600,200,700);
@@ -75,22 +76,29 @@ header {
 	margin-bottom: 15px;
 }
 
-.active {
 
-}
+// Barre navigation
 
 nav {
 	width: 100%;
 }
 
-.navbar li:hover {
-	height: 5px;
-	background: #fbc90d;
+.hidden-xs {
+	margin-top: 30px;
+	background-color: #f5f5f5;
+	border-color: #f5f5f5;
 }
+
+li:hover {
+	border-bottom: 5px solid #fbc90d;
+}
+
 .act {
-	height: 5px;
-	background: #fbc90d;
+	border-bottom: 5px solid #fbc90d;
+	color: black;
 }
+// fin Barre navigation
+
 .submenu {
 	font-family: 'PT Serif', serif;
 	font-weight: '400';
@@ -103,6 +111,7 @@ nav {
 	font-size: 18px;
 	padding-bottom: 10px;
 }
+
 .veille {
 	padding-left: 5px;
 }
@@ -114,14 +123,22 @@ aside {
 article {
 	margin-top: 20px;
 }
-	
+
 .name {
-font-family: 'Titillium Web', sans-serif;
-letter-spacing: 1px;
-text-align: center;
+	font-family: 'Titillium Web', sans-serif;
+	letter-spacing: 1px;
+	text-align: center;
 }
 .email {}
 .adresse {}
 .postal {}
 
+.lang form {
+	display: inline;
+}
 
+.lang .btn {
+	background-color: #f5f5f5;
+	font-family: 'PT Serif', serif;
+	font-weight: '700';
+}
