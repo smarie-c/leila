@@ -26,4 +26,4 @@ Dans ces conditions, il y a lieu de considérer :
 Ce revirement de jurisprudence met donc fin à la vacance imposée des sièges, et témoigne de l’importance prise par l’institution du CHSCT ces dernières années.")
 end
 
-Associe.create(:name => "steve", :description => "dev noob", :link => "http://panda.cat")
+Associe.create(:name => "Nom", :description => "d'avocat", :link => "http://daempartners.com/")
