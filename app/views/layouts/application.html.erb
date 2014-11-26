@@ -7,6 +7,15 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+		    <li>						<%= bootstrap_form_tag url: en_path, method: "post" do |f| %>
+							<%= f.submit "EN", class: "btn btn-success" %>
+						<% end %>
+			</li>
+			<li>
+						<%= bootstrap_form_tag url: fr_path, method: "post" do |f| %>
+							<%= f.submit "FR", class: "btn btn-success" %>
+						<% end %>
+			</li>
 	<!-- header admin -->
 	<% if params[:controller] == "admin" %>
 			<p>
@@ -46,12 +55,12 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
  
-		    <li><%= link_to t('acceuil'), root_path, :class => 'navbar-link submenu active' %> </li>
-		    <li><%= link_to t('veille'), veille_path, :class => 'navbar-link submenu' %> </li>
-		    <li><%= link_to t('special'), specialite_path, :class => 'navbar-link submenu' %> </li>
-		    <li><%= link_to t('associe'), associe_path, :class => 'navbar-link submenu' %> </li>
-		    <li><%= link_to t('honoraire'), honoraire_path, :class => 'navbar-link submenu' %> </li>
-		    <li><%= link_to t('contact'), contact_path, :class => 'navbar-link submenu' %> </li>
+		    <ul><%= link_to t('acceuil'), root_path, :class => 'navbar-link submenu active' %> </ul>
+		    <ul><%= link_to t('veille'), veille_path, :class => 'navbar-link submenu' %> </ul>
+		    <ul><%= link_to t('special'), specialite_path, :class => 'navbar-link submenu' %> </ul>
+		    <ul><%= link_to t('associe'), associe_path, :class => 'navbar-link submenu' %> </ul>
+		    <ul><%= link_to t('honoraire'), honoraire_path, :class => 'navbar-link submenu' %> </ul>
+		    <ul><%= link_to t('contact'), contact_path, :class => 'navbar-link submenu' %> </ul>
 
       </ul>
     </div><!-- /.navbar-collapse -->
@@ -83,19 +92,20 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
  
-		    <li><%= link_to t('acceuil'), root_path, :class => 'navbar-link submenu active' %> </li>
+		    <li class="act"><%= link_to t('acceuil'), root_path, :class => 'navbar-link submenu active' %> </li>
 		    <li><%= link_to t('veille'), veille_path, :class => 'navbar-link submenu' %> </li>
 		    <li><%= link_to t('special'), specialite_path, :class => 'navbar-link submenu' %> </li>
 		    <li><%= link_to t('associe'), associe_path, :class => 'navbar-link submenu' %> </li>
 		    <li><%= link_to t('honoraire'), honoraire_path, :class => 'navbar-link submenu' %> </li>
 		    <li><%= link_to t('contact'), contact_path, :class => 'navbar-link submenu' %> </li>
 
+
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
 		
-		<div class="separator"></div>
+
 
 	<% end %>
 <% if params[:controller] == "admin" || params[:controller] == "devise/sessions" %>
@@ -103,12 +113,7 @@
 				<%= yield %>
 		</div>
 <% else %>
-						<%= bootstrap_form_tag url: en_path, method: "post" do |f| %>
-							<%= f.submit "EN", class: "btn btn-success" %>
-						<% end %>
-						<%= bootstrap_form_tag url: fr_path, method: "post" do |f| %>
-							<%= f.submit "FR", class: "btn btn-success" %>
-						<% end %>
+
 	<%= yield %>
 <% end %>
 	</div>

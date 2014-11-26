@@ -1,37 +1,37 @@
  		<aside class="col-sm-2 profil">
-			<img src="<%= asset_path( 'carlton.gif' ) %>" class="img-responsive img-rounded" alt="Laila El Halfi" />
+			<img src="<%= asset_path( 'kina.jpg' ) %>" class="img-responsive img-rounded" alt="Laila El Halfi" />
 			<% if locale == :en %>
-				<article>
+				<div class="name">
 					<%= @index.texte1en.bbcode_to_html_with_formatting.html_safe %>
-				</article>
-				<article>
+				</div>
+				<div class="name">
 					<%= @index.texte2en.bbcode_to_html_with_formatting.html_safe %>
-				</article>
-				<article>
+				</div>
+				<div class="email">
 					<%= @index.texte3en.bbcode_to_html_with_formatting.html_safe %>
-				</article>
-				<article>
+				</div>
+				<div class="adresse">
 					<%= @index.texte4en.bbcode_to_html_with_formatting.html_safe %>
-				</article>
-				<article>
+				</div>
+				<div class="postal">
 				<%= @index.texte5en.bbcode_to_html_with_formatting.html_safe %>
-				</article>
+				</div>
 			<% else %>
-				<article>
+				<div class="name">
 					<%= @index.texte1.bbcode_to_html_with_formatting.html_safe %>
-				</article>
-				<article>
+				</div>
+				<div class="name">
 					<%= @index.texte2.bbcode_to_html_with_formatting.html_safe %>
-				</article>
-				<article>
+				</div>
+				<div class="email">
 					<%= @index.texte3.bbcode_to_html_with_formatting.html_safe %>
-				</article>
-				<article>
+				</div>
+				<div class="adresse">
 					<%= @index.texte4.bbcode_to_html_with_formatting.html_safe %>
-				</article>
-				<article>
+				</div>
+				<div class="postal">
 				<%= @index.texte5.bbcode_to_html_with_formatting.html_safe %>
-				</article>
+				</div>
 			<% end %>
 		</aside>
 				<div class="col-sm-8">
