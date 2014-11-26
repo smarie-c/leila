@@ -1,20 +1,34 @@
- 		<aside class="col-sm-2 profil">
-			<img src="<%= asset_path( 'carlton.gif' ) %>" class="img-responsive img-rounded" alt="Laila El Halfi" />
+ 		<aside class="col-sm-2">
+			<img src="<%= asset_path( 'kina.jpg' ) %>" class="img-responsive img-rounded" alt="Laila El Halfi" />
 			<article>
 				<%= @index.texte4.bbcode_to_html_with_formatting.html_safe %>
+			</article>			
+			<article>
+				<%= @index.texte5.bbcode_to_html_with_formatting.html_safe %>
+			</article>			
+			<article>
+				<%= @index.texte6.bbcode_to_html_with_formatting.html_safe %>
+			</article>			
+			<article>
+				<%= @index.texte7.bbcode_to_html_with_formatting.html_safe %>
+			</article>			
+			<article>
+				<%= @index.texte8.bbcode_to_html_with_formatting.html_safe %>
+			</article>			
+			<article>
+				<%= @index.texte9.bbcode_to_html_with_formatting.html_safe %>
 			</article>
 		</aside>
-				<div class="col-sm-8">
-<section>
-	<h3>
-	<%= @index.texte1.bbcode_to_html_with_formatting.html_safe %>
-	</h3>
-	<article>
-	<%= @index.texte2.bbcode_to_html_with_formatting.html_safe %>
-	</article>
-	<article>
-	<%= @index.texte3.bbcode_to_html_with_formatting.html_safe %>
-	</article>
-
-</section>
+<div class="col-sm-8">
+	<section>
+		<article>
+		<%= @index.texte1.bbcode_to_html_with_formatting.html_safe %>
+		</article>
+		<article>
+		<%= @index.texte2.bbcode_to_html_with_formatting.html_safe %>
+		</article>
+		<article>
+		<%= @index.texte3.bbcode_to_html_with_formatting.html_safe %>
+		</article>
+	</section>
 </div>
