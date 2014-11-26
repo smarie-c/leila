@@ -47,7 +47,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
  
-		    <ul><%= link_to t('acceuil'), root_path, :class => 'navbar-link submenu active' %> </ul>
+		    <ul><%= link_to t('acceuil'), root_path, :class => 'navbar-link submenu' %> </ul>
 		    <ul><%= link_to t('veille'), veille_path, :class => 'navbar-link submenu' %> </ul>
 		    <ul><%= link_to t('special'), specialite_path, :class => 'navbar-link submenu' %> </ul>
 		    <ul><%= link_to t('associe'), associe_path, :class => 'navbar-link submenu' %> </ul>
@@ -92,12 +92,12 @@
 	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	<ul class="nav navbar-nav">
 
-	<li class="act"><%= link_to t('acceuil'), root_path, :class => 'navbar-link submenu active' %> </li>
-	<li><%= link_to t('veille'), veille_path, :class => 'navbar-link submenu' %> </li>
-	<li><%= link_to t('special'), specialite_path, :class => 'navbar-link submenu' %> </li>
-	<li><%= link_to t('associe'), associe_path, :class => 'navbar-link submenu' %> </li>
-	<li><%= link_to t('honoraire'), honoraire_path, :class => 'navbar-link submenu' %> </li>
-	<li><%= link_to t('contact'), contact_path, :class => 'navbar-link submenu' %> </li>
+	<li id="index"><%= link_to t('acceuil'), root_path, :class => 'navbar-link submenu' %> </li>
+	<li id="veille"><%= link_to t('veille'), veille_path, :class => 'navbar-link submenu' %> </li>
+	<li id="specialite"><%= link_to t('special'), specialite_path, :class => 'navbar-link submenu' %> </li>
+	<li id="associe"><%= link_to t('associe'), associe_path, :class => 'navbar-link submenu' %> </li>
+	<li id="honoraire"><%= link_to t('honoraire'), honoraire_path, :class => 'navbar-link submenu' %> </li>
+	<li id="contact"><%= link_to t('contact'), contact_path, :class => 'navbar-link submenu' %> </li>
 
 
 	</ul>
@@ -105,6 +105,13 @@
 	</div><!-- /.container-fluid -->
 	</nav>
 
+	<script type="text/javascript">
+		function ft_add_active_to_header(str)
+		{
+			document.getElementById(str).className += " act";
+		}
+		ft_add_active_to_header("<%= params[:action] %>");
+	</script>
 
 
 	<% end %>
