@@ -6,7 +6,8 @@
 					<%= @index.texte2en.bbcode_to_html_with_formatting.html_safe %>
 				</div>
 				<div class="email">
-					<a href="https://goo.gl/maps/0BxVB"><%= @index.texte3en.bbcode_to_html_with_formatting.html_safe %></a> 
+<!-- 					<a href="https://goo.gl/maps/0BxVB"><%= @index.texte3en.bbcode_to_html_with_formatting.html_safe %></a>  -->
+					<a href="https://www.google.com/maps/place/<%= @map %>"><%= @index.texte3en.bbcode_to_html_with_formatting.html_safe %></a> 
 				</div>
 				<div class="adresse">
 					<%= @index.texte4en.bbcode_to_html_with_formatting.html_safe %>
@@ -22,7 +23,7 @@
 					<%= @index.texte2.bbcode_to_html_with_formatting.html_safe %>
 				</div>
 				<div class="email">
-					<%= @index.texte3.bbcode_to_html_with_formatting.html_safe %>
+					<a href="https://www.google.com/maps/place/<%= @map %>"><%= @index.texte3.bbcode_to_html_with_formatting.html_safe %></a> 
 				</div>
 				<div class="adresse">
 					<%= @index.texte4.bbcode_to_html_with_formatting.html_safe %>
