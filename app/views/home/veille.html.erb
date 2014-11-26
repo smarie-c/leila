@@ -1,6 +1,8 @@
 <div class="col-sm-8 col-sm-offset-2">
 	<%= will_paginate @veilles %>
-
+<% if @veilles.count == 0 %>
+<%= t('no_veille') %>
+<% end %>
 	<% @veilles.each do |v| %>
 	<section class=" bloc-g">
 		<article>
@@ -11,3 +13,4 @@
 	<% end %>
 	<%= will_paginate @veilles %>
 </div>
+
