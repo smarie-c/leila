@@ -32,7 +32,11 @@ en:
   confirm_your_new_password: "Confirm your new password"
   new_password: "New password"
   change_your_password: "Change your password"
-  no_veille: "no veille"
+  no_veille: "there is no veille available yet."
+  will_paginate:
+    previous_label: "&#8592; Previous"
+    next_label: "Next &#8594;"
+    page_gap: "&hellip;"
 
 fr:
   hello: "Salut"
@@ -48,4 +52,7 @@ fr:
   new_password: "Nouveau mot de passe"
   change_your_password: "Changez votre mot de passe"
   no_veille: "Il n'y a pas de veille pour l'instant."
-
+  will_paginate:
+    previous_label: "&#8592; Précédent"
+    next_label: "Suivant &#8594;"
+    page_gap: "&hellip;"
