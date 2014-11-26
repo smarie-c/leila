@@ -117,6 +117,18 @@
 	<% end %>
 
 	<% if params[:controller] == "admin" || params[:controller] == "devise/sessions" %>
+		<header>
+		<div class="container fix-header">
+				<div class="lang pull-right">
+					<%= bootstrap_form_tag url: fr_path, method: "post" do |f| %>
+						<%= f.submit "FR", class: "btn" %>
+					<% end %> |
+					<%= bootstrap_form_tag url: en_path, method: "post" do |f| %>
+						<%= f.submit "EN", class: "btn" %>
+					<% end %>
+				</div>
+		</div>
+	</header>
 		<div class="container">
 		<%= yield %>
 		</div>
