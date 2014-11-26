@@ -3,12 +3,10 @@
 			<% if locale == :en %>
 				<div class="name">
 					<%= @index.texte1en.bbcode_to_html_with_formatting.html_safe %>
-				</div>
-				<div class="name">
 					<%= @index.texte2en.bbcode_to_html_with_formatting.html_safe %>
 				</div>
 				<div class="email">
-					<%= @index.texte3en.bbcode_to_html_with_formatting.html_safe %>
+					<a href="https://goo.gl/maps/0BxVB"><%= @index.texte3en.bbcode_to_html_with_formatting.html_safe %></a> 
 				</div>
 				<div class="adresse">
 					<%= @index.texte4en.bbcode_to_html_with_formatting.html_safe %>
@@ -34,7 +32,7 @@
 				</div>
 			<% end %>
 		</aside>
-				<div class="col-sm-8">
+				<div class="col-sm-8 bloc-g">
 <section>
 <% if locale == :en %>
 	<h3>

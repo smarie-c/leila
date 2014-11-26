@@ -1,8 +1,9 @@
-<div class="col-sm-8">
+<div class="col-sm-8 col-sm-offset-2">
 	<%= will_paginate @veilles %>
+
 	<% @veilles.each do |v| %>
-	<section>
-		<article class="varticle">
+	<section class=" bloc-g">
+		<article>
 			<strong><div class="vtitle"><%= v.titre %><br/></div></strong><div class="separator-article"></div>
 			<div class="veille"><%= v.texte.bbcode_to_html_with_formatting.html_safe %><br/></div>
 		</article>

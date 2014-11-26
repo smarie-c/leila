@@ -110,16 +110,11 @@
 	<% end %>
 
 	<% if params[:controller] == "admin" || params[:controller] == "devise/sessions" %>
-	<div class="container">
 		<%= yield %>
-	</div>
 
 	<% else %>
-<div class="bloc-general">
-	
 		<%= yield %>
 	<% end %>
-	</div>
 </div>
 
 </body>
