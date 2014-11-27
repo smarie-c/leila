@@ -1,0 +1,15 @@
+	<%= will_paginate @veilles %>
+<% if @veilles.count == 0 %>
+<%= t('no_veille') %>
+<% end %>
+	<% @veilles.each do |v| %>
+	<section class=" bloc-g">
+		<article>
+			<strong><div class="vtitle"><%= v.titre %><br/></div></strong><div class="separator-article"></div>
+			<div class="veille"><%= v.texte.bbcode_to_html_with_formatting.html_safe %><br/></div>
+		</article>
+	</section>
+	<% end %>
+	<%= will_paginate @veilles %>
+
+

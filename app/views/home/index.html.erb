@@ -1,0 +1,80 @@
+ 		<aside class="col-sm-2 profil">
+			<img src="<%= asset_path( 'kina.jpg' ) %>" class="img-responsive img-rounded" alt="Laila El Halfi" />
+			<% if locale == :en %>
+				<div class="name">
+					<%= @index.texte1en.bbcode_to_html_with_formatting.html_safe %>
+<!-- 					<%= @index.texte2en.bbcode_to_html_with_formatting.html_safe %> -->
+				</div>
+				<div class="name">
+					<%= @index.texte2en.bbcode_to_html_with_formatting.html_safe %>
+				</div>
+				<div class="email">
+					<a href="https://www.google.com/maps/place/<%= @map %>"  target="_blank"><%= @index.texte3en.bbcode_to_html_with_formatting.html_safe %></a> 
+				</div>
+				<div class="adresse">
+					<%= @index.texte4en.bbcode_to_html_with_formatting.html_safe %>
+				</div>
+				<div class="postal">
+				<%= @index.texte5en.bbcode_to_html_with_formatting.html_safe %>
+				</div>
+			<% else %>
+				<div class="name">
+					<%= @index.texte1.bbcode_to_html_with_formatting.html_safe %>
+				</div>
+				<div class="name">
+					<%= @index.texte2.bbcode_to_html_with_formatting.html_safe %>
+				</div>
+				<div class="email">
+					<a href="https://www.google.com/maps/place/<%= @map %>"  target="_blank"><%= @index.texte3.bbcode_to_html_with_formatting.html_safe %></a> 
+				</div>
+				<div class="adresse">
+					<%= @index.texte4.bbcode_to_html_with_formatting.html_safe %>
+				</div>
+				<div class="postal">
+				<%= @index.texte5.bbcode_to_html_with_formatting.html_safe %>
+				</div>
+			<% end %>
+		</aside>
+				<div class="col-sm-8 bloc-g">
+<section>
+<% if locale == :en %>
+	<h3>
+	<%= @index.texte6en.bbcode_to_html_with_formatting.html_safe %>
+	</h3>
+	<article>
+	<%= @index.texte7en.bbcode_to_html_with_formatting.html_safe %>
+	</article>
+	<article>
+	<%= @index.texte8en.bbcode_to_html_with_formatting.html_safe %>
+	</article>
+	<article>
+	<%= @index.texte9en.bbcode_to_html_with_formatting.html_safe %>
+	</article>
+	<article>
+	<%= @index.texte10en.bbcode_to_html_with_formatting.html_safe %>
+	</article>
+	<article>
+	<%= @index.texte11en.bbcode_to_html_with_formatting.html_safe %>
+	</article>
+<% else %>
+	<h3>
+	<%= @index.texte6.bbcode_to_html_with_formatting.html_safe %>
+	</h3>
+	<article>
+	<%= @index.texte7.bbcode_to_html_with_formatting.html_safe %>
+	</article>
+	<article>
+	<%= @index.texte8.bbcode_to_html_with_formatting.html_safe %>
+	</article>
+	<article>
+	<%= @index.texte9.bbcode_to_html_with_formatting.html_safe %>
+	</article>
+	<article>
+	<%= @index.texte10.bbcode_to_html_with_formatting.html_safe %>
+	</article>
+	<article>
+	<%= @index.texte11.bbcode_to_html_with_formatting.html_safe %>
+	</article>
+<% end %>
+</section>
+</div>

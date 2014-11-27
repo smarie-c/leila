@@ -1,0 +1,14 @@
+<%= bootstrap_form_for(resource, as: resource_name, url: session_path(resource_name), :class => 'form-signin') do |f| %>
+
+<%= f.alert_message "Please fix the errors below.", error_summary: true %>
+
+<%= f.text_field :username, required: false, autofocus: true, class: "form_control" %>
+
+<%= f.password_field :password, required: false, class: "form_control"%>
+
+<%= f.check_box :remember_me, as: :boolean if devise_mapping.rememberable? %>
+<%= f.submit "Connexion", class: "btn btn-success" %>
+
+<% end %>
+
+<%= render "devise/shared/links" %>

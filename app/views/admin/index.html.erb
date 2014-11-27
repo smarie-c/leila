@@ -1,0 +1,86 @@
+<input class="btn btn-primary" name="commit" id="update_index" type="submit" value="modifier page index" onclick="display_update('index')">
+<input class="btn btn-primary" name="commit" id="update_specialite" type="submit" value="modifier page specialite" onclick="display_update('specialite')">
+<input class="btn btn-primary" name="commit" id="update_honoraire" type="submit" value="modifier page honoraire" onclick="display_update('honoraire')">
+<input class="btn btn-primary" name="commit" id="update_contact" type="submit" value="modifier page contact" onclick="display_update('contact')">
+
+<div id="contact" class="admin_class" style="display:none">
+	#contact
+
+	<%= bootstrap_form_tag url: user_contact_update_path, method: "put" do |f| %>
+		<% if locale == :fr %>
+			<%= f.text_field :texte1, :value =>  @contact.texte1, required: true %>
+		<% elsif locale == :en %>
+			#en anglais
+			<%= f.text_field :texte1en, :value =>  @contact.texte1en, required: true %>
+		<% end %>
+		<%= f.submit "update", class: "btn btn-success" %>
+	<% end %>
+</div>
+
+
+<div id="honoraire" class="admin_class" style="display:none">
+	#honoraire
+	<%= bootstrap_form_tag url: user_honoraire_update_path, method: "put" do |f| %>
+		<% if locale == :fr %>
+			<%= f.text_field :texte1, :value =>  @honoraire.texte1,required: true %>
+		<% elsif locale == :en %>
+			#en anglais
+			<%= f.text_field :texte1en, :value =>  @honoraire.texte1en,required: true %>
+		<% end %>
+		<%= f.submit "update", class: "btn btn-success" %>
+	<% end %>
+</div>
+
+<div id="specialite" class="admin_class" style="display:none">
+	#specialite
+	<%= bootstrap_form_tag url: user_specialite_update_path, method: "put" do |f| %>
+		<% if locale == :fr %>
+			<%= f.text_field :texte1, :value =>  @specialite.texte1,required: true %>
+		<% elsif locale == :en %>
+			#en anglais
+			<%= f.text_field :texte1en, :value =>  @specialite.texte1en,required: true %>
+		<% end %>
+		<%= f.submit "update", class: "btn btn-success" %>
+	<% end %>
+</div>
+
+<div id="index" class="admin_class" style="display:block">
+	#index
+	<%= bootstrap_form_tag url: user_index_update_path, method: "put" do |f| %>
+		<% if locale == :fr %>
+			Profil
+			<div class="separator"></div>
+			<%= f.text_field :texte1, :value =>  @index.texte1,required: true %>
+			<%= f.text_field :texte2, :value =>  @index.texte2,required: true %>
+			<%= f.text_field :texte3, :value =>  @index.texte3,required: true %>
+			<%= f.text_field :texte4, :value =>  @index.texte4,required: true %>
+			<%= f.text_field :texte5, :value =>  @index.texte5,required: true %>
+			Contenu de la page
+			<div class="separator"></div>
+			<%= f.text_field :texte6, :value =>  @index.texte6,required: true %>
+			<%= f.text_field :texte7, :value =>  @index.texte7,required: true %>
+			<%= f.text_field :texte8, :value =>  @index.texte8,required: true %>
+			<%= f.text_field :texte9, :value =>  @index.texte9,required: true %>
+			<%= f.text_field :texte10, :value =>  @index.texte10,required: true %>
+			<%= f.text_field :texte11, :value =>  @index.texte11,required: true %>
+		<% elsif locale == :en %>
+			#en anglais
+			Profil
+			<div class="separator"></div>
+			<%= f.text_field :texte1en, :value =>  @index.texte1en,required: true %>
+			<%= f.text_field :texte2en, :value =>  @index.texte2en,required: true %>
+			<%= f.text_field :texte3en, :value =>  @index.texte3en,required: true %>
+			<%= f.text_field :texte4en, :value =>  @index.texte4en,required: true %>
+			<%= f.text_field :texte5en, :value =>  @index.texte5en,required: true %>
+			Page Content
+			<div class="separator"></div>
+			<%= f.text_field :texte6en, :value =>  @index.texte6en,required: true %>
+			<%= f.text_field :texte7en, :value =>  @index.texte7en,required: true %>
+			<%= f.text_field :texte8en, :value =>  @index.texte8en,required: true %>
+			<%= f.text_field :texte9en, :value =>  @index.texte9en,required: true %>
+			<%= f.text_field :texte10en, :value =>  @index.texte10en,required: true %>
+			<%= f.text_field :texte11en, :value =>  @index.texte11en,required: true %>
+		<% end %>
+		<%= f.submit "update", class: "btn btn-success" %>
+	<% end %>
+</div>

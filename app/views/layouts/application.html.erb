@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Laila El Halfi</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+	<!-- header admin -->
+	<% if params[:controller] == "admin" %>
+			<p>
+		<% if user_signed_in? %>
+		  Bonjour <strong><%= current_user.username %></strong>.
+		  <%= link_to 'Editer vos pages', user_path, :class => 'navbar-link' %> |
+		  <%= link_to 'Editer veille', user_veille_path, :class => 'navbar-link' %> |
+		  <%= link_to 'Editer Associe', user_associe_path, :class => 'navbar-link' %> |
+		  <%= link_to 'Voir mon site', root_path, :class => 'navbar-link' %> |
+		  <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
+		  <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+		<% else %>
+		  <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+		<% end %>
+		</p>
+
+		<% if notice %>
+		  <p class="alert alert-success"><%= notice %></p>
+		<% end %>
+		<% if alert %>
+		  <p class="alert alert-danger"><%= alert %></p>
+		<% end %>
+	<!-- header visiteurs -->
+	<% elsif params[:controller] == "home"%>
+
+<nav class="navbar navbar-default navbar-fixed-top visible-xs-block" role="navigation">
+  <div class="container-fluid">
+
+      <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+ 
+		    <ul><%= link_to t('acceuil'), root_path, :class => 'navbar-link submenu' %> </ul>
+		    <ul><%= link_to t('veille'), veille_path, :class => 'navbar-link submenu' %> </ul>
+		    <ul><%= link_to t('special'), specialite_path, :class => 'navbar-link submenu' %> </ul>
+		    <ul><%= link_to t('associe'), associe_path, :class => 'navbar-link submenu' %> </ul>
+		    <ul><%= link_to t('honoraire'), honoraire_path, :class => 'navbar-link submenu' %> </ul>
+		    <ul><%= link_to t('contact'), contact_path, :class => 'navbar-link submenu' %> </ul>
+
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+	<header>
+		<div class="container fix-header">
+			<div class="title">Laila El Halfi</div>
+				<div class="lang pull-right">
+					<%= bootstrap_form_tag url: fr_path, method: "post" do |f| %>
+						<%= f.submit "FR", class: "btn" %>
+					<% end %> |
+					<%= bootstrap_form_tag url: en_path, method: "post" do |f| %>
+						<%= f.submit "EN", class: "btn" %>
+					<% end %>
+				</div>
+			<div class="subtitle">Avocat a la cour</div>
+		</div>
+	</header>
+
+
+
+<div class="container">
+
+	<nav class="navbar navbar-default hidden-xs" role="navigation">
+	<div class="container-fluid">
+
+	<div class="navbar-header">
+	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	<span class="sr-only">Toggle navigation</span>
+	<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+	</button>
+	</div>
+
+	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	<ul class="nav navbar-nav">
+
+	<li id="index"><%= link_to t('acceuil'), root_path, :class => 'navbar-link submenu' %> </li>
+	<li id="veille"><%= link_to t('veille'), veille_path, :class => 'navbar-link submenu' %> </li>
+	<li id="specialite"><%= link_to t('special'), specialite_path, :class => 'navbar-link submenu' %> </li>
+	<li id="associe"><%= link_to t('associe'), associe_path, :class => 'navbar-link submenu' %> </li>
+	<li id="honoraire"><%= link_to t('honoraire'), honoraire_path, :class => 'navbar-link submenu' %> </li>
+	<li id="contact"><%= link_to t('contact'), contact_path, :class => 'navbar-link submenu' %> </li>
+
+
+	</ul>
+	</div><!-- /.navbar-collapse -->
+	</div><!-- /.container-fluid -->
+	</nav>
+
+	<script type="text/javascript">
+		function ft_add_active_to_header(str)
+		{
+			document.getElementById(str).className += "act";
+			document.getElementById(str).childNodes[0].style.color = "black"
+		}
+		ft_add_active_to_header("<%= params[:action] %>");
+	</script>
+
+
+	<% end %>
+
+	<% if params[:controller] == "admin" || params[:controller] == "devise/sessions" %>
+		<header>
+		<div class="container fix-header">
+				<div class="lang pull-right">
+					<%= bootstrap_form_tag url: fr_path, method: "post" do |f| %>
+						<%= f.submit "FR", class: "btn" %>
+					<% end %> |
+					<%= bootstrap_form_tag url: en_path, method: "post" do |f| %>
+						<%= f.submit "EN", class: "btn" %>
+					<% end %>
+				</div>
+		</div>
+	</header>
+		<div class="container">
+		<%= yield %>
+		</div>
+	<% else %>
+		<%= yield %>
+	<% end %>
+</div>
+
+</body>
+</html>
+
