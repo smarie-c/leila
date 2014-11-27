@@ -21,11 +21,11 @@
 
 en:
   hello: "Hello world"
-  acceuil: "Acceuil"
-  veille: "Veille"
+  acceuil: "Home"
+  veille: "Actualités"
   special: "Specialité"
   associe: "Associés"
-  honoraire: "Honoraire"
+  honoraire: "Honoraires"
   contact: "Contact"
   site: "son site"
   change_my_password: "Change my password"
@@ -41,10 +41,10 @@ en:
 fr:
   hello: "Salut"
   acceuil: "Acceuil"
-  veille: "Veille"
+  veille: "Actualités"
   special: "Specialité"
   associe: "Associés"
-  honoraire: "Honoraire"
+  honoraire: "Honoraires"
   contact: "Contact"
   site: "son site"
   change_my_password: "Changer mon mot de passe"
