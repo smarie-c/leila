@@ -1,5 +1,15 @@
-<section>
-	<article>
+<div class="col-sm-8 bloc-g col-sm-offset-2">
+<% if locale == :en %>
+	<section>
+		<article>
+	<%= @honoraire.texte1en.bbcode_to_html_with_formatting.html_safe %>
+		</article>
+	</section>
+<% else %>
+	<section>
+		<article>
 	<%= @honoraire.texte1.bbcode_to_html_with_formatting.html_safe %>
-	</article>
-</section>
+		</article>
+	</section>
+<% end %>
+</div>

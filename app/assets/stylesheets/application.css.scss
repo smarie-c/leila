@@ -4,6 +4,7 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "compass";
 @import "compass/css3/box-shadow";
 @import "compass/css3/images";
 @import "compass/css3/transition";
@@ -23,7 +24,8 @@
     }
 }
 
-
+/* design Karine */
+/*--
 body {
 	top: 0;
 	left: 0;
@@ -147,8 +149,8 @@ body {
 					border-color: red;
 				}
 			}
-		} /* menu_inline - END */
-	} /* header - END */
+		}
+	}
 
 	#left_sidebar {
 		width: 290px;
@@ -160,7 +162,7 @@ body {
 			font-size: 20px;
 			margin-left: 50px;
 		}
-	} /* left_sidebar - END */
+	}
 
 	#central_block {
 		width: 800px;
@@ -198,16 +200,6 @@ body {
 					width: 50px;
 					height: 35px;
 					outline: none;
-					/*&.facebook {
-						background-image: asset-url("facebook_logo.png", image);
-						background-repeat: no-repeat;
-						background-size: 40px auto;
-						cursor: pointer;
-						opacity: 0.8;
-						&:hover {
-							opacity: 1;
-						}
-					}*/
 					&.twitter {
 						background-image: asset-url("twitter_logo.png", image);
 						background-repeat: no-repeat;
@@ -234,31 +226,248 @@ body {
 		}
 	}
 }
+--*/
 
 
-/* -- Panneau Admin - Devise -- */
-.form-signin {
-	max-width: 300px;
-	padding: 19px 29px 29px;
-	margin: 0 auto 20px;
-	background-color: #fff;
-	border: 1px solid #e5e5e5;
-	-webkit-border-radius: 5px;
-	   -moz-border-radius: 5px;
-	        border-radius: 5px;
-	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
-	   -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
-	        box-shadow: 0 1px 2px rgba(0,0,0,.05);
-}
-.form-signin .form-signin-heading,
-	.form-signin .checkbox {
-		
+
+body {
+	background-color: #f5f5f5;
+	.container {
+		padding: 0;
 	}
-.form-signin input[type="text"],
+	.bloc-g {
+		background-color: white;
+		border-radius: 1px;
+		border-style: solid;
+		border-color: #dedede;
+		border-width: 1px;
+		padding: 13px;
+		margin-bottom: 20px;
+		@include box-shadow(black 2px);
+	}
+	nav {
+		.navbar-header {
+			background-color: white;
+		}
+	}
+	header	{
+		background-color: white;
+		font-family: 'Titillium Web', sans-serif;
+		text-transform: uppercase;
+		color: #272926;
+		border-bottom: 1px solid #d0d0d0;
+		padding-bottom: 15px;
+		.title {
+			font-weight: 200;
+			font-size: 42px;
+			letter-spacing: 3px;
+		}
+
+		.subtitle {
+			font-size: 24px;
+			font-weight: 700;
+		}
+		.btn {
+			background-color: white;
+			font-family: 'PT Serif', serif;
+			font-weight: '700';
+		}
+		.fix-header{
+			padding-top: 50px;
+		}
+		form {
+			display: inline;
+		}
+		nav {
+			border-top: #dedede;
+		}
+	}
+	aside {
+		&.profil {
+			.name {
+				font-family: 'Titillium Web', sans-serif;
+				letter-spacing: 1px;
+			}
+			.mail {
+				font-weight: 700;
+			}
+		}
+	}
+	section {
+		&.index {
+			article {
+				padding-left: 5px;
+			}
+		}
+		&.veille {
+			line-height: 25px;
+		}
+	}
+
+
+	nav {
+		overflow: hidden;
+		&.visible-xs-block {
+			.submenu {
+				padding-bottom: 15px;
+			}
+		}
+	}
+
+	/* -- Panneau Admin - Devise -- */
+	.fix-mobile {
+		margin: 30px;
+	}
+
+	//LUCCA DEVISE + FORM + ADMIN
+	.form-signin {
+		max-width: 300px;
+		padding: 19px 29px 29px;
+		margin: 0 auto 20px;
+		background-color: #fff;
+		border: 1px solid #e5e5e5;
+		-webkit-border-radius: 5px;
+		   -moz-border-radius: 5px;
+		        border-radius: 5px;
+		-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+		   -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+		        box-shadow: 0 1px 2px rgba(0,0,0,.05);
+	}
+
+	.form-signin .form-signin-heading,
+	.form-signin .checkbox {
+			
+	}
+	.form-signin input[type="text"],
 	.form-signin input[type="password"] {
 		font-size: 16px;
 		height: auto;
 		margin-bottom: 15px;
 		padding: 7px 9px;
 	}
+}
+//END OF LUCCA
+// IBRAHIM
+
+
+
+.separator {
+	width: 40px;
+	height: 5px;
+	background: #fbc90d;
+	margin-top: 25px;
+}
+
+.profil-separator {
+	width: 40px;
+	height: 5px;
+	background: #ddddd5;
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+.profil-separator-bottom {
+	width: 70px;
+	height: 5px;
+	background: #ddddd5;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.separator-article {
+	width: 33%;
+	margin-left: 33%;
+	height: 5px;
+	background: #ddddd5;
+	margin-bottom: 15px;
+}
+
+
+.separator-index {
+	width: 33%;
+	height: 5px;
+	background: #ddddd5;
+	margin-bottom: 15px;
+}
+
+.red {
+	 //background: rgba(255, 22, 22, 0.5);
+	 color: rgba(255, 22, 22, 0.5);
+	// background: #ff2222;
+}
+.blue {
+	 //background: rgba(22, 22, 255, 0.5);
+	 color: rgba(22, 22, 255, 0.5);
+	// background: #ff2222;
+}
+.green {
+	 //background: rgba(22, 255, 22, 0.5);
+	 color: rgba(22, 255, 22, 0.5);
+	// background: #ff2222;
+}
+
+.hidden-xs {
+	background-color: #f5f5f5;
+	border-color: #f5f5f5;
+	border-radius: 0;
+	padding: 0;
+}
+
+li:hover {
+	border-bottom: 5px solid #7F051C;
+}
+
+.act {
+	border-bottom: 5px solid #fbc90d;
+}
+
+.act:focus {
+	color: black !important;
+}
+
+// fin Barre navigation
+
+.submenu {
+	font-family: 'PT Serif', serif;
+	font-weight: '400';
+	font-style: italic;
+	font-size: 18px;
+}
+
+.vtitle {
+	font-family: 'PT Serif', serif;
+	font-size: 20px;
+	padding-bottom: 10px;
+	text-align: center;
+
+}
+
+.veille {
+	padding-left: 5px;
+}
+
+
+article {
+	margin-top: 20px;
+}
+
+
+
+
+//panel_admin
+.admin_class {
+	background-color: white;
+	border-radius: 8px;
+	border-style: solid;
+	border-color: #dedede;
+	border-width: 1px;
+	padding: 13px;
+	margin-bottom: 20px;
+	position: right, top;
+}
+
+.test-moi {
+	 text-decoration:underline;
+}
+
 

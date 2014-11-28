@@ -25,16 +25,32 @@ en:
     sub: "Barrister"
   navigation:
     acceuil: "Home"
-    veille: "News"
+    actu: "News"
     special: "Expertise"
     associe: "Partner"
     contact: "Contacts"
+  profil:
+    name: "Name : "
+    phone: "Phone : "
+    addr: "Adress : "
+  category:
+    associes:
+      site: "website"
+    actualites:
+      no_actu: "there is no News available yet."
   footer:
     follow: "Follow me"
-  change_my_password: "Change my password"
-  confirm_your_new_password: "Confirm your new password"
-  new_password: "New password"
-  change_your_password: "Change your password"
+
+  admin:
+    change_my_password: "Change my password"
+    confirm_your_new_password: "Confirm your new password"
+    new_password: "New password"
+    change_your_password: "Change your password"
+
+  will_paginate:
+    previous_label: "&#8592; Previous"
+    next_label: "Next &#8594;"
+    page_gap: "&hellip;"
 
 fr:
   header:
@@ -42,14 +58,29 @@ fr:
     sub: "Avocat à la Cour"
   navigation:
     acceuil: "Acceuil"
-    veille: "Actualités"
-    special: "compétences"
+    actu: "Actualités"
+    special: "Compétences"
     associe: "Associés"
     contact: "Contact"
+  profil:
+    name: "Nom : "
+    phone: "Téléphone : "
+    addr: "Adresse : "
+  category:
+    associes:
+      site: "site web"
+    actualites:
+      no_actu:  "Il n'y a pas d'Actualités pour l'instant."
   footer:
     follow: "Suivez moi"
-  change_my_password: "Changer mon mot de passe"
-  confirm_your_new_password: "Confirmez votre nouveau mot de passe"
-  new_password: "Nouveau mot de passe"
-  change_your_password: "Changez votre mot de passe"
 
+  admin:
+    change_my_password: "Changer mon mot de passe"
+    confirm_your_new_password: "Confirmez votre nouveau mot de passe"
+    new_password: "Nouveau mot de passe"
+    change_your_password: "Changez votre mot de passe"
+
+  will_paginate:
+    previous_label: "&#8592; Précédent"
+    next_label: "Suivant &#8594;"
+    page_gap: "&hellip;"

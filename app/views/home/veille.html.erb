@@ -1,13 +1,16 @@
-<div class="col-sm-8">
+	<div class="col-sm-offset-2"> 
 	<%= will_paginate @veilles %>
+<% if @veilles.count == 0 %>
+<%= t('category.actualites.no_actu') %>
+<% end %>
 	<% @veilles.each do |v| %>
-	<section>
+	<section class="bloc-g veille">
 		<article>
-			<div class="vtitle"><%= v.titre %><br/></div>
+			<strong><div class="vtitle"><%= v.titre.bbcode_to_html_with_formatting.html_safe %><br/></div></strong><div class="separator-article"></div>
 			<div class="veille"><%= v.texte.bbcode_to_html_with_formatting.html_safe %><br/></div>
-			<div class="separator-article"></div>
 		</article>
 	</section>
 	<% end %>
 	<%= will_paginate @veilles %>
 </div>
+

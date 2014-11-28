@@ -1,6 +1,11 @@
 class HomeController < ApplicationController
   def index
        @index = Index.find(1)
+       if I18n.locale == :en
+         @map = @index.texte3en
+       else
+         @map = @index.texte3
+       end
   end
 
   def associe

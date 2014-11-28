@@ -1,14 +1,14 @@
-				<div class="col-sm-8">
-<%= will_paginate @associes %>
-<% @associes.each do |v| %>
-	<%= v.name %><br/>
-	<%= v.description.bbcode_to_html_with_formatting.html_safe %><br/>
-	<% if v.pics %>
-		<%= v.pics %><br/>
-	<% end %>
-	<% if v.link %>
-		<%= link_to t('site'), v.link %><br/>
-	<% end %>
-<% end %>
-<%= will_paginate @associes %>
+<div class="col-sm-8 bloc-g col-sm-offset-2">
+	<%= will_paginate @associes %>
+		<% @associes.each do |v| %>
+			<%= v.name %><br/>
+			<%= v.description.bbcode_to_html_with_formatting.html_safe %><br/>
+			<% if v.pics %>
+				<%= v.pics %><br/>
+			<% end %>
+			<% if v.link %>
+				<%= link_to t('category.associes.site'), v.link %><br/>
+			<% end %>
+		<% end %>
+	<%= will_paginate @associes %>
 </div>

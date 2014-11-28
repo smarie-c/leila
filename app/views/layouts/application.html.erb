@@ -7,7 +7,9 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
+
 <body>
+	<!-- design Karine 
  	<header>
  		<center>
 	    	<div class="title_header">
@@ -22,19 +24,12 @@
 				<li><%= link_to t('navigation.home'), root_path %></li>
 				<li class="nav associes"><%= link_to t('navigation.associe'), associe_path %></li>
 				<li class="nav competence"><%= link_to t('navigation.special'), specialite_path %></li>
-				<li class="nav veille"><%= link_to t('navigation.veille'), veille_path %></li>
+				<li class="nav veille"><%= link_to t('navigation.actu'), veille_path %></li>
 				<li class="nav contact"><%= link_to t('navigation.contact'), contact_path %></li>
-				<!--<li class="dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown <b class="caret"></b></a>
-					<ul class="dropdown-menu">
-						<li><a href="#">Action</a></li>
-						<li><a href="#">Another action</a></li>
-					</ul>
-				</li> -->
         	</ul>
         </nav>
     </header>
-    <%= yield %>
+    <% yield %>
     <footer>
     	<div class="infos_footer">
 	    	<div class="phone"></div>
@@ -42,7 +37,6 @@
 	    	<div class="adress"></div>
 	    	<div class="follow">
 	    	    <span><%= t('footer.follow') %></span>
-	    		<!--<div class="facebook"></div>-->
 	    		<a href="https://twitter.com/ElHalfiAvocats?lang=en">
 	    			<div class="twitter"></div>
 	    		</a>
@@ -52,7 +46,143 @@
 	    	</div>
 	    </div>
     </footer>
+end design Karine -->
 
+	<% test_fr = '' %>
+	<% test_en = '' %>
+	<% if locale == :en %>
+		<% test_en = ' test-moi' %>
+	<% elsif locale == :fr %>
+		<% test_fr = ' test-moi' %>
+	<% end %>
+	<!-- header admin -->
+	<% if params[:controller] == "admin" %>
+			<p>
+		<% if user_signed_in? %>
+		  Bonjour <strong><%= current_user.username %></strong>.
+		  <%= link_to 'Editer vos pages', user_path, :class => 'navbar-link' %> |
+		  <%= link_to 'Editer veille', user_veille_path, :class => 'navbar-link' %> |
+		  <%= link_to 'Editer Associe', user_associe_path, :class => 'navbar-link' %> |
+		  <%= link_to 'Voir mon site', root_path, :class => 'navbar-link' %> |
+		  <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
+		  <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+		<% else %>
+		  <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+		<% end %>
+		</p>
+
+		<% if notice %>
+		  <p class="alert alert-success"><%= notice %></p>
+		<% end %>
+		<% if alert %>
+		  <p class="alert alert-danger"><%= alert %></p>
+		<% end %>
+	<!-- header visiteurs -->
+	<% elsif params[:controller] == "home"%>
+
+<nav class="navbar navbar-default navbar-fixed-top visible-xs-block" role="navigation">
+  <div class="container-fluid">
+
+      <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+ 
+		    <ul><%= link_to t('navigation.acceuil'), root_path, :class => 'navbar-link submenu' %> </ul>
+		    <ul><%= link_to t('navigation.special'), specialite_path, :class => 'navbar-link submenu' %> </ul>
+		    <ul><%= link_to t('navigation.associe'), associe_path, :class => 'navbar-link submenu' %> </ul>
+		    <ul><%= link_to t('navigation.actu'), veille_path, :class => 'navbar-link submenu' %> </ul>
+		    <ul><%= link_to t('navigation.contact'), contact_path, :class => 'navbar-link submenu' %> </ul>
+
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+	<header>
+		<div class="container fix-header">
+			<div class="title"><%= t('header.name')%></div>
+				<div class="lang pull-right">
+					<%= bootstrap_form_tag url: fr_path, method: "post" do |f| %>
+						<%= f.submit "FR", class: "btn" + test_fr %>
+					<% end %> |
+					<%= bootstrap_form_tag url: en_path, method: "post" do |f| %>
+						<%= f.submit "EN", class: "btn" + test_en %>
+					<% end %>
+				</div>
+			<div class="subtitle"><%= t("header.sub") %></div>
+		</div>
+	</header>
+
+
+
+<div class="container">
+
+	<nav class="navbar navbar-default hidden-xs" role="navigation">
+	<div class="container-fluid">
+
+	<div class="navbar-header">
+	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	<span class="sr-only">Toggle navigation</span>
+	<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+	</button>
+	</div>
+
+	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	<ul class="nav navbar-nav">
+
+	<li id="index"><%= link_to t('navigation.acceuil'), root_path, :class => 'navbar-link submenu' %> </li>
+	<li id="specialite"><%= link_to t('navigation.special'), specialite_path, :class => 'navbar-link submenu' %> </li>
+	<li id="associe"><%= link_to t('navigation.associe'), associe_path, :class => 'navbar-link submenu' %> </li>
+	<li id="veille"><%= link_to t('navigation.actu'), veille_path, :class => 'navbar-link submenu' %> </li>
+	<li id="contact"><%= link_to t('navigation.contact'), contact_path, :class => 'navbar-link submenu' %> </li>
+
+
+	</ul>
+	</div><!-- /.navbar-collapse -->
+	</div><!-- /.container-fluid -->
+	</nav>
+
+	<script type="text/javascript">
+		function ft_add_active_to_header(str)
+		{
+			document.getElementById(str).className += "act";
+			document.getElementById(str).childNodes[0].style.color = "black"
+		}
+		ft_add_active_to_header("<%= params[:action] %>");
+	</script>
+
+
+	<% end %>
+
+	<% if params[:controller] == "admin" || params[:controller] == "devise/sessions" %>
+		<header>
+		<div class="container fix-header">
+				<div class="lang pull-right">
+					<%= bootstrap_form_tag url: fr_path, method: "post" do |f| %>
+						<%= f.submit "FR", class: "btn" + test_fr %>
+					<% end %> |
+					<%= bootstrap_form_tag url: en_path, method: "post" do |f| %>
+						<%= f.submit "EN", class: "btn" + test_en %>
+					<% end %>
+				</div>
+		</div>
+	</header>
+		<div class="container">
+		<%= yield %>
+		</div>
+	<% else %>
+		<%= yield %>
+	<% end %>
+</div>
 </body>
 </html>
 
