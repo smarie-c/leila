@@ -20,28 +20,34 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
-  acceuil: "Acceuil"
-  veille: "Veille"
-  special: "Specialité"
-  associe: "Associés"
-  honoraire: "Honoraire"
-  contact: "Contact"
-  site: "son site"
+  header:
+    name: "Laila El Halfi"
+    sub: "Barrister"
+  navigation:
+    acceuil: "Home"
+    veille: "News"
+    special: "Expertise"
+    associe: "Partner"
+    contact: "Contacts"
+  footer:
+    follow: "Follow me"
   change_my_password: "Change my password"
   confirm_your_new_password: "Confirm your new password"
   new_password: "New password"
   change_your_password: "Change your password"
 
 fr:
-  hello: "Salut"
-  acceuil: "Acceuil"
-  veille: "Veille"
-  special: "Specialité"
-  associe: "Associés"
-  honoraire: "Honoraire"
-  contact: "Contact"
-  site: "son site"
+  header:
+    name: "Laila El Halfi"
+    sub: "Avocat à la Cour"
+  navigation:
+    acceuil: "Acceuil"
+    veille: "Actualités"
+    special: "compétences"
+    associe: "Associés"
+    contact: "Contact"
+  footer:
+    follow: "Suivez moi"
   change_my_password: "Changer mon mot de passe"
   confirm_your_new_password: "Confirmez votre nouveau mot de passe"
   new_password: "Nouveau mot de passe"
