@@ -1,6 +1,7 @@
 <%= bootstrap_form_tag url: user_veille_create_path do |f| %>
 	<%= f.text_field :titre, :value =>  "",required: true %>
 	<%= f.text_area :texte, :value =>  "",size: "60x12",required: true %>
+	<%= f.hidden_field :veille_type, :value => 0,required: true %>
 <%= f.submit "Creates", class: "btn btn-success" %>
 
 <% end %>
