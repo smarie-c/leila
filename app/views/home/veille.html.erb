@@ -6,7 +6,7 @@
 	<% @veilles.each do |v| %>
 	<section class="bloc-g veille">
 		<article>
-			<strong><div class="vtitle"><%= v.titre %><br/></div></strong><div class="separator-article"></div>
+			<strong><div class="vtitle"><%= v.titre.bbcode_to_html_with_formatting.html_safe %><br/></div></strong><div class="separator-article"></div>
 			<div class="veille"><%= v.texte.bbcode_to_html_with_formatting.html_safe %><br/></div>
 		</article>
 	</section>
