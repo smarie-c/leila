@@ -8,7 +8,7 @@ class AdminController < ApplicationController
   end
 
   def veille
-  	@veilles = Veille.all.order('updated_at DESC').paginate(:page => params[:page])
+  	@veilles = Veille.where("langue = #{I18n.locale}").order('updated_at DESC').paginate(:page => params[:page])
   end
 
   def update_veille
