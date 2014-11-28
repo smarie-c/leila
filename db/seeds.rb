@@ -24,7 +24,7 @@ Dans ces conditions, il y a lieu de considérer :
 
 2. Que Les nouveaux représentants devront certes attendre l’expiration des mandats des représentants pour entrer en fonction, mais bénéficieront toutefois de la protection statutaire dès le jour de leur désignation.
 
-Ce revirement de jurisprudence met donc fin à la vacance imposée des sièges, et témoigne de l’importance prise par l’institution du CHSCT ces dernières années.", :langue => "fr", :type => i % 5)
+Ce revirement de jurisprudence met donc fin à la vacance imposée des sièges, et témoigne de l’importance prise par l’institution du CHSCT ces dernières années.", :langue => "fr", :veille_type => i % 5)
 i = i + 1
 end
 
@@ -39,7 +39,7 @@ In these circumstances, it is appropriate to consider:
 
 2. That the new representatives will certainly wait for the expiry of the mandates of Representatives to take office , but still benefit from the statutory protection from the day of their appointment .
 
-That departure from precedent thus ends the imposed vacancy of the seats, and demonstrates the growing importance of the institution of the HSC in recent years.", :langue => "en", :type => i % 5)
+That departure from precedent thus ends the imposed vacancy of the seats, and demonstrates the growing importance of the institution of the HSC in recent years.", :langue => "en", :veille_type => i % 5)
 i = i + 1
 end
 
