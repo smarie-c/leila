@@ -19,7 +19,7 @@
 
 		<% if locale == :en %>
 			<div class="name">
-			<%= (t('profil.name') + @index.texte1en).bbcode_to_html_with_formatting.html_safe %>
+			<%= (t('profil.name') + @index.texte1en + ' ' + @index.texte2en).bbcode_to_html_with_formatting.html_safe %>
 			<!-- 					<%= @index.texte2en.bbcode_to_html_with_formatting.html_safe %> -->
 			</div>
 			<!-- 				<div class="name">
@@ -44,7 +44,7 @@
 			</div>
 			<% else %>
 			<div class="name">
-			<%= (t('profil.name') + @index.texte1).bbcode_to_html_with_formatting.html_safe %>
+			<%= (t('profil.name') + @index.texte1 + ' ' + @index.texte2).bbcode_to_html_with_formatting.html_safe %>
 			</div>
 <!-- 			<div class="name">
 			<%= @index.texte2.bbcode_to_html_with_formatting.html_safe %>
