@@ -21,9 +21,12 @@
 
 fr:
   hello: "Salut"
+  name: "Nom : "
+  phone: "Tél : "
+  addr: "Adresse : "
   acceuil: "Acceuil"
   veille: "Actualités"
-  special: "Specialité"
+  special: "Nos compétences"
   associe: "Associés"
   honoraire: "Honoraires"
   contact: "Contact"

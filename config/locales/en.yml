@@ -21,11 +21,14 @@
 
 en:
   hello: "Hello world"
+  name: "Name : "
+  phone: "Phone : "
+  addr: "Adress : "
   acceuil: "Home"
   veille: "Actualités"
-  special: "Specialité"
+  special: "Skills"
   associe: "Associés"
-  honoraire: "Honoraires"
+  honoraire: "Fees"
   contact: "Contact"
   site: "son site"
   change_my_password: "Change my password"
@@ -40,9 +43,12 @@ en:
 
 fr:
   hello: "Salut"
+  name: "Nom : "
+  phone: "Tél : "
+  addr: "Adresse : "
   acceuil: "Acceuil"
   veille: "Actualités"
-  special: "Specialité"
+  special: "Nos compétences"
   associe: "Associés"
   honoraire: "Honoraires"
   contact: "Contact"

@@ -8,6 +8,13 @@
 </head>
 <body>
 
+	<% test_fr = '' %>
+	<% test_en = '' %>
+	<% if locale == :en %>
+		<% test_en = ' test-moi' %>
+	<% elsif locale == :fr %>
+		<% test_fr = ' test-moi' %>
+	<% end %>
 	<!-- header admin -->
 	<% if params[:controller] == "admin" %>
 			<p>
@@ -64,10 +71,10 @@
 			<div class="title">Laila El Halfi</div>
 				<div class="lang pull-right">
 					<%= bootstrap_form_tag url: fr_path, method: "post" do |f| %>
-						<%= f.submit "FR", class: "btn" %>
+						<%= f.submit "FR", class: "btn" + test_fr %>
 					<% end %> |
 					<%= bootstrap_form_tag url: en_path, method: "post" do |f| %>
-						<%= f.submit "EN", class: "btn" %>
+						<%= f.submit "EN", class: "btn" + test_en %>
 					<% end %>
 				</div>
 			<div class="subtitle">Avocat a la cour</div>
@@ -123,10 +130,10 @@
 		<div class="container fix-header">
 				<div class="lang pull-right">
 					<%= bootstrap_form_tag url: fr_path, method: "post" do |f| %>
-						<%= f.submit "FR", class: "btn" %>
+						<%= f.submit "FR", class: "btn" + test_fr %>
 					<% end %> |
 					<%= bootstrap_form_tag url: en_path, method: "post" do |f| %>
-						<%= f.submit "EN", class: "btn" %>
+						<%= f.submit "EN", class: "btn" + test_en %>
 					<% end %>
 				</div>
 		</div>
