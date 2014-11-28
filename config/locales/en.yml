@@ -20,44 +20,70 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
-  name: "Name : "
-  phone: "Phone : "
-  addr: "Adress : "
-  acceuil: "Home"
-  veille: "Actualités"
-  special: "Skills"
-  associe: "Associés"
-  honoraire: "Fees"
-  contact: "Contact"
-  site: "son site"
-  change_my_password: "Change my password"
-  confirm_your_new_password: "Confirm your new password"
-  new_password: "New password"
-  change_your_password: "Change your password"
-  no_veille: "there is no veille available yet."
+  header:
+    name: "Laila El Halfi"
+    sub: "Barrister"
+  navigation:
+    acceuil: "Home"
+    actu: "News"
+    special: "Expertise"
+    associe: "Partner"
+    contact: "Contacts"
+  profil:
+    name: "Name : "
+    phone: "Phone : "
+    fax: "Fax : "
+    mobil: "Mobil : "
+    addr: "Adress : "
+  category:
+    associes:
+      site: "website"
+    actualites:
+      no_actu: "there is no News available yet."
+  footer:
+    follow: "Follow me"
+
+  admin:
+    change_my_password: "Change my password"
+    confirm_your_new_password: "Confirm your new password"
+    new_password: "New password"
+    change_your_password: "Change your password"
+
   will_paginate:
     previous_label: "&#8592; Previous"
     next_label: "Next &#8594;"
     page_gap: "&hellip;"
 
 fr:
-  hello: "Salut"
-  name: "Nom : "
-  phone: "Tél : "
-  addr: "Adresse : "
-  acceuil: "Acceuil"
-  veille: "Actualités"
-  special: "Nos compétences"
-  associe: "Associés"
-  honoraire: "Honoraires"
-  contact: "Contact"
-  site: "son site"
-  change_my_password: "Changer mon mot de passe"
-  confirm_your_new_password: "Confirmez votre nouveau mot de passe"
-  new_password: "Nouveau mot de passe"
-  change_your_password: "Changez votre mot de passe"
-  no_veille: "Il n'y a pas de veille pour l'instant."
+  header:
+    name: "Laila El Halfi"
+    sub: "Avocat à la Cour"
+  navigation:
+    acceuil: "Acceuil"
+    actu: "Actualités"
+    special: "Compétences"
+    associe: "Associés"
+    contact: "Contact"
+  profil:
+    name: "Nom : "
+    phone: "Téléphone : "
+    fax: "Fax : "
+    mobil: "Mobile : "
+    addr: "Adresse : "
+  category:
+    associes:
+      site: "site web"
+    actualites:
+      no_actu:  "Il n'y a pas d'Actualités pour l'instant."
+  footer:
+    follow: "Suivez moi"
+
+  admin:
+    change_my_password: "Changer mon mot de passe"
+    confirm_your_new_password: "Confirmez votre nouveau mot de passe"
+    new_password: "Nouveau mot de passe"
+    change_your_password: "Changez votre mot de passe"
+
   will_paginate:
     previous_label: "&#8592; Précédent"
     next_label: "Suivant &#8594;"

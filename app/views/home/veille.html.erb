@@ -1,7 +1,7 @@
 	<div class="col-sm-offset-2"> 
 	<%= will_paginate @veilles %>
 <% if @veilles.count == 0 %>
-<%= t('no_veille') %>
+<%= t('category.actualites.no_actu') %>
 <% end %>
 	<% @veilles.each do |v| %>
 	<section class="bloc-g veille">

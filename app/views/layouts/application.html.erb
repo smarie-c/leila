@@ -1,12 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Laila El Halfi</title>
+  <title><%= t('header.name') %></title>
+  <meta name="viewport" content="width=device-width" />
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
+
 <body>
+	<!-- design Karine 
+ 	<header>
+ 		<center>
+	    	<div class="title_header">
+	    		<span class="name"><%= t('header.name') %></span>
+	    		<div class="line"></div>
+	    		<span class="sub"><%= t('header.sub') %></span>
+	    	</div>
+	    	</center>
+		<a id="menu_toggle" class="button dark" href="#"><i class="icon-reorder"></i>test</a>
+		<nav id="menu_inline">
+			<ul class="navigation">
+				<li><%= link_to t('navigation.home'), root_path %></li>
+				<li class="nav associes"><%= link_to t('navigation.associe'), associe_path %></li>
+				<li class="nav competence"><%= link_to t('navigation.special'), specialite_path %></li>
+				<li class="nav veille"><%= link_to t('navigation.actu'), veille_path %></li>
+				<li class="nav contact"><%= link_to t('navigation.contact'), contact_path %></li>
+        	</ul>
+        </nav>
+    </header>
+    <% yield %>
+    <footer>
+    	<div class="infos_footer">
+	    	<div class="phone"></div>
+	    	<div class="mail"></div>
+	    	<div class="adress"></div>
+	    	<div class="follow">
+	    	    <span><%= t('footer.follow') %></span>
+	    		<a href="https://twitter.com/ElHalfiAvocats?lang=en">
+	    			<div class="twitter"></div>
+	    		</a>
+	    		<a href="https://www.linkedin.com/pub/laila-el-halfi/27/7a6/678">
+	    			<div class="linkedin"></div>
+	    		</a>
+	    	</div>
+	    </div>
+    </footer>
+end design Karine -->
 
 	<% test_fr = '' %>
 	<% test_en = '' %>
@@ -55,12 +95,11 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
  
-		    <ul><%= link_to t('acceuil'), root_path, :class => 'navbar-link submenu' %> </ul>
-		    <ul><%= link_to t('special'), specialite_path, :class => 'navbar-link submenu' %> </ul>
-		    <ul><%= link_to t('associe'), associe_path, :class => 'navbar-link submenu' %> </ul>
-		    <ul><%= link_to t('honoraire'), honoraire_path, :class => 'navbar-link submenu' %> </ul>
-		    <ul><%= link_to t('veille'), veille_path, :class => 'navbar-link submenu' %> </ul>
-		    <ul><%= link_to t('contact'), contact_path, :class => 'navbar-link submenu' %> </ul>
+		    <ul><%= link_to t('navigation.acceuil'), root_path, :class => 'navbar-link submenu' %> </ul>
+		    <ul><%= link_to t('navigation.special'), specialite_path, :class => 'navbar-link submenu' %> </ul>
+		    <ul><%= link_to t('navigation.associe'), associe_path, :class => 'navbar-link submenu' %> </ul>
+		    <ul><%= link_to t('navigation.actu'), veille_path, :class => 'navbar-link submenu' %> </ul>
+		    <ul><%= link_to t('navigation.contact'), contact_path, :class => 'navbar-link submenu' %> </ul>
 
       </ul>
     </div><!-- /.navbar-collapse -->
@@ -68,7 +107,7 @@
 </nav>
 	<header>
 		<div class="container fix-header">
-			<div class="title">Laila El Halfi</div>
+			<div class="title"><%= t('header.name')%></div>
 				<div class="lang pull-right">
 					<%= bootstrap_form_tag url: fr_path, method: "post" do |f| %>
 						<%= f.submit "FR", class: "btn" + test_fr %>
@@ -77,7 +116,7 @@
 						<%= f.submit "EN", class: "btn" + test_en %>
 					<% end %>
 				</div>
-			<div class="subtitle">Avocat a la cour</div>
+			<div class="subtitle"><%= t("header.sub") %></div>
 		</div>
 	</header>
 
@@ -100,12 +139,11 @@
 	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	<ul class="nav navbar-nav">
 
-	<li id="index"><%= link_to t('acceuil'), root_path, :class => 'navbar-link submenu' %> </li>
-	<li id="specialite"><%= link_to t('special'), specialite_path, :class => 'navbar-link submenu' %> </li>
-	<li id="associe"><%= link_to t('associe'), associe_path, :class => 'navbar-link submenu' %> </li>
-	<li id="honoraire"><%= link_to t('honoraire'), honoraire_path, :class => 'navbar-link submenu' %> </li>
-	<li id="veille"><%= link_to t('veille'), veille_path, :class => 'navbar-link submenu' %> </li>
-	<li id="contact"><%= link_to t('contact'), contact_path, :class => 'navbar-link submenu' %> </li>
+	<li id="index"><%= link_to t('navigation.acceuil'), root_path, :class => 'navbar-link submenu' %> </li>
+	<li id="specialite"><%= link_to t('navigation.special'), specialite_path, :class => 'navbar-link submenu' %> </li>
+	<li id="associe"><%= link_to t('navigation.associe'), associe_path, :class => 'navbar-link submenu' %> </li>
+	<li id="veille"><%= link_to t('navigation.actu'), veille_path, :class => 'navbar-link submenu' %> </li>
+	<li id="contact"><%= link_to t('navigation.contact'), contact_path, :class => 'navbar-link submenu' %> </li>
 
 
 	</ul>
@@ -145,7 +183,6 @@
 		<%= yield %>
 	<% end %>
 </div>
-
 </body>
 </html>
 

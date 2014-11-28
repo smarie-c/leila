@@ -45,3 +45,26 @@
 [11/27/14 17:05:18 +0100 e2r4p22.42.fr (19244)] ERROR : Unknown license key
 [11/27/14 17:05:18 +0100 e2r4p22.42.fr (19244)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
 [11/27/14 17:05:44 +0100 e2r4p22.42.fr (19244)] INFO : Starting Agent shutdown
+[11/28/14 19:00:57 +0100 e2r4p18.42.fr (48922)] INFO : Starting the New Relic agent in "development" environment.
+[11/28/14 19:00:57 +0100 e2r4p18.42.fr (48922)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[11/28/14 19:00:57 +0100 e2r4p18.42.fr (48922)] WARN : No configuration file found. Working directory = /Volumes/Data/nfs/zfs-student-2/users/2013/kberger/web/lai
+[11/28/14 19:00:57 +0100 e2r4p18.42.fr (48922)] WARN : Looked in these locations (based on defaults): /Volumes/Data/nfs/zfs-student-2/users/2013/kberger/web/lai/config/newrelic.yml, /Volumes/Data/nfs/zfs-student-2/users/2013/kberger/web/lai/newrelic.yml, /Volumes/Data/nfs/zfs-student-2/users/2013/kberger/web/lai/config/newrelic.yml, /Volumes/Data/nfs/zfs-student-2/users/2013/kberger/web/lai/newrelic.yml, /nfs/zfs-student-2/users/2013/kberger/.newrelic/newrelic.yml, /nfs/zfs-student-2/users/2013/kberger/newrelic.yml
+[11/28/14 19:00:57 +0100 e2r4p18.42.fr (48922)] INFO : Environment: development
+[11/28/14 19:00:57 +0100 e2r4p18.42.fr (48922)] INFO : No known dispatcher detected.
+[11/28/14 19:00:57 +0100 e2r4p18.42.fr (48922)] INFO : Application: development
+[11/28/14 19:00:57 +0100 e2r4p18.42.fr (48922)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'.
+[11/28/14 19:00:57 +0100 e2r4p18.42.fr (48922)] INFO : Installing ActiveRecord 4 instrumentation
+[11/28/14 19:00:57 +0100 e2r4p18.42.fr (48922)] INFO : Installing Dalli Memcache instrumentation
+[11/28/14 19:00:57 +0100 e2r4p18.42.fr (48922)] INFO : Installing Net instrumentation
+[11/28/14 19:00:57 +0100 e2r4p18.42.fr (48922)] INFO : Installing deferred Rack instrumentation
+[11/28/14 19:00:57 +0100 e2r4p18.42.fr (48922)] INFO : Installing Rack::Builder middleware instrumentation
+[11/28/14 19:00:57 +0100 e2r4p18.42.fr (48922)] INFO : Installing Rails 3+ middleware instrumentation
+[11/28/14 19:00:57 +0100 e2r4p18.42.fr (48922)] INFO : Installing Sidekiq instrumentation
+[11/28/14 19:00:57 +0100 e2r4p18.42.fr (48922)] INFO : Installing Rails 4 Controller instrumentation
+[11/28/14 19:00:57 +0100 e2r4p18.42.fr (48922)] INFO : Installing Rails 4 view instrumentation
+[11/28/14 19:00:57 +0100 e2r4p18.42.fr (48922)] INFO : Installing Rails 4 Error instrumentation
+[11/28/14 19:00:57 +0100 e2r4p18.42.fr (48922)] INFO : Finished instrumentation
+[11/28/14 19:00:58 +0100 e2r4p18.42.fr (48922)] INFO : Doing deferred dependency-detection before Rack startup
+[11/28/14 19:01:07 +0100 e2r4p18.42.fr (48922)] ERROR : Unknown license key
+[11/28/14 19:01:07 +0100 e2r4p18.42.fr (48922)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[11/28/14 19:01:22 +0100 e2r4p18.42.fr (48922)] INFO : Starting Agent shutdown

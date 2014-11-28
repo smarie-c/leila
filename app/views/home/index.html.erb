@@ -1,3 +1,17 @@
+<!--
+<div id="left_sidebar">
+    <div class="profil">
+  		<div class="img"></div>
+  		<div class="info">
+  			<span>Profil</span>
+  		</div>
+    </div>
+</div>
+<center>
+	<div id="central_block">
+	</div>
+</center>
+-->
 <div class="visible-xs fix-mobile"></div>	
 	<aside class="col-sm-2 profil">
 		<img src="<%= asset_path( 'anonyme.jpg' ) %>" class="img-responsive img-rounded" alt="Laila El Halfi" />
@@ -5,7 +19,7 @@
 
 		<% if locale == :en %>
 			<div class="name">
-			<%= (t('name') + @index.texte1en).bbcode_to_html_with_formatting.html_safe %>
+			<%= (t('profil.name') + @index.texte1en).bbcode_to_html_with_formatting.html_safe %>
 			<!-- 					<%= @index.texte2en.bbcode_to_html_with_formatting.html_safe %> -->
 			</div>
 			<!-- 				<div class="name">
@@ -13,7 +27,7 @@
 			</div> -->
 			<div class="email">
 			<a href="https://www.google.com/maps/place/<%= @map %>"  target="_blank">
-				<%= (t('addr') + @index.texte3en + ' ' + @index.texte4en).bbcode_to_html_with_formatting.html_safe %>
+				<%= (t('profil.addr') + @index.texte3en + @index.texte4en).bbcode_to_html_with_formatting.html_safe %>
 			</a> 
 			</div>
 			<div class="adresse">
@@ -24,20 +38,20 @@
  				 src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBegs8cCY3HjnUkA7KKxRGKrJkK_YCPYsk&q=<%= @map %>">
 			</iframe> 
 			<div class="postal">
-			<%= (t('phone') + @index.texte5en).bbcode_to_html_with_formatting.html_safe %>
-			<%= (t('fax') + @index.faxen).bbcode_to_html_with_formatting.html_safe %>
-			<%= (t('mobile') + @index.mobileen).bbcode_to_html_with_formatting.html_safe %>
+			<%= (t('profil.phone') + @index.texte5en).bbcode_to_html_with_formatting.html_safe %>
+			<%= (t('profil.fax') + @index.faxen).bbcode_to_html_with_formatting.html_safe %>
+			<%= (t('profil.mobil') + @index.mobileen).bbcode_to_html_with_formatting.html_safe %>
 			</div>
 			<% else %>
 			<div class="name">
-			<%= (t('name') + @index.texte1).bbcode_to_html_with_formatting.html_safe %>
+			<%= (t('profil.name') + @index.texte1).bbcode_to_html_with_formatting.html_safe %>
 			</div>
 <!-- 			<div class="name">
 			<%= @index.texte2.bbcode_to_html_with_formatting.html_safe %>
 			</div> -->
 			<div class="email">
 			<a href="https://www.google.com/maps/place/<%= @map %>"  target="_blank">
-				<%= (t('addr') + @index.texte3 + ' ' + @index.texte4).bbcode_to_html_with_formatting.html_safe %>
+				<%= (t('profil.addr') + @index.texte3 + @index.texte4).bbcode_to_html_with_formatting.html_safe %>
 			</a>
 			</div>
 			<div class="adresse">
@@ -48,9 +62,10 @@
  				 src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBegs8cCY3HjnUkA7KKxRGKrJkK_YCPYsk&q=<%= @map %>">
 			</iframe> 
 			<div class="postal">
-			<%= (t('phone') + @index.texte5).bbcode_to_html_with_formatting.html_safe %>
-			<%= (t('fax') + @index.fax).bbcode_to_html_with_formatting.html_safe %>
-			<%= (t('mobile') + @index.mobile).bbcode_to_html_with_formatting.html_safe %>
+			<%= (t('profil.phone') + @index.texte5).bbcode_to_html_with_formatting.html_safe %>
+			<%= (t('profil.fax') + @index.fax).bbcode_to_html_with_formatting.html_safe %>
+			<%= (t('profil.mobil') + @index.mobile).bbcode_to_html_with_formatting.html_safe %>
+			<%= (t('profil.phone') + @index.texte5).bbcode_to_html_with_formatting.html_safe %>
 			</div>
 		<% end %>
 			<div class="profil-separator-bottom"></div>
