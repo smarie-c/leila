@@ -3,7 +3,7 @@ class CreateAssocies < ActiveRecord::Migration
     create_table :associes do |t|
       t.string :pics
       t.string :name
-      t.text :description, null: false, default: ""
+      t.text :description, null: false
       t.string :link
 
       t.timestamps

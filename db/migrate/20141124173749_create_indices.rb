@@ -14,6 +14,10 @@ class CreateIndices < ActiveRecord::Migration
       t.text :texte9, null: false
       t.text :texte10, null: false
       t.text :texte11, null: false
+      t.text :texte12, null: false
+      t.text :texte13, null: false
+      t.text :texte14, null: false
+      t.text :texte15, null: false
       t.text :texte1en, null: false
       t.text :texte2en, null: false
       t.text :texte3en, null: false
@@ -27,6 +31,10 @@ class CreateIndices < ActiveRecord::Migration
       t.text :texte9en, null: false
       t.text :texte10en, null: false
       t.text :texte11en, null: false
+      t.text :texte12en, null: false
+      t.text :texte13en, null: false
+      t.text :texte14en, null: false
+      t.text :texte15en, null: false
 
       t.timestamps
     end

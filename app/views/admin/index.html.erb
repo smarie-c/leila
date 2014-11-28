@@ -55,6 +55,8 @@
 			<%= f.text_field :texte3, :value =>  @index.texte3,required: true %>
 			<%= f.text_field :texte4, :value =>  @index.texte4,required: true %>
 			<%= f.text_field :texte5, :value =>  @index.texte5,required: true %>
+			<%= f.text_field :fax, :value =>  @index.fax,required: true %>
+			<%= f.text_field :mobile, :value =>  @index.mobile,required: true %>
 			Contenu de la page
 			<div class="separator"></div>
 			<%= f.text_field :texte6, :value =>  @index.texte6,required: true %>
@@ -63,6 +65,10 @@
 			<%= f.text_field :texte9, :value =>  @index.texte9,required: true %>
 			<%= f.text_field :texte10, :value =>  @index.texte10,required: true %>
 			<%= f.text_field :texte11, :value =>  @index.texte11,required: true %>
+			<%= f.text_field :texte12, :value =>  @index.texte12,required: true %>
+			<%= f.text_field :texte13, :value =>  @index.texte13,required: true %>
+			<%= f.text_field :texte14, :value =>  @index.texte14,required: true %>
+			<%= f.text_field :texte15, :value =>  @index.texte15,required: true %>
 		<% elsif locale == :en %>
 			#en anglais
 			Profil
@@ -72,6 +78,8 @@
 			<%= f.text_field :texte3en, :value =>  @index.texte3en,required: true %>
 			<%= f.text_field :texte4en, :value =>  @index.texte4en,required: true %>
 			<%= f.text_field :texte5en, :value =>  @index.texte5en,required: true %>
+			<%= f.text_field :faxen, :value =>  @index.faxen,required: true %>
+			<%= f.text_field :mobileen, :value =>  @index.mobileen,required: true %>
 			Page Content
 			<div class="separator"></div>
 			<%= f.text_field :texte6en, :value =>  @index.texte6en,required: true %>
@@ -80,6 +88,10 @@
 			<%= f.text_field :texte9en, :value =>  @index.texte9en,required: true %>
 			<%= f.text_field :texte10en, :value =>  @index.texte10en,required: true %>
 			<%= f.text_field :texte11en, :value =>  @index.texte11en,required: true %>
+			<%= f.text_field :texte12en, :value =>  @index.texte12en,required: true %>
+			<%= f.text_field :texte13en, :value =>  @index.texte13en,required: true %>
+			<%= f.text_field :texte14en, :value =>  @index.texte14en,required: true %>
+			<%= f.text_field :texte15en, :value =>  @index.texte15en,required: true %>
 		<% end %>
 		<%= f.submit "update", class: "btn btn-success" %>
 	<% end %>
