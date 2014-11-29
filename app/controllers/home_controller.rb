@@ -2,9 +2,9 @@ class HomeController < ApplicationController
   def index
        @index = Index.find(1)
        if I18n.locale == :en
-         @map = @index.texte3en
+         @map = @index.streeten
        else
-         @map = @index.texte3
+         @map = @index.street
        end
   end
 
@@ -24,7 +24,7 @@ class HomeController < ApplicationController
         @specialite = Specialite.find(1)
   end
 
-  def veille
+  def actualite
   	@veilles = Veille.where("langue = '#{I18n.locale}'").order('updated_at DESC').paginate(:page => params[:page])
   end
 

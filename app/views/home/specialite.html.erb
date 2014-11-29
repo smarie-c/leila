@@ -2,13 +2,13 @@
 <% if locale == :en %>
 	<section>
 		<article>
-	<%= @specialite.texte1en.bbcode_to_html_with_formatting.html_safe %>
+	<%= @specialite.contenuen.bbcode_to_html_with_formatting.html_safe %>
 		</article>
 	</section>
 <% else %>
 	<section>
 		<article>
-	<%= @specialite.texte1.bbcode_to_html_with_formatting.html_safe %>
+	<%= @specialite.contenu.bbcode_to_html_with_formatting.html_safe %>
 		</article>
 	</section>
 <% end %>

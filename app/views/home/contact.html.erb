@@ -3,7 +3,7 @@
 <% if locale == :en %>
 	<section>
 		<article>
-	<%= @contact.texte1en.bbcode_to_html_with_formatting.html_safe %>
+	<%= @contact.contenuen.bbcode_to_html_with_formatting.html_safe %>
 		</article>
 	</section>
 					<%= bootstrap_form_tag url: fr_path, method: "post" do |f| %>
@@ -15,7 +15,7 @@
 <% else %>
 	<section>
 		<article>
-	<%= @contact.texte1.bbcode_to_html_with_formatting.html_safe %>
+	<%= @contact.contenu.bbcode_to_html_with_formatting.html_safe %>
 		</article>
 	</section>
 

@@ -54,15 +54,11 @@
 
 		<% if locale == :en %>
 			<div class="name">
-			<%= (t('profil.name') + @index.texte1en + ' ' + @index.texte2en).bbcode_to_html_with_formatting.html_safe %>
-			<!-- 					<%= @index.texte2en.bbcode_to_html_with_formatting.html_safe %> -->
+			<%= (t('profil.name') + @index.firstnameen + ' ' + @index.nameen).bbcode_to_html_with_formatting.html_safe %>
 			</div>
-			<!-- 				<div class="name">
-			<%= @index.texte2en.bbcode_to_html_with_formatting.html_safe %>
-			</div> -->
 			<div class="email">
 			<a href="https://www.google.com/maps/place/<%= @map %>"  target="_blank">
-				<%= (t('profil.addr') + @index.texte3en + @index.texte4en).bbcode_to_html_with_formatting.html_safe %>
+				<%= (t('profil.addr') + @index.streeten + ' ' + @index.cpen + ' ' + @index.cityen).bbcode_to_html_with_formatting.html_safe %>
 			</a> 
 			</div>
 			<div class="adresse">
@@ -73,20 +69,17 @@
  				 src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBegs8cCY3HjnUkA7KKxRGKrJkK_YCPYsk&q=<%= @map %>">
 			</iframe> 
 			<div class="postal">
-			<%= (t('profil.phone') + @index.texte5en).bbcode_to_html_with_formatting.html_safe %>
+			<%= (t('profil.phone') + @index.phoneen).bbcode_to_html_with_formatting.html_safe %>
 			<%= (t('profil.fax') + @index.faxen).bbcode_to_html_with_formatting.html_safe %>
 			<%= (t('profil.mobil') + @index.mobileen).bbcode_to_html_with_formatting.html_safe %>
 			</div>
 			<% else %>
 			<div class="name">
-			<%= (t('profil.name') + @index.texte1 + ' ' + @index.texte2).bbcode_to_html_with_formatting.html_safe %>
+			<%= (t('profil.name') + @index.firstname + ' ' + @index.name).bbcode_to_html_with_formatting.html_safe %>
 			</div>
-<!-- 			<div class="name">
-			<%= @index.texte2.bbcode_to_html_with_formatting.html_safe %>
-			</div> -->
 			<div class="email">
 			<a href="https://www.google.com/maps/place/<%= @map %>"  target="_blank">
-				<%= (t('profil.addr') + @index.texte3 + @index.texte4).bbcode_to_html_with_formatting.html_safe %>
+				<%= (t('profil.addr') + @index.street + ' ' + @index.cp + ' ' + @index.city).bbcode_to_html_with_formatting.html_safe %>
 			</a>
 			</div>
 			<div class="adresse">
@@ -97,10 +90,9 @@
  				 src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBegs8cCY3HjnUkA7KKxRGKrJkK_YCPYsk&q=<%= @map %>">
 			</iframe> 
 			<div class="postal">
-			<%= (t('profil.phone') + @index.texte5).bbcode_to_html_with_formatting.html_safe %>
+			<%= (t('profil.phone') + @index.phone).bbcode_to_html_with_formatting.html_safe %>
 			<%= (t('profil.fax') + @index.fax).bbcode_to_html_with_formatting.html_safe %>
 			<%= (t('profil.mobil') + @index.mobile).bbcode_to_html_with_formatting.html_safe %>
-			<%= (t('profil.phone') + @index.texte5).bbcode_to_html_with_formatting.html_safe %>
 			</div>
 		<% end %>
 			<div class="profil-separator-bottom"></div>
@@ -110,52 +102,52 @@
 
 	<% if locale == :en %>
 		<h3 class="interview">
-			<%= @index.texte6en.bbcode_to_html_with_formatting.html_safe %>
+			<%= @index.titre1en.bbcode_to_html_with_formatting.html_safe %>
 			<span class="glyphicon glyphicon-bookmark"></span> 
 		</h3>
 		<article>
-		<%= @index.texte7en.bbcode_to_html_with_formatting.html_safe %>
+		<%= @index.contenu1en.bbcode_to_html_with_formatting.html_safe %>
 		</article>
 		<div class="separator-index"></div>
 		<h3 class="actualite">
-		<%= @index.texte8en.bbcode_to_html_with_formatting.html_safe %>
+		<%= @index.titre2en.bbcode_to_html_with_formatting.html_safe %>
 		</h3>
 		<article>
-		<%= @index.texte9en.bbcode_to_html_with_formatting.html_safe %>
+		<%= @index.contenu2en.bbcode_to_html_with_formatting.html_safe %>
 		</article>
 		<div class="separator-index"></div>
 
 		<h3 class="hot">
-		<%= @index.texte10en.bbcode_to_html_with_formatting.html_safe %>
+		<%= @index.titre3en.bbcode_to_html_with_formatting.html_safe %>
 		</h3>
 		<article>
-		<%= @index.texte11en.bbcode_to_html_with_formatting.html_safe %>
+		<%= @index.contenu3en.bbcode_to_html_with_formatting.html_safe %>
 		</article>
 		<div class="separator-index"></div>
 
 	<% else %>
 		<h3 class="interview">
 
-		<%= @index.texte6.bbcode_to_html_with_formatting.html_safe %>
+		<%= @index.titre1.bbcode_to_html_with_formatting.html_safe %>
 		</h3>
 		<article>
-		<%= @index.texte7.bbcode_to_html_with_formatting.html_safe %>
+		<%= @index.contenu1.bbcode_to_html_with_formatting.html_safe %>
 		</article>
 		<div class="separator-index"></div>
 
 		<h3c lass="actualite">
-		<%= @index.texte8.bbcode_to_html_with_formatting.html_safe %>
+		<%= @index.titre2.bbcode_to_html_with_formatting.html_safe %>
 		</h3>
 		<article>
-		<%= @index.texte9.bbcode_to_html_with_formatting.html_safe %>
+		<%= @index.contenu2.bbcode_to_html_with_formatting.html_safe %>
 		</article>
 		<div class="separator-index"></div>
 
 		<h3 class="hot">
-		<%= @index.texte10.bbcode_to_html_with_formatting.html_safe %>
+		<%= @index.titre3.bbcode_to_html_with_formatting.html_safe %>
 		</h3>
 		<article>
-		<%= @index.texte11.bbcode_to_html_with_formatting.html_safe %>
+		<%= @index.contenu3.bbcode_to_html_with_formatting.html_safe %>
 		</article>
 		<div class="separator-index"></div>
 

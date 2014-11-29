@@ -7,22 +7,22 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 User.create(:username => "pokemon", :password => "aaaaaaaa", :password_confirmation => "aaaaaaaa")
-Contact.create(:texte1 => "Pour me contacter veuillez remplir les champs suivants", :texte1en => "To contact me please fill in the following fields")
-Honoraire.create(:texte1 => "french example 1", :texte1en => "en example 1")
-Specialite.create(:texte1 => "french example 1", :texte1en => "en example 1")
+Contact.create(:contenu => "Pour me contacter veuillez remplir les champs suivants", :contenuen => "To contact me please fill in the following fields")
+Honoraire.create(:contenu => "french example 1", :contenuen => "en example 1")
+Specialite.create(:contenu => "french example 1", :contenuen => "en example 1")
 
-Index.create(:texte1 => "laila",:texte2 => "EL HALFI",:texte3 => "36 Avenue Bugeaud,",:texte4 => "75016 paris",:texte5 => "01 45 53 64 16", :fax => "01 45 53 74 16", :mobile => "06 61 57 45 87",
-	:texte6 => "Avocats spécialisé en droit du travail,",:texte7 => "droit de la sécurité sociale et droit pénal du travail. Expertise en conseil / contentieux / audit social / restructurations d'entreprises",
-	:texte8 => "Lorem ipsum",:texte9 => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-	:texte10 => "Lorem ipsum",:texte11 => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-	:texte12 => "Lorem ipsum",:texte13 => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-	:texte14 => "Lorem ipsum",:texte15 => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-	:texte1en => "laila",:texte2en => "EL HALFI",:texte3en => "36 Avenue Bugeaud,",:texte4en => "75016 paris",:texte5en => "01 45 53 64 16", :faxen => "01 45 53 74 16", :mobileen => "06 61 57 45 87",
-	:texte6en => "lawyer specializing in labor law ,",:texte7en => "right to social security and criminal labor law . Expertise in consulting / litigation / social audit / corporate restructuring",
-	:texte8en => "en example 1 8",:texte9en => "en example 1 9",
-	:texte10en => "en example 1 10",:texte11en => "en example 1 11",
-	:texte12en => "en example 1 12",:texte13en => "en example 1 13",
-	:texte14en => "en example 1 14",:texte15en => "en example 1 15")
+Index.create(:firstname => "laila",:name => "EL HALFI",:street => "36 Avenue Bugeaud,",:cp => "75016",:city => "paris",:phone => "01 45 53 64 16", :fax => "01 45 53 74 16", :mobile => "06 61 57 45 87",
+	:titre1 => "Avocats spécialisé en droit du travail,",:contenu1 => "droit de la sécurité sociale et droit pénal du travail. Expertise en conseil / contentieux / audit social / restructurations d'entreprises",
+	:titre2 => "Lorem ipsum",:contenu2 => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+	:titre3 => "Lorem ipsum",:contenu3 => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+	:titre4 => "Lorem ipsum",:contenu4 => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+	:titre5 => "Lorem ipsum",:contenu5 => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+	:firstnameen => "laila",:nameen => "EL HALFI",:streeten => "36 Avenue Bugeaud,",:cpen => "75016",:cityen => "paris",:phoneen => "01 45 53 64 16", :faxen => "01 45 53 74 16", :mobileen => "06 61 57 45 87",
+	:titre1en => "lawyer specializing in labor law ,",:contenu1en => "right to social security and criminal labor law . Expertise in consulting / litigation / social audit / corporate restructuring",
+	:titre2en => "en example 1 8",:contenu2en => "en example 1 9",
+	:titre3en => "en example 1 10",:contenu3en => "en example 1 11",
+	:titre4en => "en example 1 12",:contenu4en => "en example 1 13",
+	:titre5en => "en example 1 14",:contenu5en => "en example 1 15")
 
 i = 0
 20.times do

@@ -8,10 +8,10 @@
 
 	<%= bootstrap_form_tag url: user_contact_update_path, method: "put" do |f| %>
 		<% if locale == :fr %>
-			<%= f.text_field :texte1, :value =>  @contact.texte1, required: true %>
+			<%= f.text_field :contenu, :value =>  @contact.contenu, required: true %>
 		<% elsif locale == :en %>
 			#en anglais
-			<%= f.text_field :texte1en, :value =>  @contact.texte1en, required: true %>
+			<%= f.text_field :contenuen, :value =>  @contact.contenuen, required: true %>
 		<% end %>
 		<%= f.submit "update", class: "btn btn-success" %>
 	<% end %>
@@ -22,10 +22,10 @@
 	#honoraire
 	<%= bootstrap_form_tag url: user_honoraire_update_path, method: "put" do |f| %>
 		<% if locale == :fr %>
-			<%= f.text_field :texte1, :value =>  @honoraire.texte1,required: true %>
+			<%= f.text_field :contenu, :value =>  @honoraire.contenu,required: true %>
 		<% elsif locale == :en %>
 			#en anglais
-			<%= f.text_field :texte1en, :value =>  @honoraire.texte1en,required: true %>
+			<%= f.text_field :contenuen, :value =>  @honoraire.contenuen,required: true %>
 		<% end %>
 		<%= f.submit "update", class: "btn btn-success" %>
 	<% end %>
@@ -35,10 +35,10 @@
 	#specialite
 	<%= bootstrap_form_tag url: user_specialite_update_path, method: "put" do |f| %>
 		<% if locale == :fr %>
-			<%= f.text_field :texte1, :value =>  @specialite.texte1,required: true %>
+			<%= f.text_field :contenu, :value =>  @specialite.contenu,required: true %>
 		<% elsif locale == :en %>
 			#en anglais
-			<%= f.text_field :texte1en, :value =>  @specialite.texte1en,required: true %>
+			<%= f.text_field :contenuen, :value =>  @specialite.contenuen,required: true %>
 		<% end %>
 		<%= f.submit "update", class: "btn btn-success" %>
 	<% end %>
@@ -50,48 +50,50 @@
 		<% if locale == :fr %>
 			Profil
 			<div class="separator"></div>
-			<%= f.text_field :texte1, :value =>  @index.texte1,required: true %>
-			<%= f.text_field :texte2, :value =>  @index.texte2,required: true %>
-			<%= f.text_field :texte3, :value =>  @index.texte3,required: true %>
-			<%= f.text_field :texte4, :value =>  @index.texte4,required: true %>
-			<%= f.text_field :texte5, :value =>  @index.texte5,required: true %>
+			<%= f.text_field :firstname, :value =>  @index.firstname,required: true %>
+			<%= f.text_field :name, :value =>  @index.name,required: true %>
+			<%= f.text_field :street, :value =>  @index.street,required: true %>
+			<%= f.text_field :cp, :value =>  @index.cp,required: true %>
+			<%= f.text_field :city, :value =>  @index.city,required: true %>
+			<%= f.text_field :phone, :value =>  @index.phone,required: true %>
 			<%= f.text_field :fax, :value =>  @index.fax,required: true %>
 			<%= f.text_field :mobile, :value =>  @index.mobile,required: true %>
 			Contenu de la page
 			<div class="separator"></div>
-			<%= f.text_field :texte6, :value =>  @index.texte6,required: true %>
-			<%= f.text_field :texte7, :value =>  @index.texte7,required: true %>
-			<%= f.text_field :texte8, :value =>  @index.texte8,required: true %>
-			<%= f.text_field :texte9, :value =>  @index.texte9,required: true %>
-			<%= f.text_field :texte10, :value =>  @index.texte10,required: true %>
-			<%= f.text_field :texte11, :value =>  @index.texte11,required: true %>
-			<%= f.text_field :texte12, :value =>  @index.texte12,required: true %>
-			<%= f.text_field :texte13, :value =>  @index.texte13,required: true %>
-			<%= f.text_field :texte14, :value =>  @index.texte14,required: true %>
-			<%= f.text_field :texte15, :value =>  @index.texte15,required: true %>
+			<%= f.text_field :titre1, :value =>  @index.titre1,required: true %>
+			<%= f.text_field :contenu1, :value =>  @index.contenu1,required: true %>
+			<%= f.text_field :titre2, :value =>  @index.titre2,required: true %>
+			<%= f.text_field :contenu2, :value =>  @index.contenu2,required: true %>
+			<%= f.text_field :titre3, :value =>  @index.titre3,required: true %>
+			<%= f.text_field :contenu3, :value =>  @index.contenu3,required: true %>
+			<%= f.text_field :titre4, :value =>  @index.titre4,required: true %>
+			<%= f.text_field :contenu4, :value =>  @index.contenu4,required: true %>
+			<%= f.text_field :titre5, :value =>  @index.titre5,required: true %>
+			<%= f.text_field :contenu5, :value =>  @index.contenu5,required: true %>
 		<% elsif locale == :en %>
 			#en anglais
 			Profil
 			<div class="separator"></div>
-			<%= f.text_field :texte1en, :value =>  @index.texte1en,required: true %>
-			<%= f.text_field :texte2en, :value =>  @index.texte2en,required: true %>
-			<%= f.text_field :texte3en, :value =>  @index.texte3en,required: true %>
-			<%= f.text_field :texte4en, :value =>  @index.texte4en,required: true %>
-			<%= f.text_field :texte5en, :value =>  @index.texte5en,required: true %>
+			<%= f.text_field :firstnameen, :value =>  @index.firstnameen,required: true %>
+			<%= f.text_field :nameen, :value =>  @index.nameen,required: true %>
+			<%= f.text_field :streeten, :value =>  @index.streeten,required: true %>
+			<%= f.text_field :cpen, :value =>  @index.cpen,required: true %>
+			<%= f.text_field :cityen, :value =>  @index.cityen,required: true %>
+			<%= f.text_field :phoneen, :value =>  @index.phoneen,required: true %>
 			<%= f.text_field :faxen, :value =>  @index.faxen,required: true %>
 			<%= f.text_field :mobileen, :value =>  @index.mobileen,required: true %>
 			Page Content
 			<div class="separator"></div>
-			<%= f.text_field :texte6en, :value =>  @index.texte6en,required: true %>
-			<%= f.text_field :texte7en, :value =>  @index.texte7en,required: true %>
-			<%= f.text_field :texte8en, :value =>  @index.texte8en,required: true %>
-			<%= f.text_field :texte9en, :value =>  @index.texte9en,required: true %>
-			<%= f.text_field :texte10en, :value =>  @index.texte10en,required: true %>
-			<%= f.text_field :texte11en, :value =>  @index.texte11en,required: true %>
-			<%= f.text_field :texte12en, :value =>  @index.texte12en,required: true %>
-			<%= f.text_field :texte13en, :value =>  @index.texte13en,required: true %>
-			<%= f.text_field :texte14en, :value =>  @index.texte14en,required: true %>
-			<%= f.text_field :texte15en, :value =>  @index.texte15en,required: true %>
+			<%= f.text_field :titre1en, :value =>  @index.titre1en,required: true %>
+			<%= f.text_field :contenu1en, :value =>  @index.contenu1en,required: true %>
+			<%= f.text_field :titre2en, :value =>  @index.titre2en,required: true %>
+			<%= f.text_field :contenu2en, :value =>  @index.contenu2en,required: true %>
+			<%= f.text_field :titre3en, :value =>  @index.titre3en,required: true %>
+			<%= f.text_field :contenu3en, :value =>  @index.contenu3en,required: true %>
+			<%= f.text_field :titre4en, :value =>  @index.titre4en,required: true %>
+			<%= f.text_field :contenu4en, :value =>  @index.contenu4en,required: true %>
+			<%= f.text_field :titre5en, :value =>  @index.titre5en,required: true %>
+			<%= f.text_field :contenu5en, :value =>  @index.contenu5en,required: true %>
 		<% end %>
 		<%= f.submit "update", class: "btn btn-success" %>
 	<% end %>

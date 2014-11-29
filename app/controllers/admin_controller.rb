@@ -7,41 +7,41 @@ class AdminController < ApplicationController
   	@specialite = Specialite.find(1)
   end
 
-  def veille
+  def actualite
   	@veilles = Veille.where("langue = '#{I18n.locale}'").order('updated_at DESC').paginate(:page => params[:page])
   end
 
-  def update_veille
+  def update_actualite
   	begin
 	  	veille = Veille.find(params[:id])
 	rescue Exception => e
-		redirect_to user_veille_path, :flash => { :alert => "la veille cherché n'a pas été trouvée." } and return
+		redirect_to user_actualite_path, :flash => { :alert => "l'actualité cherché n'a pas été trouvée." } and return
 	end
 	veille.titre = params[:titre]
 	veille.texte = params[:texte]
 	begin
 	  	veille.save
 	rescue Exception => e
-		redirect_to user_veille_path, :flash => { :alert => "la veille n'a pas été mise à jour." } and return
+		redirect_to user_actualite_path, :flash => { :alert => "l'actualité n'a pas été mise à jour." } and return
 	end
-	redirect_to user_veille_path, :flash => { :notice => "la veille a été mise à jour." } and return
+	redirect_to user_actualite_path, :flash => { :notice => "l'actualité a été mise à jour." } and return
   end
 
-  def delete_veille
+  def delete_actualite
   	begin
 	  	veille = Veille.find(params[:id])
 	rescue Exception => e
-		redirect_to user_veille_path, :flash => { :alert => "la veille cherché n'a pas été trouvée." } and return
+		redirect_to user_actualite_path, :flash => { :alert => "l'actualité cherché n'a pas été trouvée." } and return
 	end
 	begin
 	  	veille.destroy
 	rescue Exception => e
-		redirect_to user_veille_path, :flash => { :alert => "la veille n'a pas été supprimée." } and return
+		redirect_to user_actualite_path, :flash => { :alert => "l'actualité n'a pas été supprimée." } and return
 	end
-	redirect_to user_veille_path, :flash => { :notice => "la veille a été supprimée." } and return
+	redirect_to user_actualite_path, :flash => { :notice => "l'actualité a été supprimée." } and return
   end
 
-  def create_veille
+  def create_actualite
   	veille = Veille.new
   	veille.titre = params[:titre]
 	veille.texte = params[:texte]
@@ -50,9 +50,9 @@ class AdminController < ApplicationController
   	begin
 	  	veille.save
 	rescue Exception => e
-		redirect_to user_veille_path, :flash => { :alert => "la veille n'a pas été créé." } and return
+		redirect_to user_actualite_path, :flash => { :alert => "l'actualité n'a pas été créé." } and return
 	end
-	redirect_to user_veille_path, :flash => { :notice => "la veille a été créé." } and return
+	redirect_to user_actualite_path, :flash => { :notice => "l'actualité a été créé." } and return
   end
 
   def associe
@@ -113,41 +113,43 @@ class AdminController < ApplicationController
 		redirect_to user_path, :flash => { :alert => "l'associé cherché n'a pas été trouvé." } and return
 	end
 	if I18n.locale == :fr
-		index.texte1 = params[:texte1]
-		index.texte2 = params[:texte2]
-		index.texte3 = params[:texte3]
-		index.texte4 = params[:texte4]
-		index.texte5 = params[:texte5]
+		index.firstname = params[:firstname]
+		index.name = params[:name]
+		index.street = params[:street]
+		index.cp = params[:cp]
+		index.city = params[:city]
+		index.phone = params[:phone]
 		index.fax = params[:fax]
 		index.mobile = params[:mobile]
-		index.texte6 = params[:texte6]
-		index.texte7 = params[:texte7]
-		index.texte8 = params[:texte8]
-		index.texte9 = params[:texte9]
-		index.texte10 = params[:texte10]
-		index.texte11 = params[:texte11]
-		index.texte12 = params[:texte12]
-		index.texte13 = params[:texte13]
-		index.texte14 = params[:texte14]
-		index.texte15 = params[:texte15]
+		index.titre1 = params[:titre1]
+		index.contenu1 = params[:contenu1]
+		index.titre2 = params[:titre2]
+		index.contenu2 = params[:contenu2]
+		index.titre3 = params[:titre3]
+		index.contenu3 = params[:contenu3]
+		index.titre4 = params[:titre4]
+		index.contenu4 = params[:contenu4]
+		index.titre5 = params[:titre5]
+		index.contenu5 = params[:contenu5]
 	else
-		index.texte1en = params[:texte1en]
-		index.texte2en = params[:texte2en]
-		index.texte3en = params[:texte3en]
-		index.texte4en = params[:texte4en]
-		index.texte5en = params[:texte5en]
+		index.firstnameen = params[:firstnameen]
+		index.nameen = params[:nameen]
+		index.streeten = params[:streeten]
+		index.cpen = params[:cpen]
+		index.cityen = params[:cityen]
+		index.phoneen = params[:phoneen]
 		index.faxen = params[:faxen]
 		index.mobileen = params[:mobileen]
-		index.texte6en = params[:texte6en]
-		index.texte7en = params[:texte7en]
-		index.texte8en = params[:texte8en]
-		index.texte9en = params[:texte9en]
-		index.texte10en = params[:texte10en]
-		index.texte11en = params[:texte11en]
-		index.texte12en = params[:texte12en]
-		index.texte13en = params[:texte13en]
-		index.texte14en = params[:texte14en]
-		index.texte15en = params[:texte15en]
+		index.titre1en = params[:titre1en]
+		index.contenu1en = params[:contenu1en]
+		index.titre2en = params[:titre2en]
+		index.contenu2en = params[:contenu2en]
+		index.titre3en = params[:titre3en]
+		index.contenu3en = params[:contenu3en]
+		index.titre4en = params[:titre4en]
+		index.contenu4en = params[:contenu4en]
+		index.titre5en = params[:titre5en]
+		index.contenu5en = params[:contenu5en]
 	end
 	begin
 	  	index.save
@@ -164,9 +166,9 @@ class AdminController < ApplicationController
 		redirect_to user_path, :flash => { :alert => "l'associé cherché n'a pas été trouvé." } and return
 	end
 	if I18n.locale == :fr
-		honoraire.texte1 = params[:texte1]
+		honoraire.contenu = params[:contenu]
 	else
-		honoraire.texte1en = params[:texte1en]
+		honoraire.contenuen = params[:contenuen]
 	end
 	begin
 	  	honoraire.save
@@ -183,9 +185,9 @@ class AdminController < ApplicationController
 		redirect_to user_path, :flash => { :alert => "l'associé cherché n'a pas été trouvé." } and return
 	end
 	if I18n.locale == :fr
-		contact.texte1 = params[:texte1]
+		contact.contenu = params[:contenu]
 	else
-		contact.texte1en = params[:texte1en]
+		contact.contenuen = params[:contenuen]
 	end
 	begin
 	  	contact.save
@@ -202,9 +204,9 @@ class AdminController < ApplicationController
 		redirect_to user_path, :flash => { :alert => "l'associé cherché n'a pas été trouvé." } and return
 	end
 	if I18n.locale == :fr
-		specialite.texte1 = params[:texte1]
+		specialite.contenu = params[:contenu]
 	else
-		specialite.texte1en = params[:texte1en]
+		specialite.contenuen = params[:contenuen]
 	end
 	begin
 	  	specialite.save

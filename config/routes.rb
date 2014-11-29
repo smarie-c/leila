@@ -14,7 +14,7 @@ Rails.application.routes.draw do
    get '/honoraire' => 'home#honoraire'
    get '/contact' => 'home#contact'
    get '/specialite' => 'home#specialite'
-   get '/veille' => 'home#veille'
+   get '/actualite' => 'home#actualite'
    
 
    #panneau admin
@@ -22,11 +22,11 @@ Rails.application.routes.draw do
 
    get '/user' => 'admin#index'
 
-##veille
-   get '/user/veille' => 'admin#veille'
-   post '/user/veille/create' => 'admin#create_veille'
-   delete '/user/veille/delete' => 'admin#delete_veille'
-   put '/user/veille/update' => 'admin#update_veille'
+##actualite
+   get '/user/actualite' => 'admin#actualite'
+   post '/user/actualite/create' => 'admin#create_actualite'
+   delete '/user/actualite/delete' => 'admin#delete_actualite'
+   put '/user/actualite/update' => 'admin#update_actualite'
 
 ##associe
    get '/user/associe' => 'admin#associe'
