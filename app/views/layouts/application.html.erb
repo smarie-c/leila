@@ -1,188 +1,108 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title><%= t('header.name') %></title>
-  <meta name="viewport" content="width=device-width" />
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+	<meta charset="UTF-8">
+	<title><%= t('header.name') %></title>
+	<meta name="viewport" content="width=device-width" />
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<%= csrf_meta_tags %>
 </head>
-
-<body>
-	<!-- design Karine 
- 	<header>
- 		<center>
-	    	<div class="title_header">
-	    		<span class="name"><%= t('header.name') %></span>
-	    		<div class="line"></div>
-	    		<span class="sub"><%= t('header.sub') %></span>
-	    	</div>
-	    	</center>
-		<a id="menu_toggle" class="button dark" href="#"><i class="icon-reorder"></i>test</a>
-		<nav id="menu_inline">
-			<ul class="navigation">
-				<li><%= link_to t('navigation.home'), root_path %></li>
-				<li class="nav associes"><%= link_to t('navigation.associe'), associe_path %></li>
-				<li class="nav competence"><%= link_to t('navigation.special'), specialite_path %></li>
-				<li class="nav veille"><%= link_to t('navigation.actu'), actualite_path %></li>
-				<li class="nav contact"><%= link_to t('navigation.contact'), contact_path %></li>
-        	</ul>
-        </nav>
-    </header>
-    <% yield %>
-    <footer>
-    	<div class="infos_footer">
-	    	<div class="phone"></div>
-	    	<div class="mail"></div>
-	    	<div class="adress"></div>
-	    	<div class="follow">
-	    	    <span><%= t('footer.follow') %></span>
-	    		<a href="https://twitter.com/ElHalfiAvocats?lang=en">
-	    			<div class="twitter"></div>
-	    		</a>
-	    		<a href="https://www.linkedin.com/pub/laila-el-halfi/27/7a6/678">
-	    			<div class="linkedin"></div>
-	    		</a>
-	    	</div>
-	    </div>
-    </footer>
-end design Karine -->
-
-	<% test_fr = '' %>
-	<% test_en = '' %>
-	<% if locale == :en %>
-		<% test_en = ' test-moi' %>
-	<% elsif locale == :fr %>
-		<% test_fr = ' test-moi' %>
-	<% end %>
-	<!-- header admin -->
-	<% if params[:controller] == "admin" %>
-			<p>
-		<% if user_signed_in? %>
-		  Bonjour <strong><%= current_user.username %></strong>.
-		  <%= link_to 'Editer vos pages', user_path, :class => 'navbar-link' %> |
-		  <%= link_to 'Editer actualités', user_actualite_path, :class => 'navbar-link' %> |
-		  <%= link_to 'Editer Associe', user_associe_path, :class => 'navbar-link' %> |
-		  <%= link_to 'Voir mon site', root_path, :class => 'navbar-link' %> |
-		  <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
-		  <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
-		<% else %>
-		  <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
-		<% end %>
-		</p>
-
-		<% if notice %>
-		  <p class="alert alert-success"><%= notice %></p>
-		<% end %>
-		<% if alert %>
-		  <p class="alert alert-danger"><%= alert %></p>
-		<% end %>
-	<!-- header visiteurs -->
-	<% elsif params[:controller] == "home"%>
-
-<nav class="navbar navbar-default navbar-fixed-top visible-xs-block" role="navigation">
-  <div class="container-fluid">
-
-      <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
- 
-		    <ul><%= link_to t('navigation.acceuil'), root_path, :class => 'navbar-link submenu' %> </ul>
-		    <ul><%= link_to t('navigation.special'), specialite_path, :class => 'navbar-link submenu' %> </ul>
-		    <ul><%= link_to t('navigation.associe'), associe_path, :class => 'navbar-link submenu' %> </ul>
-		    <ul><%= link_to t('navigation.actu'), actualite_path, :class => 'navbar-link submenu' %> </ul>
-		    <ul><%= link_to t('navigation.contact'), contact_path, :class => 'navbar-link submenu' %> </ul>
-
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+<body class="container">
 	<header>
-		<div class="container fix-header">
-			<div class="title"><%= t('header.name')%></div>
-				<div class="lang pull-right">
-					<%= bootstrap_form_tag url: fr_path, method: "post" do |f| %>
-						<%= f.submit "FR", class: "btn" + test_fr %>
-					<% end %> |
-					<%= bootstrap_form_tag url: en_path, method: "post" do |f| %>
-						<%= f.submit "EN", class: "btn" + test_en %>
-					<% end %>
-				</div>
-			<div class="subtitle"><%= t("header.sub") %></div>
+			<div class="col-sm-2 id">
+				<span class="nom-laila">Laila El Halfi</span>
+				<span class="job-laila">Avocat</span>
+			<!-- col-sm-2 ID -->
+			</div>
+		<!-- col-sm-offset-2 -->
+		<div class="first-separator-v"></div>
+			<span class="col-sm-1 menu act">Accueil</span>
+			<span class="col-sm-1 menu">Services</span>
+			<span class="col-sm-2 menu">Nos Compétences</span>
+			<span class="col-sm-1 menu">L'Équipe</span>
+			<span class="col-sm-1 menu">Contact</span>
+		<div class="second-separator-v"></div>
+		<div class="col-sm-3 specialiste">
+			specialiste en droit du travail
 		</div>
 	</header>
 
-
-
-<div class="container">
-
-	<nav class="navbar navbar-default hidden-xs" role="navigation">
-	<div class="container-fluid">
-
-	<div class="navbar-header">
-	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-	<span class="sr-only">Toggle navigation</span>
-	<span class="icon-bar"></span>
-	<span class="icon-bar"></span>
-	<span class="icon-bar"></span>
-	</button>
+	<!-- Separe le Header de la Seaction -->
+	<div class="contact-header">
+		<div class="contact-each">Téléphone :<span class="infos"> 01 45 53 64 16</span></div>
+		<div class="contact-each">FAX :<span class="infos"> 01 45 53 74 16</span></div>
+		<div class="contact-each">Mobile :<span class="infos"> 06 61 57 45 87</span></div>
+		<div class="contact-each">Email :<span class="infos"> lelhalfi@elhalfi-avocats.com</span></div>
 	</div>
+<section>
 
-	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	<ul class="nav navbar-nav">
+<!-- Debut Carousel -->
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
 
-	<li id="index"><%= link_to t('navigation.acceuil'), root_path, :class => 'navbar-link submenu' %> </li>
-	<li id="specialite"><%= link_to t('navigation.special'), specialite_path, :class => 'navbar-link submenu' %> </li>
-	<li id="associe"><%= link_to t('navigation.associe'), associe_path, :class => 'navbar-link submenu' %> </li>
-	<li id="veille"><%= link_to t('navigation.actu'), actualite_path, :class => 'navbar-link submenu' %> </li>
-	<li id="contact"><%= link_to t('navigation.contact'), contact_path, :class => 'navbar-link submenu' %> </li>
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item">
+      <img src="<%= asset_path( 'casablanca.png' ) %>" alt="...">
+      <div class="carousel-caption">
+        Casablanca
+      </div>
+    </div>
+    <div class="item active">
+      <img src="<%= asset_path( 'madison.png' ) %>" alt="...">
+      <div class="carousel-caption">
+        Madison
+      </div>
+    </div>
+     <div class="item">
+     <img src="<%= asset_path( 'jade.png' ) %>" alt="...">
+      <div class="carousel-caption">
+        Jade
+      </div>
+    </div>
+  </div>
 
-
-	</ul>
-	</div><!-- /.navbar-collapse -->
-	</div><!-- /.container-fluid -->
-	</nav>
-
-	<script type="text/javascript">
-		function ft_add_active_to_header(str)
-		{
-			document.getElementById(str).className += "act";
-			document.getElementById(str).childNodes[0].style.color = "black"
-		}
-		ft_add_active_to_header("<%= params[:action] %>");
-	</script>
-
-
-	<% end %>
-
-	<% if params[:controller] == "admin" || params[:controller] == "devise/sessions" %>
-		<header>
-		<div class="container fix-header">
-				<div class="lang pull-right">
-					<%= bootstrap_form_tag url: fr_path, method: "post" do |f| %>
-						<%= f.submit "FR", class: "btn" + test_fr %>
-					<% end %> |
-					<%= bootstrap_form_tag url: en_path, method: "post" do |f| %>
-						<%= f.submit "EN", class: "btn" + test_en %>
-					<% end %>
-				</div>
-		</div>
-	</header>
-		<div class="container">
-		<%= yield %>
-		</div>
-	<% else %>
-		<%= yield %>
-	<% end %>
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>
+<!-- Fin Carousel -->
+
+<nav class="col-sm-offset-1">
+	<span align="left" class="col-sm-3 nav-article actu act">Actualité</span>
+	<div class="article-separator"></div>
+	<span align="center" class="col-sm-5 nav-article skills">Nos Compétences</span>
+	<div class="article-separator"></div>
+	<span align="right" class="col-sm-3 nav-article contact">Contact</span>
+</nav>
+<article>
+
+
+
+
+
+</article>
+
+
+</section>
+
+
+<footer>
+	
+</footer>
+<!-- Container Principal -->
 </body>
 </html>
 
