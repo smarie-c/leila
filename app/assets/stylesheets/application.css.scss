@@ -484,14 +484,11 @@ li:hover {
 article {
 	margin-top: 20px;
 }
-.carousel-control.left {
-	background-image: -webkit-linear-gradient(left, rgba(0, 255, 255, 0.5) 100%, rgba(0, 0, 255, 0.00001) 0%);
+.carousel-inner {
+	/*background-image: -webkit-linear-gradient(left, rgba(0, 255, 255, 0.5) 100%, rgba(0, 0, 255, 0.00001) 0%);*/
+	background-color: #444444;
 }
 
-.carousel-control.right {
-
-	background-image: -webkit-linear-gradient(left, rgba(0, 0, 255, 0.0001) 0%, rgba(255, 0, 0, 0.5) 100%);
-}
 
 //panel_admin
 .admin_class {
