@@ -486,7 +486,7 @@ article {
 }
 .carousel-inner {
 	/*background-image: -webkit-linear-gradient(left, rgba(0, 255, 255, 0.5) 100%, rgba(0, 0, 255, 0.00001) 0%);*/
-	background-color: #2EAFC0;
+	background-color: #35616F;
 }
 
 
@@ -528,13 +528,21 @@ article {
 .actu_text {
 	padding-left: 5px;
 }
+.pagination	a {
+	border-left: 1px;
+	border-right: 1px;
+	border-top: 0;
+	border-bottom: 0;
+	border-style: solid;
+	border-color: blue;
+}
 .pagination {
   background: #f1f1f1;
   border: 1px solid #e5e5e5;
   text-align: center;
   padding: 1em;
   cursor: default; }
-  .pagination a, .pagination span {
+.pagination a, .pagination span {
     padding: 0.2em 0.3em; }
   .pagination .disabled {
     color: #aaaaaa; }
@@ -555,6 +563,7 @@ article {
     color: black; }
     .pagination a:hover, .pagination a:focus {
       text-decoration: underline; }
+
 
 
 

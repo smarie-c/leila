@@ -102,8 +102,70 @@
 		<div class="separator-index"></div>
 
 	<% end %>
+<!-- veilles start -->
+	<% @veilles.each do |v| %>
+	<section class="veille">
+		<article>
+			<strong>
+				<% if v.veille_type == 0 %>
+					<div class="atitle actu_idee">
+				<% elsif v.veille_type == 1 %>
+					<div class="atitle actu_info">
+				<% else %>
+					<div class="atitle actu_news">
+				<% end %>
+					<%= v.titre.bbcode_to_html_with_formatting.html_safe %>
+ 				</div>
+			</strong>
+			<div class="separator-article"></div>
+			<div class="veille">
+				<% index = v.texte.index("\n") %>
+				<%= v.texte[0,index].bbcode_to_html_with_formatting.html_safe %>
+			</div>
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal<%= v.id %>" data-whatever="@mdo">en savoir plus</button>
+			<p style="text-align:right;"><%= t('category.actualites.created') %><%= v.created_at.strftime("%d/%m/%Y") %></p>
+				<!-- modal start -->
+				<div class="modal fade" id="exampleModal<%= v.id %>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+					<div class="modal-content">
+					<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+							<% if v.veille_type == 0 %>
+								<div class="atitle actu_idee">
+							<% elsif v.veille_type == 1 %>
+								<div class="atitle actu_info">
+							<% else %>
+								<div class="atitle actu_news">
+							<% end %>
+								<%= v.titre.bbcode_to_html_with_formatting.html_safe %>
+							</div>
+					</div>
+					<div class="modal-body">
+							<%= v.texte.bbcode_to_html_with_formatting.html_safe %>
+					</div>
+					<div class="modal-footer">
+						<a class="twitter-share-button"
+   href="https://twitter.com/share"
+  data-url="http://goo.gl/TD7rai"
+  data-counturl="https://dev.twitter.com/web/tweet-button"
+  data-count="vertical">
+Tweet
+</a>
+					Actualité crée le : <%= v.created_at.strftime("%d/%m/%Y") %>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+					</div>
+					</div>
+				</div>
+				<!-- modal end -->
+		</article>
 	</section>
+	<% end %>
+	<!-- veilles end -->
+	</section>
+
 </div>
+
 	<aside class="col-sm-10 profil col-md-4">
 		<div class="col-md-12 bloc-g col-sm-12 col-xl-12">
 			<img src="<%= asset_path( 'anonyme.jpg' ) %>" class="img-responsive img-rounded" alt="Laila El Halfi" />

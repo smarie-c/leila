@@ -1,6 +1,7 @@
 class HomeController < ApplicationController
   def index
        @index = Index.find(1)
+       @veilles = Veille.where("langue = '#{I18n.locale}'").order('updated_at DESC').limit(3)
        if I18n.locale == :en
          @map = @index.streeten
        else

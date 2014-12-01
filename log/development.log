@@ -30350,3 +30350,3022 @@ Completed 200 OK in 298ms (Views: 296.6ms | ActiveRecord: 0.1ms)
 
 
 Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-12-01 20:56:26 +0100
+
+
+Started GET "/actualite" for 127.0.0.1 at 2014-12-01 21:00:26 +0100
+Processing by HomeController#actualite as HTML
+  [1m[36m (9.3ms)[0m  [1mSELECT COUNT(*) FROM "veilles"  WHERE (langue = 'fr')[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "veilles"  WHERE (langue = 'fr')
+  [1m[36mVeille Load (0.3ms)[0m  [1mSELECT  "veilles".* FROM "veilles"  WHERE (langue = 'fr')  ORDER BY updated_at DESC LIMIT 5 OFFSET 0[0m
+  Rendered home/actualite.html.erb within layouts/application (215.3ms)
+Completed 200 OK in 548ms (Views: 533.1ms | ActiveRecord: 10.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 21:00:26 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 21:00:26 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 21:00:26 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-01 21:00:26 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-01 21:00:26 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-01 21:00:26 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-01 21:00:26 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-01 21:00:26 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-01 21:00:26 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-01 21:00:26 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-01 21:00:26 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-01 21:00:26 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-01 21:00:26 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-01 21:00:26 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-01 21:00:26 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-12-01 21:00:26 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-01 21:00:26 +0100
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-12-01 21:00:26 +0100
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-12-01 21:00:26 +0100
+
+
+Started GET "/assets/veille.js?body=1" for 127.0.0.1 at 2014-12-01 21:00:26 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 21:00:26 +0100
+
+
+Started GET "/assets/law1.png" for 127.0.0.1 at 2014-12-01 21:00:26 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 21:00:26 +0100
+Processing by HomeController#index as HTML
+  [1m[35mIndex Load (0.4ms)[0m  SELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 355ms (Views: 332.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-12-01 21:00:27 +0100
+
+
+Started GET "/actualite?data-toggle=%22modal%22&data-target=%22" for 127.0.0.1 at 2014-12-01 21:02:12 +0100
+Processing by HomeController#actualite as HTML
+  Parameters: {"data-toggle"=>"\"modal\"", "data-target"=>"\""}
+  [1m[36m (33.9ms)[0m  [1mSELECT COUNT(*) FROM "veilles"  WHERE (langue = 'fr')[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "veilles"  WHERE (langue = 'fr')
+  [1m[36mVeille Load (0.3ms)[0m  [1mSELECT  "veilles".* FROM "veilles"  WHERE (langue = 'fr')  ORDER BY updated_at DESC LIMIT 5 OFFSET 0[0m
+  Rendered home/actualite.html.erb within layouts/application (42.7ms)
+Completed 200 OK in 405ms (Views: 369.6ms | ActiveRecord: 34.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 21:02:13 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 21:02:13 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-01 21:02:13 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-01 21:02:13 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-01 21:02:13 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-01 21:02:13 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 21:02:13 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-01 21:02:13 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-01 21:02:13 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-01 21:02:13 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-01 21:02:13 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-01 21:02:13 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-01 21:02:13 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-01 21:02:13 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-12-01 21:02:13 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-01 21:02:13 +0100
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-12-01 21:02:13 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-01 21:02:13 +0100
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-12-01 21:02:13 +0100
+
+
+Started GET "/assets/veille.js?body=1" for 127.0.0.1 at 2014-12-01 21:02:13 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 21:02:13 +0100
+
+
+Started GET "/assets/law1.png" for 127.0.0.1 at 2014-12-01 21:02:13 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 21:02:13 +0100
+Processing by HomeController#index as HTML
+  [1m[35mIndex Load (0.1ms)[0m  SELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 579ms (Views: 577.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-12-01 21:02:14 +0100
+
+
+Started GET "/actualite?data-toggle=%22modal%22&data-target=%22" for 127.0.0.1 at 2014-12-01 21:05:55 +0100
+Processing by HomeController#actualite as HTML
+  Parameters: {"data-toggle"=>"\"modal\"", "data-target"=>"\""}
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "veilles"  WHERE (langue = 'fr')[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "veilles"  WHERE (langue = 'fr')
+  [1m[36mVeille Load (0.3ms)[0m  [1mSELECT  "veilles".* FROM "veilles"  WHERE (langue = 'fr')  ORDER BY updated_at DESC LIMIT 5 OFFSET 0[0m
+  Rendered home/actualite.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 327ms (Views: 325.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 21:05:55 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 21:05:55 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 21:05:55 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-01 21:05:55 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-01 21:05:55 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-01 21:05:55 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-01 21:05:55 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-01 21:05:55 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-01 21:05:55 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-01 21:05:55 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-01 21:05:55 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-01 21:05:55 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-01 21:05:55 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-01 21:05:55 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-01 21:05:55 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-12-01 21:05:55 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-01 21:05:55 +0100
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-12-01 21:05:55 +0100
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-12-01 21:05:55 +0100
+
+
+Started GET "/assets/veille.js?body=1" for 127.0.0.1 at 2014-12-01 21:05:55 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 21:05:55 +0100
+
+
+Started GET "/assets/law1.png" for 127.0.0.1 at 2014-12-01 21:05:55 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 21:05:55 +0100
+Processing by HomeController#index as HTML
+  [1m[35mIndex Load (0.1ms)[0m  SELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 383ms (Views: 381.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-12-01 21:05:56 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 21:06:00 +0100
+Processing by HomeController#index as HTML
+  [1m[36mIndex Load (0.1ms)[0m  [1mSELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 307ms (Views: 306.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 21:06:00 +0100
+Processing by HomeController#index as HTML
+  [1m[35mIndex Load (0.1ms)[0m  SELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 386ms (Views: 384.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/anonyme.jpg" for 127.0.0.1 at 2014-12-01 21:06:01 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 21:06:08 +0100
+Processing by HomeController#index as HTML
+  [1m[36mIndex Load (0.1ms)[0m  [1mSELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 294ms (Views: 293.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 21:06:09 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 21:06:09 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 21:06:09 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-01 21:06:09 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-01 21:06:09 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-01 21:06:09 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-01 21:06:09 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-01 21:06:09 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-01 21:06:09 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-01 21:06:09 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-01 21:06:09 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-01 21:06:09 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-01 21:06:09 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-01 21:06:09 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-01 21:06:09 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-12-01 21:06:09 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-01 21:06:09 +0100
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-12-01 21:06:09 +0100
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-12-01 21:06:09 +0100
+
+
+Started GET "/assets/veille.js?body=1" for 127.0.0.1 at 2014-12-01 21:06:09 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 21:06:09 +0100
+
+
+Started GET "/assets/law1.png" for 127.0.0.1 at 2014-12-01 21:06:09 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 21:06:09 +0100
+Processing by HomeController#index as HTML
+  [1m[35mIndex Load (0.1ms)[0m  SELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 294ms (Views: 293.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/anonyme.jpg" for 127.0.0.1 at 2014-12-01 21:06:09 +0100
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-12-01 21:06:09 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 21:14:26 +0100
+Processing by HomeController#index as HTML
+  [1m[36mIndex Load (0.1ms)[0m  [1mSELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 289ms (Views: 288.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 21:14:26 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 21:14:26 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 21:14:26 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-01 21:14:26 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-01 21:14:26 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-01 21:14:26 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-01 21:14:26 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-01 21:14:26 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-01 21:14:26 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-01 21:14:26 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-01 21:14:26 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-01 21:14:26 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-01 21:14:26 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-01 21:14:26 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-01 21:14:26 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-12-01 21:14:26 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-01 21:14:26 +0100
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-12-01 21:14:26 +0100
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-12-01 21:14:26 +0100
+
+
+Started GET "/assets/veille.js?body=1" for 127.0.0.1 at 2014-12-01 21:14:26 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 21:14:26 +0100
+
+
+Started GET "/assets/law1.png" for 127.0.0.1 at 2014-12-01 21:14:26 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 21:14:26 +0100
+Processing by HomeController#index as HTML
+  [1m[35mIndex Load (0.1ms)[0m  SELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 294ms (Views: 292.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/anonyme.jpg" for 127.0.0.1 at 2014-12-01 21:14:27 +0100
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-12-01 21:14:27 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 21:15:44 +0100
+Processing by HomeController#index as HTML
+  [1m[36mIndex Load (0.1ms)[0m  [1mSELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (16.3ms)
+Completed 500 Internal Server Error in 22ms
+** [Airbrake] Notice was not sent due to configuration:         
+  Environment Monitored? false         
+  API key set? false
+
+NoMethodError - undefined method `each' for nil:NilClass:
+  app/views/home/index.html.erb:106:in `_app_views_home_index_html_erb___1303413420687210867_70239672964200'
+  actionview (4.1.5) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `instrument'
+  actionview (4.1.5) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.5) lib/action_view/template.rb:143:in `render'
+  actionview (4.1.5) lib/action_view/renderer/template_renderer.rb:55:in `block (2 levels) in render_template'
+  actionview (4.1.5) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `instrument'
+  actionview (4.1.5) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionview (4.1.5) lib/action_view/renderer/template_renderer.rb:54:in `block in render_template'
+  actionview (4.1.5) lib/action_view/renderer/template_renderer.rb:62:in `render_with_layout'
+  actionview (4.1.5) lib/action_view/renderer/template_renderer.rb:53:in `render_template'
+  actionview (4.1.5) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionview (4.1.5) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.5) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.5) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.5) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.5) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.5) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.5) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.5) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.5) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.5) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /nfs/zfs-student-3/users/2013/lsirigna/.brew/Cellar/ruby/2.1.2_3/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.1.5) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.5) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.5) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.5) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.5) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.5) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  http_accept_language (2.0.2) lib/http_accept_language/middleware.rb:13:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/rack/agent_hooks.rb:26:in `traced_call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:55:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/rack/browser_monitoring.rb:23:in `traced_call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:55:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:36:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  activerecord (4.1.5) lib/active_record/migration.rb:380:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  airbrake (4.1.0) lib/airbrake/rails/middleware.rb:13:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:57:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  request_store (1.1.0) lib/request_store/middleware.rb:8:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  airbrake (4.1.0) lib/airbrake/user_informer.rb:16:in `_call'
+  airbrake (4.1.0) lib/airbrake/user_informer.rb:12:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.3) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.3) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.3) lib/thin/connection.rb:53:in `process'
+  thin (1.6.3) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.3) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.3) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.5) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.5) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:8:in `<top (required)>'
+  spring (1.2.0) lib/spring/client/rails.rb:27:in `call'
+  spring (1.2.0) lib/spring/client/command.rb:7:in `call'
+  spring (1.2.0) lib/spring/client.rb:26:in `run'
+  spring (1.2.0) bin/spring:48:in `<top (required)>'
+  spring (1.2.0) lib/spring/binstub.rb:11:in `<top (required)>'
+  /nfs/zfs-student-3/users/2013/lsirigna/.brew/Cellar/ruby/2.1.2_3/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+  bin/spring:16:in `<top (required)>'
+  bin/rails:3:in `<main>'
+
+
+
+Started POST "/__better_errors/9774900eb2222fbb/variables" for 127.0.0.1 at 2014-12-01 21:15:44 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 21:16:44 +0100
+Processing by HomeController#index as HTML
+  [1m[35mIndex Load (3.1ms)[0m  SELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mVeille Load (1.4ms)[0m  [1mSELECT  "veilles".* FROM "veilles"  WHERE (langue = 'fr')  ORDER BY updated_at DESC LIMIT 3[0m
+  Rendered home/index.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 322ms (Views: 295.2ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 21:16:45 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 21:16:45 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 21:16:45 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-01 21:16:45 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-01 21:16:45 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-01 21:16:45 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-01 21:16:45 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-01 21:16:45 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-01 21:16:45 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-01 21:16:45 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-01 21:16:45 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-01 21:16:45 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-01 21:16:45 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-01 21:16:45 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-01 21:16:45 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-12-01 21:16:45 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-01 21:16:45 +0100
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-12-01 21:16:45 +0100
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-12-01 21:16:45 +0100
+
+
+Started GET "/assets/veille.js?body=1" for 127.0.0.1 at 2014-12-01 21:16:45 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 21:16:45 +0100
+
+
+Started GET "/assets/law1.png" for 127.0.0.1 at 2014-12-01 21:16:45 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 21:16:45 +0100
+Processing by HomeController#index as HTML
+  [1m[35mIndex Load (0.1ms)[0m  SELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mVeille Load (0.2ms)[0m  [1mSELECT  "veilles".* FROM "veilles"  WHERE (langue = 'fr')  ORDER BY updated_at DESC LIMIT 3[0m
+  Rendered home/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 280ms (Views: 278.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/anonyme.jpg" for 127.0.0.1 at 2014-12-01 21:16:45 +0100
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-12-01 21:16:45 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 21:17:27 +0100
+Processing by HomeController#index as HTML
+  [1m[35mIndex Load (0.1ms)[0m  SELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mVeille Load (0.3ms)[0m  [1mSELECT  "veilles".* FROM "veilles"  WHERE (langue = 'fr')  ORDER BY updated_at DESC LIMIT 3[0m
+  Rendered home/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 294ms (Views: 292.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 21:17:27 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 21:17:27 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 21:17:27 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-01 21:17:27 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-01 21:17:27 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-01 21:17:27 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-01 21:17:27 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-01 21:17:27 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-01 21:17:27 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-01 21:17:27 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-01 21:17:27 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-01 21:17:27 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-01 21:17:27 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-01 21:17:27 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-01 21:17:27 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-12-01 21:17:27 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-01 21:17:27 +0100
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-12-01 21:17:27 +0100
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-12-01 21:17:27 +0100
+
+
+Started GET "/assets/veille.js?body=1" for 127.0.0.1 at 2014-12-01 21:17:27 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 21:17:27 +0100
+
+
+Started GET "/assets/law1.png" for 127.0.0.1 at 2014-12-01 21:17:27 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 21:17:27 +0100
+Processing by HomeController#index as HTML
+  [1m[35mIndex Load (0.1ms)[0m  SELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mVeille Load (0.3ms)[0m  [1mSELECT  "veilles".* FROM "veilles"  WHERE (langue = 'fr')  ORDER BY updated_at DESC LIMIT 3[0m
+  Rendered home/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 286ms (Views: 284.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/anonyme.jpg" for 127.0.0.1 at 2014-12-01 21:17:28 +0100
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-12-01 21:17:28 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 21:17:46 +0100
+Processing by HomeController#index as HTML
+  [1m[35mIndex Load (0.1ms)[0m  SELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mVeille Load (0.3ms)[0m  [1mSELECT  "veilles".* FROM "veilles"  WHERE (langue = 'fr')  ORDER BY updated_at DESC LIMIT 3[0m
+  Rendered home/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 312ms (Views: 309.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 21:17:46 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 21:17:46 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 21:17:46 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-01 21:17:46 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-01 21:17:46 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-01 21:17:46 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-01 21:17:46 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-01 21:17:46 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-01 21:17:46 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-01 21:17:46 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-01 21:17:46 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-01 21:17:46 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-01 21:17:46 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-01 21:17:46 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-01 21:17:46 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-12-01 21:17:46 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-01 21:17:46 +0100
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-12-01 21:17:46 +0100
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-12-01 21:17:46 +0100
+
+
+Started GET "/assets/veille.js?body=1" for 127.0.0.1 at 2014-12-01 21:17:46 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 21:17:46 +0100
+
+
+Started GET "/assets/law1.png" for 127.0.0.1 at 2014-12-01 21:17:46 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 21:17:46 +0100
+Processing by HomeController#index as HTML
+  [1m[35mIndex Load (0.1ms)[0m  SELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mVeille Load (0.3ms)[0m  [1mSELECT  "veilles".* FROM "veilles"  WHERE (langue = 'fr')  ORDER BY updated_at DESC LIMIT 3[0m
+  Rendered home/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 303ms (Views: 301.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/anonyme.jpg" for 127.0.0.1 at 2014-12-01 21:17:47 +0100
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-12-01 21:17:47 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 21:21:39 +0100
+Processing by HomeController#index as HTML
+  [1m[35mIndex Load (0.1ms)[0m  SELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mVeille Load (0.3ms)[0m  [1mSELECT  "veilles".* FROM "veilles"  WHERE (langue = 'fr')  ORDER BY updated_at DESC LIMIT 3[0m
+  Rendered home/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 291ms (Views: 289.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-01 21:21:39 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 21:21:39 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-01 21:21:39 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-01 21:21:39 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 21:21:39 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-01 21:21:39 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-01 21:21:39 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-01 21:21:39 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 21:21:39 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-01 21:21:39 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-01 21:21:39 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-01 21:21:39 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-12-01 21:21:39 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-01 21:21:39 +0100
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-12-01 21:21:39 +0100
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-12-01 21:21:39 +0100
+
+
+Started GET "/assets/veille.js?body=1" for 127.0.0.1 at 2014-12-01 21:21:39 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-01 21:21:39 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-01 21:21:39 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-01 21:21:39 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 21:21:40 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 21:21:40 +0100
+Processing by HomeController#index as HTML
+  [1m[35mIndex Load (0.2ms)[0m  SELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mVeille Load (0.3ms)[0m  [1mSELECT  "veilles".* FROM "veilles"  WHERE (langue = 'fr')  ORDER BY updated_at DESC LIMIT 3[0m
+  Rendered home/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 293ms (Views: 291.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/anonyme.jpg" for 127.0.0.1 at 2014-12-01 21:21:40 +0100
+
+
+Started GET "/assets/law1.png" for 127.0.0.1 at 2014-12-01 21:21:40 +0100
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-12-01 21:21:40 +0100
+
+
+Started GET "/actualite" for 127.0.0.1 at 2014-12-01 21:21:51 +0100
+Processing by HomeController#actualite as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "veilles"  WHERE (langue = 'fr')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "veilles"  WHERE (langue = 'fr')[0m
+  [1m[35mVeille Load (0.3ms)[0m  SELECT  "veilles".* FROM "veilles"  WHERE (langue = 'fr')  ORDER BY updated_at DESC LIMIT 5 OFFSET 0
+  Rendered home/actualite.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 287ms (Views: 285.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 21:21:51 +0100
+Processing by HomeController#index as HTML
+  [1m[36mIndex Load (0.1ms)[0m  [1mSELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVeille Load (0.3ms)[0m  SELECT  "veilles".* FROM "veilles"  WHERE (langue = 'fr')  ORDER BY updated_at DESC LIMIT 3
+  Rendered home/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 291ms (Views: 288.4ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/en" for 127.0.0.1 at 2014-12-01 21:22:07 +0100
+Processing by HomeController#turn_en as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"c2V14pC7gmg84z3OoiKcE3yWcd0xWLagZMt/rFWXOdk=", "commit"=>"EN"}
+Redirected to http://0.0.0.0:3000/actualite
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/actualite" for 127.0.0.1 at 2014-12-01 21:22:07 +0100
+Processing by HomeController#actualite as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "veilles"  WHERE (langue = 'en')[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "veilles"  WHERE (langue = 'en')
+  [1m[36mVeille Load (0.3ms)[0m  [1mSELECT  "veilles".* FROM "veilles"  WHERE (langue = 'en')  ORDER BY updated_at DESC LIMIT 5 OFFSET 0[0m
+  Rendered home/actualite.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 310ms (Views: 308.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 21:22:07 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 21:22:07 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 21:22:07 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-01 21:22:07 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-01 21:22:07 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-01 21:22:07 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-01 21:22:07 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-01 21:22:07 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-01 21:22:07 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-01 21:22:07 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-01 21:22:07 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-01 21:22:07 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-01 21:22:07 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-01 21:22:07 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-01 21:22:07 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-12-01 21:22:07 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-01 21:22:07 +0100
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-12-01 21:22:07 +0100
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-12-01 21:22:07 +0100
+
+
+Started GET "/assets/veille.js?body=1" for 127.0.0.1 at 2014-12-01 21:22:07 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 21:22:07 +0100
+
+
+Started GET "/assets/law1.png" for 127.0.0.1 at 2014-12-01 21:22:07 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 21:22:07 +0100
+Processing by HomeController#index as HTML
+  [1m[35mIndex Load (0.1ms)[0m  SELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mVeille Load (0.3ms)[0m  [1mSELECT  "veilles".* FROM "veilles"  WHERE (langue = 'en')  ORDER BY updated_at DESC LIMIT 3[0m
+  Rendered home/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 298ms (Views: 296.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-12-01 21:22:08 +0100
+  [1m[36m (1.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to DeviseCreateUsers (20141124122332)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.7ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141124122332"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+Migrating to CreateVeilles (20141124124417)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "veilles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "titre" varchar(255) NOT NULL, "texte" text DEFAULT '' NOT NULL, "veille_type" integer NOT NULL, "langue" varchar(255) NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141124124417"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+Migrating to AddUsernameToUsers (20141124125700)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "users" ADD "username" varchar(255)[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_username" ON "users" ("username")[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141124125700"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+Migrating to CreateAssocies (20141124162129)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "associes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "pics" varchar(255), "name" varchar(255), "description" text NOT NULL, "link" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141124162129"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+Migrating to CreateHonoraires (20141124173118)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "honoraires" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "contenu" text NOT NULL, "contenuen" text NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141124173118"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+Migrating to CreateContacts (20141124173208)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "contacts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "contenu" text NOT NULL, "contenuen" text NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141124173208"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Migrating to CreateSpecialites (20141124173312)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "specialites" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "contenu" text NOT NULL, "contenuen" text NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141124173312"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+Migrating to CreateIndices (20141124173749)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "indices" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "firstname" text NOT NULL, "name" text NOT NULL, "street" text NOT NULL, "cp" text NOT NULL, "city" text NOT NULL, "phone" text NOT NULL, "fax" text NOT NULL, "mobile" text NOT NULL, "titre1" text NOT NULL, "contenu1" text NOT NULL, "titre2" text NOT NULL, "contenu2" text NOT NULL, "titre3" text NOT NULL, "contenu3" text NOT NULL, "titre4" text NOT NULL, "contenu4" text NOT NULL, "titre5" text NOT NULL, "contenu5" text NOT NULL, "firstnameen" text NOT NULL, "nameen" text NOT NULL, "streeten" text NOT NULL, "cpen" text NOT NULL, "cityen" text NOT NULL, "phoneen" text NOT NULL, "faxen" text NOT NULL, "mobileen" text NOT NULL, "titre1en" text NOT NULL, "contenu1en" text NOT NULL, "titre2en" text NOT NULL, "contenu2en" text NOT NULL, "titre3en" text NOT NULL, "contenu3en" text NOT NULL, "titre4en" text NOT NULL, "contenu4en" text NOT NULL, "titre5en" text NOT NULL, "contenu5en" text NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141124173749"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_username' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_username' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "encrypted_password", "updated_at", "username") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-12-01 20:22:48.039596"], ["encrypted_password", "$2a$10$5HRk.wFGuU4eJyuyie2PN.dCsafOVItCWiaf1GaMCDj.CkIjpFtjO"], ["updated_at", "2014-12-01 20:22:48.039596"], ["username", "pokemon"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "contacts" ("contenu", "contenuen", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["contenu", "Pour me contacter veuillez remplir les champs suivants"], ["contenuen", "To contact me please fill in the following fields"], ["created_at", "2014-12-01 20:22:48.049821"], ["updated_at", "2014-12-01 20:22:48.049821"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "honoraires" ("contenu", "contenuen", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["contenu", "french example 1"], ["contenuen", "en example 1"], ["created_at", "2014-12-01 20:22:48.055896"], ["updated_at", "2014-12-01 20:22:48.055896"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "specialites" ("contenu", "contenuen", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["contenu", "french example 1"], ["contenuen", "en example 1"], ["created_at", "2014-12-01 20:22:48.062098"], ["updated_at", "2014-12-01 20:22:48.062098"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "indices" ("city", "cityen", "contenu1", "contenu1en", "contenu2", "contenu2en", "contenu3", "contenu3en", "contenu4", "contenu4en", "contenu5", "contenu5en", "cp", "cpen", "created_at", "fax", "faxen", "firstname", "firstnameen", "mobile", "mobileen", "name", "nameen", "phone", "phoneen", "street", "streeten", "titre1", "titre1en", "titre2", "titre2en", "titre3", "titre3en", "titre4", "titre4en", "titre5", "titre5en", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["city", "paris"], ["cityen", "paris"], ["contenu1", "droit de la sécurité sociale et droit pénal du travail. Expertise en conseil / contentieux / audit social / restructurations d'entreprises"], ["contenu1en", "right to social security and criminal labor law . Expertise in consulting / litigation / social audit / corporate restructuring"], ["contenu2", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"], ["contenu2en", "en example 1 9"], ["contenu3", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"], ["contenu3en", "en example 1 11"], ["contenu4", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"], ["contenu4en", "en example 1 13"], ["contenu5", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"], ["contenu5en", "en example 1 15"], ["cp", "75016"], ["cpen", "75016"], ["created_at", "2014-12-01 20:22:48.082971"], ["fax", "01 45 53 74 16"], ["faxen", "01 45 53 74 16"], ["firstname", "laila"], ["firstnameen", "laila"], ["mobile", "06 61 57 45 87"], ["mobileen", "06 61 57 45 87"], ["name", "EL HALFI"], ["nameen", "EL HALFI"], ["phone", "01 45 53 64 16"], ["phoneen", "01 45 53 64 16"], ["street", "36 Avenue Bugeaud,"], ["streeten", "36 Avenue Bugeaud,"], ["titre1", "Avocats spécialisé en droit du travail,"], ["titre1en", "lawyer specializing in labor law ,"], ["titre2", "Lorem ipsum"], ["titre2en", "en example 1 8"], ["titre3", "Lorem ipsum"], ["titre3en", "en example 1 10"], ["titre4", "Lorem ipsum"], ["titre4en", "en example 1 12"], ["titre5", "Lorem ipsum"], ["titre5en", "en example 1 14"], ["updated_at", "2014-12-01 20:22:48.082971"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "veilles" ("created_at", "langue", "texte", "titre", "updated_at", "veille_type") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", "2014-12-01 20:22:48.090991"], ["langue", "fr"], ["texte", "Selon l’article R.4613-6 du code du travail, le collège chargé de désigner les membres du CHSCT doit être réuni dans les 15 jours de l’expiration des mandats des représentants de cette institution. Cette disposition était interprétée littéralement par la jurisprudence depuis un arrêt du 14 janvier 2004 de sorte qu’organiser un scrutin quelques jours avant l’échéance des mandats emportait la nullité des élections.\n\nDans un arrêt du 8 octobre 2014 (n°13-60.262), la Cour de cassation revient sur cette jurisprudence rigide et précise que  « si le renouvellement des membres du CHSCT ne peut avoir pour effet de mettre fin aux mandats en cours avant leur date d’expiration, l’employeur, afin d’assurer la permanence de l’institution, peut réunir le collège désignatif avant le terme ultime de ces mandats, les désignations ainsi effectuées ne prenant effet qu’à ce terme ».\n\nDans ces conditions, il y a lieu de considérer :\n\n 1. Que les élections anticipées ne sont plus frappées de nullité\n\n2. Que Les nouveaux représentants devront certes attendre l’expiration des mandats des représentants pour entrer en fonction, mais bénéficieront toutefois de la protection statutaire dès le jour de leur désignation.\n\nCe revirement de jurisprudence met donc fin à la vacance imposée des sièges, et témoigne de l’importance prise par l’institution du CHSCT ces dernières années."], ["titre", "Renouvellement du CHSCT : l’anticipation est enfin possible !"], ["updated_at", "2014-12-01 20:22:48.090991"], ["veille_type", 0]]
+  [1m[36m (13.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "veilles" ("created_at", "langue", "texte", "titre", "updated_at", "veille_type") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 20:22:48.105213"], ["langue", "fr"], ["texte", "Selon l’article R.4613-6 du code du travail, le collège chargé de désigner les membres du CHSCT doit être réuni dans les 15 jours de l’expiration des mandats des représentants de cette institution. Cette disposition était interprétée littéralement par la jurisprudence depuis un arrêt du 14 janvier 2004 de sorte qu’organiser un scrutin quelques jours avant l’échéance des mandats emportait la nullité des élections.\n\nDans un arrêt du 8 octobre 2014 (n°13-60.262), la Cour de cassation revient sur cette jurisprudence rigide et précise que  « si le renouvellement des membres du CHSCT ne peut avoir pour effet de mettre fin aux mandats en cours avant leur date d’expiration, l’employeur, afin d’assurer la permanence de l’institution, peut réunir le collège désignatif avant le terme ultime de ces mandats, les désignations ainsi effectuées ne prenant effet qu’à ce terme ».\n\nDans ces conditions, il y a lieu de considérer :\n\n 1. Que les élections anticipées ne sont plus frappées de nullité\n\n2. Que Les nouveaux représentants devront certes attendre l’expiration des mandats des représentants pour entrer en fonction, mais bénéficieront toutefois de la protection statutaire dès le jour de leur désignation.\n\nCe revirement de jurisprudence met donc fin à la vacance imposée des sièges, et témoigne de l’importance prise par l’institution du CHSCT ces dernières années."], ["titre", "Renouvellement du CHSCT : l’anticipation est enfin possible !"], ["updated_at", "2014-12-01 20:22:48.105213"], ["veille_type", 1]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "veilles" ("created_at", "langue", "texte", "titre", "updated_at", "veille_type") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", "2014-12-01 20:22:48.107360"], ["langue", "fr"], ["texte", "Selon l’article R.4613-6 du code du travail, le collège chargé de désigner les membres du CHSCT doit être réuni dans les 15 jours de l’expiration des mandats des représentants de cette institution. Cette disposition était interprétée littéralement par la jurisprudence depuis un arrêt du 14 janvier 2004 de sorte qu’organiser un scrutin quelques jours avant l’échéance des mandats emportait la nullité des élections.\n\nDans un arrêt du 8 octobre 2014 (n°13-60.262), la Cour de cassation revient sur cette jurisprudence rigide et précise que  « si le renouvellement des membres du CHSCT ne peut avoir pour effet de mettre fin aux mandats en cours avant leur date d’expiration, l’employeur, afin d’assurer la permanence de l’institution, peut réunir le collège désignatif avant le terme ultime de ces mandats, les désignations ainsi effectuées ne prenant effet qu’à ce terme ».\n\nDans ces conditions, il y a lieu de considérer :\n\n 1. Que les élections anticipées ne sont plus frappées de nullité\n\n2. Que Les nouveaux représentants devront certes attendre l’expiration des mandats des représentants pour entrer en fonction, mais bénéficieront toutefois de la protection statutaire dès le jour de leur désignation.\n\nCe revirement de jurisprudence met donc fin à la vacance imposée des sièges, et témoigne de l’importance prise par l’institution du CHSCT ces dernières années."], ["titre", "Renouvellement du CHSCT : l’anticipation est enfin possible !"], ["updated_at", "2014-12-01 20:22:48.107360"], ["veille_type", 2]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "veilles" ("created_at", "langue", "texte", "titre", "updated_at", "veille_type") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 20:22:48.109773"], ["langue", "fr"], ["texte", "Selon l’article R.4613-6 du code du travail, le collège chargé de désigner les membres du CHSCT doit être réuni dans les 15 jours de l’expiration des mandats des représentants de cette institution. Cette disposition était interprétée littéralement par la jurisprudence depuis un arrêt du 14 janvier 2004 de sorte qu’organiser un scrutin quelques jours avant l’échéance des mandats emportait la nullité des élections.\n\nDans un arrêt du 8 octobre 2014 (n°13-60.262), la Cour de cassation revient sur cette jurisprudence rigide et précise que  « si le renouvellement des membres du CHSCT ne peut avoir pour effet de mettre fin aux mandats en cours avant leur date d’expiration, l’employeur, afin d’assurer la permanence de l’institution, peut réunir le collège désignatif avant le terme ultime de ces mandats, les désignations ainsi effectuées ne prenant effet qu’à ce terme ».\n\nDans ces conditions, il y a lieu de considérer :\n\n 1. Que les élections anticipées ne sont plus frappées de nullité\n\n2. Que Les nouveaux représentants devront certes attendre l’expiration des mandats des représentants pour entrer en fonction, mais bénéficieront toutefois de la protection statutaire dès le jour de leur désignation.\n\nCe revirement de jurisprudence met donc fin à la vacance imposée des sièges, et témoigne de l’importance prise par l’institution du CHSCT ces dernières années."], ["titre", "Renouvellement du CHSCT : l’anticipation est enfin possible !"], ["updated_at", "2014-12-01 20:22:48.109773"], ["veille_type", 0]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "veilles" ("created_at", "langue", "texte", "titre", "updated_at", "veille_type") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", "2014-12-01 20:22:48.111880"], ["langue", "fr"], ["texte", "Selon l’article R.4613-6 du code du travail, le collège chargé de désigner les membres du CHSCT doit être réuni dans les 15 jours de l’expiration des mandats des représentants de cette institution. Cette disposition était interprétée littéralement par la jurisprudence depuis un arrêt du 14 janvier 2004 de sorte qu’organiser un scrutin quelques jours avant l’échéance des mandats emportait la nullité des élections.\n\nDans un arrêt du 8 octobre 2014 (n°13-60.262), la Cour de cassation revient sur cette jurisprudence rigide et précise que  « si le renouvellement des membres du CHSCT ne peut avoir pour effet de mettre fin aux mandats en cours avant leur date d’expiration, l’employeur, afin d’assurer la permanence de l’institution, peut réunir le collège désignatif avant le terme ultime de ces mandats, les désignations ainsi effectuées ne prenant effet qu’à ce terme ».\n\nDans ces conditions, il y a lieu de considérer :\n\n 1. Que les élections anticipées ne sont plus frappées de nullité\n\n2. Que Les nouveaux représentants devront certes attendre l’expiration des mandats des représentants pour entrer en fonction, mais bénéficieront toutefois de la protection statutaire dès le jour de leur désignation.\n\nCe revirement de jurisprudence met donc fin à la vacance imposée des sièges, et témoigne de l’importance prise par l’institution du CHSCT ces dernières années."], ["titre", "Renouvellement du CHSCT : l’anticipation est enfin possible !"], ["updated_at", "2014-12-01 20:22:48.111880"], ["veille_type", 1]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "veilles" ("created_at", "langue", "texte", "titre", "updated_at", "veille_type") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 20:22:48.114193"], ["langue", "fr"], ["texte", "Selon l’article R.4613-6 du code du travail, le collège chargé de désigner les membres du CHSCT doit être réuni dans les 15 jours de l’expiration des mandats des représentants de cette institution. Cette disposition était interprétée littéralement par la jurisprudence depuis un arrêt du 14 janvier 2004 de sorte qu’organiser un scrutin quelques jours avant l’échéance des mandats emportait la nullité des élections.\n\nDans un arrêt du 8 octobre 2014 (n°13-60.262), la Cour de cassation revient sur cette jurisprudence rigide et précise que  « si le renouvellement des membres du CHSCT ne peut avoir pour effet de mettre fin aux mandats en cours avant leur date d’expiration, l’employeur, afin d’assurer la permanence de l’institution, peut réunir le collège désignatif avant le terme ultime de ces mandats, les désignations ainsi effectuées ne prenant effet qu’à ce terme ».\n\nDans ces conditions, il y a lieu de considérer :\n\n 1. Que les élections anticipées ne sont plus frappées de nullité\n\n2. Que Les nouveaux représentants devront certes attendre l’expiration des mandats des représentants pour entrer en fonction, mais bénéficieront toutefois de la protection statutaire dès le jour de leur désignation.\n\nCe revirement de jurisprudence met donc fin à la vacance imposée des sièges, et témoigne de l’importance prise par l’institution du CHSCT ces dernières années."], ["titre", "Renouvellement du CHSCT : l’anticipation est enfin possible !"], ["updated_at", "2014-12-01 20:22:48.114193"], ["veille_type", 2]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "veilles" ("created_at", "langue", "texte", "titre", "updated_at", "veille_type") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", "2014-12-01 20:22:48.116302"], ["langue", "fr"], ["texte", "Selon l’article R.4613-6 du code du travail, le collège chargé de désigner les membres du CHSCT doit être réuni dans les 15 jours de l’expiration des mandats des représentants de cette institution. Cette disposition était interprétée littéralement par la jurisprudence depuis un arrêt du 14 janvier 2004 de sorte qu’organiser un scrutin quelques jours avant l’échéance des mandats emportait la nullité des élections.\n\nDans un arrêt du 8 octobre 2014 (n°13-60.262), la Cour de cassation revient sur cette jurisprudence rigide et précise que  « si le renouvellement des membres du CHSCT ne peut avoir pour effet de mettre fin aux mandats en cours avant leur date d’expiration, l’employeur, afin d’assurer la permanence de l’institution, peut réunir le collège désignatif avant le terme ultime de ces mandats, les désignations ainsi effectuées ne prenant effet qu’à ce terme ».\n\nDans ces conditions, il y a lieu de considérer :\n\n 1. Que les élections anticipées ne sont plus frappées de nullité\n\n2. Que Les nouveaux représentants devront certes attendre l’expiration des mandats des représentants pour entrer en fonction, mais bénéficieront toutefois de la protection statutaire dès le jour de leur désignation.\n\nCe revirement de jurisprudence met donc fin à la vacance imposée des sièges, et témoigne de l’importance prise par l’institution du CHSCT ces dernières années."], ["titre", "Renouvellement du CHSCT : l’anticipation est enfin possible !"], ["updated_at", "2014-12-01 20:22:48.116302"], ["veille_type", 0]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "veilles" ("created_at", "langue", "texte", "titre", "updated_at", "veille_type") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 20:22:48.118595"], ["langue", "fr"], ["texte", "Selon l’article R.4613-6 du code du travail, le collège chargé de désigner les membres du CHSCT doit être réuni dans les 15 jours de l’expiration des mandats des représentants de cette institution. Cette disposition était interprétée littéralement par la jurisprudence depuis un arrêt du 14 janvier 2004 de sorte qu’organiser un scrutin quelques jours avant l’échéance des mandats emportait la nullité des élections.\n\nDans un arrêt du 8 octobre 2014 (n°13-60.262), la Cour de cassation revient sur cette jurisprudence rigide et précise que  « si le renouvellement des membres du CHSCT ne peut avoir pour effet de mettre fin aux mandats en cours avant leur date d’expiration, l’employeur, afin d’assurer la permanence de l’institution, peut réunir le collège désignatif avant le terme ultime de ces mandats, les désignations ainsi effectuées ne prenant effet qu’à ce terme ».\n\nDans ces conditions, il y a lieu de considérer :\n\n 1. Que les élections anticipées ne sont plus frappées de nullité\n\n2. Que Les nouveaux représentants devront certes attendre l’expiration des mandats des représentants pour entrer en fonction, mais bénéficieront toutefois de la protection statutaire dès le jour de leur désignation.\n\nCe revirement de jurisprudence met donc fin à la vacance imposée des sièges, et témoigne de l’importance prise par l’institution du CHSCT ces dernières années."], ["titre", "Renouvellement du CHSCT : l’anticipation est enfin possible !"], ["updated_at", "2014-12-01 20:22:48.118595"], ["veille_type", 1]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "veilles" ("created_at", "langue", "texte", "titre", "updated_at", "veille_type") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", "2014-12-01 20:22:48.121518"], ["langue", "fr"], ["texte", "Selon l’article R.4613-6 du code du travail, le collège chargé de désigner les membres du CHSCT doit être réuni dans les 15 jours de l’expiration des mandats des représentants de cette institution. Cette disposition était interprétée littéralement par la jurisprudence depuis un arrêt du 14 janvier 2004 de sorte qu’organiser un scrutin quelques jours avant l’échéance des mandats emportait la nullité des élections.\n\nDans un arrêt du 8 octobre 2014 (n°13-60.262), la Cour de cassation revient sur cette jurisprudence rigide et précise que  « si le renouvellement des membres du CHSCT ne peut avoir pour effet de mettre fin aux mandats en cours avant leur date d’expiration, l’employeur, afin d’assurer la permanence de l’institution, peut réunir le collège désignatif avant le terme ultime de ces mandats, les désignations ainsi effectuées ne prenant effet qu’à ce terme ».\n\nDans ces conditions, il y a lieu de considérer :\n\n 1. Que les élections anticipées ne sont plus frappées de nullité\n\n2. Que Les nouveaux représentants devront certes attendre l’expiration des mandats des représentants pour entrer en fonction, mais bénéficieront toutefois de la protection statutaire dès le jour de leur désignation.\n\nCe revirement de jurisprudence met donc fin à la vacance imposée des sièges, et témoigne de l’importance prise par l’institution du CHSCT ces dernières années."], ["titre", "Renouvellement du CHSCT : l’anticipation est enfin possible !"], ["updated_at", "2014-12-01 20:22:48.121518"], ["veille_type", 2]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "veilles" ("created_at", "langue", "texte", "titre", "updated_at", "veille_type") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 20:22:48.123777"], ["langue", "fr"], ["texte", "Selon l’article R.4613-6 du code du travail, le collège chargé de désigner les membres du CHSCT doit être réuni dans les 15 jours de l’expiration des mandats des représentants de cette institution. Cette disposition était interprétée littéralement par la jurisprudence depuis un arrêt du 14 janvier 2004 de sorte qu’organiser un scrutin quelques jours avant l’échéance des mandats emportait la nullité des élections.\n\nDans un arrêt du 8 octobre 2014 (n°13-60.262), la Cour de cassation revient sur cette jurisprudence rigide et précise que  « si le renouvellement des membres du CHSCT ne peut avoir pour effet de mettre fin aux mandats en cours avant leur date d’expiration, l’employeur, afin d’assurer la permanence de l’institution, peut réunir le collège désignatif avant le terme ultime de ces mandats, les désignations ainsi effectuées ne prenant effet qu’à ce terme ».\n\nDans ces conditions, il y a lieu de considérer :\n\n 1. Que les élections anticipées ne sont plus frappées de nullité\n\n2. Que Les nouveaux représentants devront certes attendre l’expiration des mandats des représentants pour entrer en fonction, mais bénéficieront toutefois de la protection statutaire dès le jour de leur désignation.\n\nCe revirement de jurisprudence met donc fin à la vacance imposée des sièges, et témoigne de l’importance prise par l’institution du CHSCT ces dernières années."], ["titre", "Renouvellement du CHSCT : l’anticipation est enfin possible !"], ["updated_at", "2014-12-01 20:22:48.123777"], ["veille_type", 0]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "veilles" ("created_at", "langue", "texte", "titre", "updated_at", "veille_type") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", "2014-12-01 20:22:48.125911"], ["langue", "fr"], ["texte", "Selon l’article R.4613-6 du code du travail, le collège chargé de désigner les membres du CHSCT doit être réuni dans les 15 jours de l’expiration des mandats des représentants de cette institution. Cette disposition était interprétée littéralement par la jurisprudence depuis un arrêt du 14 janvier 2004 de sorte qu’organiser un scrutin quelques jours avant l’échéance des mandats emportait la nullité des élections.\n\nDans un arrêt du 8 octobre 2014 (n°13-60.262), la Cour de cassation revient sur cette jurisprudence rigide et précise que  « si le renouvellement des membres du CHSCT ne peut avoir pour effet de mettre fin aux mandats en cours avant leur date d’expiration, l’employeur, afin d’assurer la permanence de l’institution, peut réunir le collège désignatif avant le terme ultime de ces mandats, les désignations ainsi effectuées ne prenant effet qu’à ce terme ».\n\nDans ces conditions, il y a lieu de considérer :\n\n 1. Que les élections anticipées ne sont plus frappées de nullité\n\n2. Que Les nouveaux représentants devront certes attendre l’expiration des mandats des représentants pour entrer en fonction, mais bénéficieront toutefois de la protection statutaire dès le jour de leur désignation.\n\nCe revirement de jurisprudence met donc fin à la vacance imposée des sièges, et témoigne de l’importance prise par l’institution du CHSCT ces dernières années."], ["titre", "Renouvellement du CHSCT : l’anticipation est enfin possible !"], ["updated_at", "2014-12-01 20:22:48.125911"], ["veille_type", 1]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "veilles" ("created_at", "langue", "texte", "titre", "updated_at", "veille_type") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 20:22:48.127992"], ["langue", "fr"], ["texte", "Selon l’article R.4613-6 du code du travail, le collège chargé de désigner les membres du CHSCT doit être réuni dans les 15 jours de l’expiration des mandats des représentants de cette institution. Cette disposition était interprétée littéralement par la jurisprudence depuis un arrêt du 14 janvier 2004 de sorte qu’organiser un scrutin quelques jours avant l’échéance des mandats emportait la nullité des élections.\n\nDans un arrêt du 8 octobre 2014 (n°13-60.262), la Cour de cassation revient sur cette jurisprudence rigide et précise que  « si le renouvellement des membres du CHSCT ne peut avoir pour effet de mettre fin aux mandats en cours avant leur date d’expiration, l’employeur, afin d’assurer la permanence de l’institution, peut réunir le collège désignatif avant le terme ultime de ces mandats, les désignations ainsi effectuées ne prenant effet qu’à ce terme ».\n\nDans ces conditions, il y a lieu de considérer :\n\n 1. Que les élections anticipées ne sont plus frappées de nullité\n\n2. Que Les nouveaux représentants devront certes attendre l’expiration des mandats des représentants pour entrer en fonction, mais bénéficieront toutefois de la protection statutaire dès le jour de leur désignation.\n\nCe revirement de jurisprudence met donc fin à la vacance imposée des sièges, et témoigne de l’importance prise par l’institution du CHSCT ces dernières années."], ["titre", "Renouvellement du CHSCT : l’anticipation est enfin possible !"], ["updated_at", "2014-12-01 20:22:48.127992"], ["veille_type", 2]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "veilles" ("created_at", "langue", "texte", "titre", "updated_at", "veille_type") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", "2014-12-01 20:22:48.130077"], ["langue", "fr"], ["texte", "Selon l’article R.4613-6 du code du travail, le collège chargé de désigner les membres du CHSCT doit être réuni dans les 15 jours de l’expiration des mandats des représentants de cette institution. Cette disposition était interprétée littéralement par la jurisprudence depuis un arrêt du 14 janvier 2004 de sorte qu’organiser un scrutin quelques jours avant l’échéance des mandats emportait la nullité des élections.\n\nDans un arrêt du 8 octobre 2014 (n°13-60.262), la Cour de cassation revient sur cette jurisprudence rigide et précise que  « si le renouvellement des membres du CHSCT ne peut avoir pour effet de mettre fin aux mandats en cours avant leur date d’expiration, l’employeur, afin d’assurer la permanence de l’institution, peut réunir le collège désignatif avant le terme ultime de ces mandats, les désignations ainsi effectuées ne prenant effet qu’à ce terme ».\n\nDans ces conditions, il y a lieu de considérer :\n\n 1. Que les élections anticipées ne sont plus frappées de nullité\n\n2. Que Les nouveaux représentants devront certes attendre l’expiration des mandats des représentants pour entrer en fonction, mais bénéficieront toutefois de la protection statutaire dès le jour de leur désignation.\n\nCe revirement de jurisprudence met donc fin à la vacance imposée des sièges, et témoigne de l’importance prise par l’institution du CHSCT ces dernières années."], ["titre", "Renouvellement du CHSCT : l’anticipation est enfin possible !"], ["updated_at", "2014-12-01 20:22:48.130077"], ["veille_type", 0]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "veilles" ("created_at", "langue", "texte", "titre", "updated_at", "veille_type") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 20:22:48.132299"], ["langue", "fr"], ["texte", "Selon l’article R.4613-6 du code du travail, le collège chargé de désigner les membres du CHSCT doit être réuni dans les 15 jours de l’expiration des mandats des représentants de cette institution. Cette disposition était interprétée littéralement par la jurisprudence depuis un arrêt du 14 janvier 2004 de sorte qu’organiser un scrutin quelques jours avant l’échéance des mandats emportait la nullité des élections.\n\nDans un arrêt du 8 octobre 2014 (n°13-60.262), la Cour de cassation revient sur cette jurisprudence rigide et précise que  « si le renouvellement des membres du CHSCT ne peut avoir pour effet de mettre fin aux mandats en cours avant leur date d’expiration, l’employeur, afin d’assurer la permanence de l’institution, peut réunir le collège désignatif avant le terme ultime de ces mandats, les désignations ainsi effectuées ne prenant effet qu’à ce terme ».\n\nDans ces conditions, il y a lieu de considérer :\n\n 1. Que les élections anticipées ne sont plus frappées de nullité\n\n2. Que Les nouveaux représentants devront certes attendre l’expiration des mandats des représentants pour entrer en fonction, mais bénéficieront toutefois de la protection statutaire dès le jour de leur désignation.\n\nCe revirement de jurisprudence met donc fin à la vacance imposée des sièges, et témoigne de l’importance prise par l’institution du CHSCT ces dernières années."], ["titre", "Renouvellement du CHSCT : l’anticipation est enfin possible !"], ["updated_at", "2014-12-01 20:22:48.132299"], ["veille_type", 1]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "veilles" ("created_at", "langue", "texte", "titre", "updated_at", "veille_type") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", "2014-12-01 20:22:48.135562"], ["langue", "fr"], ["texte", "Selon l’article R.4613-6 du code du travail, le collège chargé de désigner les membres du CHSCT doit être réuni dans les 15 jours de l’expiration des mandats des représentants de cette institution. Cette disposition était interprétée littéralement par la jurisprudence depuis un arrêt du 14 janvier 2004 de sorte qu’organiser un scrutin quelques jours avant l’échéance des mandats emportait la nullité des élections.\n\nDans un arrêt du 8 octobre 2014 (n°13-60.262), la Cour de cassation revient sur cette jurisprudence rigide et précise que  « si le renouvellement des membres du CHSCT ne peut avoir pour effet de mettre fin aux mandats en cours avant leur date d’expiration, l’employeur, afin d’assurer la permanence de l’institution, peut réunir le collège désignatif avant le terme ultime de ces mandats, les désignations ainsi effectuées ne prenant effet qu’à ce terme ».\n\nDans ces conditions, il y a lieu de considérer :\n\n 1. Que les élections anticipées ne sont plus frappées de nullité\n\n2. Que Les nouveaux représentants devront certes attendre l’expiration des mandats des représentants pour entrer en fonction, mais bénéficieront toutefois de la protection statutaire dès le jour de leur désignation.\n\nCe revirement de jurisprudence met donc fin à la vacance imposée des sièges, et témoigne de l’importance prise par l’institution du CHSCT ces dernières années."], ["titre", "Renouvellement du CHSCT : l’anticipation est enfin possible !"], ["updated_at", "2014-12-01 20:22:48.135562"], ["veille_type", 2]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "veilles" ("created_at", "langue", "texte", "titre", "updated_at", "veille_type") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 20:22:48.137878"], ["langue", "fr"], ["texte", "Selon l’article R.4613-6 du code du travail, le collège chargé de désigner les membres du CHSCT doit être réuni dans les 15 jours de l’expiration des mandats des représentants de cette institution. Cette disposition était interprétée littéralement par la jurisprudence depuis un arrêt du 14 janvier 2004 de sorte qu’organiser un scrutin quelques jours avant l’échéance des mandats emportait la nullité des élections.\n\nDans un arrêt du 8 octobre 2014 (n°13-60.262), la Cour de cassation revient sur cette jurisprudence rigide et précise que  « si le renouvellement des membres du CHSCT ne peut avoir pour effet de mettre fin aux mandats en cours avant leur date d’expiration, l’employeur, afin d’assurer la permanence de l’institution, peut réunir le collège désignatif avant le terme ultime de ces mandats, les désignations ainsi effectuées ne prenant effet qu’à ce terme ».\n\nDans ces conditions, il y a lieu de considérer :\n\n 1. Que les élections anticipées ne sont plus frappées de nullité\n\n2. Que Les nouveaux représentants devront certes attendre l’expiration des mandats des représentants pour entrer en fonction, mais bénéficieront toutefois de la protection statutaire dès le jour de leur désignation.\n\nCe revirement de jurisprudence met donc fin à la vacance imposée des sièges, et témoigne de l’importance prise par l’institution du CHSCT ces dernières années."], ["titre", "Renouvellement du CHSCT : l’anticipation est enfin possible !"], ["updated_at", "2014-12-01 20:22:48.137878"], ["veille_type", 0]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "veilles" ("created_at", "langue", "texte", "titre", "updated_at", "veille_type") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", "2014-12-01 20:22:48.139872"], ["langue", "fr"], ["texte", "Selon l’article R.4613-6 du code du travail, le collège chargé de désigner les membres du CHSCT doit être réuni dans les 15 jours de l’expiration des mandats des représentants de cette institution. Cette disposition était interprétée littéralement par la jurisprudence depuis un arrêt du 14 janvier 2004 de sorte qu’organiser un scrutin quelques jours avant l’échéance des mandats emportait la nullité des élections.\n\nDans un arrêt du 8 octobre 2014 (n°13-60.262), la Cour de cassation revient sur cette jurisprudence rigide et précise que  « si le renouvellement des membres du CHSCT ne peut avoir pour effet de mettre fin aux mandats en cours avant leur date d’expiration, l’employeur, afin d’assurer la permanence de l’institution, peut réunir le collège désignatif avant le terme ultime de ces mandats, les désignations ainsi effectuées ne prenant effet qu’à ce terme ».\n\nDans ces conditions, il y a lieu de considérer :\n\n 1. Que les élections anticipées ne sont plus frappées de nullité\n\n2. Que Les nouveaux représentants devront certes attendre l’expiration des mandats des représentants pour entrer en fonction, mais bénéficieront toutefois de la protection statutaire dès le jour de leur désignation.\n\nCe revirement de jurisprudence met donc fin à la vacance imposée des sièges, et témoigne de l’importance prise par l’institution du CHSCT ces dernières années."], ["titre", "Renouvellement du CHSCT : l’anticipation est enfin possible !"], ["updated_at", "2014-12-01 20:22:48.139872"], ["veille_type", 1]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "veilles" ("created_at", "langue", "texte", "titre", "updated_at", "veille_type") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 20:22:48.142086"], ["langue", "fr"], ["texte", "Selon l’article R.4613-6 du code du travail, le collège chargé de désigner les membres du CHSCT doit être réuni dans les 15 jours de l’expiration des mandats des représentants de cette institution. Cette disposition était interprétée littéralement par la jurisprudence depuis un arrêt du 14 janvier 2004 de sorte qu’organiser un scrutin quelques jours avant l’échéance des mandats emportait la nullité des élections.\n\nDans un arrêt du 8 octobre 2014 (n°13-60.262), la Cour de cassation revient sur cette jurisprudence rigide et précise que  « si le renouvellement des membres du CHSCT ne peut avoir pour effet de mettre fin aux mandats en cours avant leur date d’expiration, l’employeur, afin d’assurer la permanence de l’institution, peut réunir le collège désignatif avant le terme ultime de ces mandats, les désignations ainsi effectuées ne prenant effet qu’à ce terme ».\n\nDans ces conditions, il y a lieu de considérer :\n\n 1. Que les élections anticipées ne sont plus frappées de nullité\n\n2. Que Les nouveaux représentants devront certes attendre l’expiration des mandats des représentants pour entrer en fonction, mais bénéficieront toutefois de la protection statutaire dès le jour de leur désignation.\n\nCe revirement de jurisprudence met donc fin à la vacance imposée des sièges, et témoigne de l’importance prise par l’institution du CHSCT ces dernières années."], ["titre", "Renouvellement du CHSCT : l’anticipation est enfin possible !"], ["updated_at", "2014-12-01 20:22:48.142086"], ["veille_type", 2]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "veilles" ("created_at", "langue", "texte", "titre", "updated_at", "veille_type") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", "2014-12-01 20:22:48.144642"], ["langue", "fr"], ["texte", "Selon l’article R.4613-6 du code du travail, le collège chargé de désigner les membres du CHSCT doit être réuni dans les 15 jours de l’expiration des mandats des représentants de cette institution. Cette disposition était interprétée littéralement par la jurisprudence depuis un arrêt du 14 janvier 2004 de sorte qu’organiser un scrutin quelques jours avant l’échéance des mandats emportait la nullité des élections.\n\nDans un arrêt du 8 octobre 2014 (n°13-60.262), la Cour de cassation revient sur cette jurisprudence rigide et précise que  « si le renouvellement des membres du CHSCT ne peut avoir pour effet de mettre fin aux mandats en cours avant leur date d’expiration, l’employeur, afin d’assurer la permanence de l’institution, peut réunir le collège désignatif avant le terme ultime de ces mandats, les désignations ainsi effectuées ne prenant effet qu’à ce terme ».\n\nDans ces conditions, il y a lieu de considérer :\n\n 1. Que les élections anticipées ne sont plus frappées de nullité\n\n2. Que Les nouveaux représentants devront certes attendre l’expiration des mandats des représentants pour entrer en fonction, mais bénéficieront toutefois de la protection statutaire dès le jour de leur désignation.\n\nCe revirement de jurisprudence met donc fin à la vacance imposée des sièges, et témoigne de l’importance prise par l’institution du CHSCT ces dernières années."], ["titre", "Renouvellement du CHSCT : l’anticipation est enfin possible !"], ["updated_at", "2014-12-01 20:22:48.144642"], ["veille_type", 0]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "veilles" ("created_at", "langue", "texte", "titre", "updated_at", "veille_type") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 20:22:48.146905"], ["langue", "fr"], ["texte", "Selon l’article R.4613-6 du code du travail, le collège chargé de désigner les membres du CHSCT doit être réuni dans les 15 jours de l’expiration des mandats des représentants de cette institution. Cette disposition était interprétée littéralement par la jurisprudence depuis un arrêt du 14 janvier 2004 de sorte qu’organiser un scrutin quelques jours avant l’échéance des mandats emportait la nullité des élections.\n\nDans un arrêt du 8 octobre 2014 (n°13-60.262), la Cour de cassation revient sur cette jurisprudence rigide et précise que  « si le renouvellement des membres du CHSCT ne peut avoir pour effet de mettre fin aux mandats en cours avant leur date d’expiration, l’employeur, afin d’assurer la permanence de l’institution, peut réunir le collège désignatif avant le terme ultime de ces mandats, les désignations ainsi effectuées ne prenant effet qu’à ce terme ».\n\nDans ces conditions, il y a lieu de considérer :\n\n 1. Que les élections anticipées ne sont plus frappées de nullité\n\n2. Que Les nouveaux représentants devront certes attendre l’expiration des mandats des représentants pour entrer en fonction, mais bénéficieront toutefois de la protection statutaire dès le jour de leur désignation.\n\nCe revirement de jurisprudence met donc fin à la vacance imposée des sièges, et témoigne de l’importance prise par l’institution du CHSCT ces dernières années."], ["titre", "Renouvellement du CHSCT : l’anticipation est enfin possible !"], ["updated_at", "2014-12-01 20:22:48.146905"], ["veille_type", 1]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "veilles" ("created_at", "langue", "texte", "titre", "updated_at", "veille_type") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", "2014-12-01 20:22:48.149067"], ["langue", "en"], ["texte", "According to Article R.4613-6 of the Labour Code , the college responsible for appointing the members of the HSC must be met within 15 days of the expiry of the mandates of the representatives of this institution. This provision was literally interpreted by case law since a judgment of 14 January 2004 so that organizing an election just days before the expiration of the term in the nullity of the elections.\n\nIn a judgment of 8 October 2014 ( No. 13-60262 ) , the Supreme Court returns to this rigid law and states that «  if the renewal of the members of HSC may have the effect of ending the current mandates before their date expiry , the employer , to ensure the institution's permanence, may convene the designator college before the culmination of these mandates, and made ​​designations take effect until this term ».\n\nIn these circumstances, it is appropriate to consider:\n\n1. That the early elections are not null and void\n\n2. That the new representatives will certainly wait for the expiry of the mandates of Representatives to take office , but still benefit from the statutory protection from the day of their appointment .\n\nThat departure from precedent thus ends the imposed vacancy of the seats, and demonstrates the growing importance of the institution of the HSC in recent years."], ["titre", "Renewal of HSC : anticipation is finally possible !"], ["updated_at", "2014-12-01 20:22:48.149067"], ["veille_type", 2]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "veilles" ("created_at", "langue", "texte", "titre", "updated_at", "veille_type") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 20:22:48.151520"], ["langue", "en"], ["texte", "According to Article R.4613-6 of the Labour Code , the college responsible for appointing the members of the HSC must be met within 15 days of the expiry of the mandates of the representatives of this institution. This provision was literally interpreted by case law since a judgment of 14 January 2004 so that organizing an election just days before the expiration of the term in the nullity of the elections.\n\nIn a judgment of 8 October 2014 ( No. 13-60262 ) , the Supreme Court returns to this rigid law and states that «  if the renewal of the members of HSC may have the effect of ending the current mandates before their date expiry , the employer , to ensure the institution's permanence, may convene the designator college before the culmination of these mandates, and made ​​designations take effect until this term ».\n\nIn these circumstances, it is appropriate to consider:\n\n1. That the early elections are not null and void\n\n2. That the new representatives will certainly wait for the expiry of the mandates of Representatives to take office , but still benefit from the statutory protection from the day of their appointment .\n\nThat departure from precedent thus ends the imposed vacancy of the seats, and demonstrates the growing importance of the institution of the HSC in recent years."], ["titre", "Renewal of HSC : anticipation is finally possible !"], ["updated_at", "2014-12-01 20:22:48.151520"], ["veille_type", 0]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "veilles" ("created_at", "langue", "texte", "titre", "updated_at", "veille_type") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", "2014-12-01 20:22:48.153605"], ["langue", "en"], ["texte", "According to Article R.4613-6 of the Labour Code , the college responsible for appointing the members of the HSC must be met within 15 days of the expiry of the mandates of the representatives of this institution. This provision was literally interpreted by case law since a judgment of 14 January 2004 so that organizing an election just days before the expiration of the term in the nullity of the elections.\n\nIn a judgment of 8 October 2014 ( No. 13-60262 ) , the Supreme Court returns to this rigid law and states that «  if the renewal of the members of HSC may have the effect of ending the current mandates before their date expiry , the employer , to ensure the institution's permanence, may convene the designator college before the culmination of these mandates, and made ​​designations take effect until this term ».\n\nIn these circumstances, it is appropriate to consider:\n\n1. That the early elections are not null and void\n\n2. That the new representatives will certainly wait for the expiry of the mandates of Representatives to take office , but still benefit from the statutory protection from the day of their appointment .\n\nThat departure from precedent thus ends the imposed vacancy of the seats, and demonstrates the growing importance of the institution of the HSC in recent years."], ["titre", "Renewal of HSC : anticipation is finally possible !"], ["updated_at", "2014-12-01 20:22:48.153605"], ["veille_type", 1]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "veilles" ("created_at", "langue", "texte", "titre", "updated_at", "veille_type") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 20:22:48.155887"], ["langue", "en"], ["texte", "According to Article R.4613-6 of the Labour Code , the college responsible for appointing the members of the HSC must be met within 15 days of the expiry of the mandates of the representatives of this institution. This provision was literally interpreted by case law since a judgment of 14 January 2004 so that organizing an election just days before the expiration of the term in the nullity of the elections.\n\nIn a judgment of 8 October 2014 ( No. 13-60262 ) , the Supreme Court returns to this rigid law and states that «  if the renewal of the members of HSC may have the effect of ending the current mandates before their date expiry , the employer , to ensure the institution's permanence, may convene the designator college before the culmination of these mandates, and made ​​designations take effect until this term ».\n\nIn these circumstances, it is appropriate to consider:\n\n1. That the early elections are not null and void\n\n2. That the new representatives will certainly wait for the expiry of the mandates of Representatives to take office , but still benefit from the statutory protection from the day of their appointment .\n\nThat departure from precedent thus ends the imposed vacancy of the seats, and demonstrates the growing importance of the institution of the HSC in recent years."], ["titre", "Renewal of HSC : anticipation is finally possible !"], ["updated_at", "2014-12-01 20:22:48.155887"], ["veille_type", 2]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "veilles" ("created_at", "langue", "texte", "titre", "updated_at", "veille_type") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", "2014-12-01 20:22:48.158433"], ["langue", "en"], ["texte", "According to Article R.4613-6 of the Labour Code , the college responsible for appointing the members of the HSC must be met within 15 days of the expiry of the mandates of the representatives of this institution. This provision was literally interpreted by case law since a judgment of 14 January 2004 so that organizing an election just days before the expiration of the term in the nullity of the elections.\n\nIn a judgment of 8 October 2014 ( No. 13-60262 ) , the Supreme Court returns to this rigid law and states that «  if the renewal of the members of HSC may have the effect of ending the current mandates before their date expiry , the employer , to ensure the institution's permanence, may convene the designator college before the culmination of these mandates, and made ​​designations take effect until this term ».\n\nIn these circumstances, it is appropriate to consider:\n\n1. That the early elections are not null and void\n\n2. That the new representatives will certainly wait for the expiry of the mandates of Representatives to take office , but still benefit from the statutory protection from the day of their appointment .\n\nThat departure from precedent thus ends the imposed vacancy of the seats, and demonstrates the growing importance of the institution of the HSC in recent years."], ["titre", "Renewal of HSC : anticipation is finally possible !"], ["updated_at", "2014-12-01 20:22:48.158433"], ["veille_type", 0]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "veilles" ("created_at", "langue", "texte", "titre", "updated_at", "veille_type") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 20:22:48.160573"], ["langue", "en"], ["texte", "According to Article R.4613-6 of the Labour Code , the college responsible for appointing the members of the HSC must be met within 15 days of the expiry of the mandates of the representatives of this institution. This provision was literally interpreted by case law since a judgment of 14 January 2004 so that organizing an election just days before the expiration of the term in the nullity of the elections.\n\nIn a judgment of 8 October 2014 ( No. 13-60262 ) , the Supreme Court returns to this rigid law and states that «  if the renewal of the members of HSC may have the effect of ending the current mandates before their date expiry , the employer , to ensure the institution's permanence, may convene the designator college before the culmination of these mandates, and made ​​designations take effect until this term ».\n\nIn these circumstances, it is appropriate to consider:\n\n1. That the early elections are not null and void\n\n2. That the new representatives will certainly wait for the expiry of the mandates of Representatives to take office , but still benefit from the statutory protection from the day of their appointment .\n\nThat departure from precedent thus ends the imposed vacancy of the seats, and demonstrates the growing importance of the institution of the HSC in recent years."], ["titre", "Renewal of HSC : anticipation is finally possible !"], ["updated_at", "2014-12-01 20:22:48.160573"], ["veille_type", 1]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "veilles" ("created_at", "langue", "texte", "titre", "updated_at", "veille_type") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", "2014-12-01 20:22:48.162686"], ["langue", "en"], ["texte", "According to Article R.4613-6 of the Labour Code , the college responsible for appointing the members of the HSC must be met within 15 days of the expiry of the mandates of the representatives of this institution. This provision was literally interpreted by case law since a judgment of 14 January 2004 so that organizing an election just days before the expiration of the term in the nullity of the elections.\n\nIn a judgment of 8 October 2014 ( No. 13-60262 ) , the Supreme Court returns to this rigid law and states that «  if the renewal of the members of HSC may have the effect of ending the current mandates before their date expiry , the employer , to ensure the institution's permanence, may convene the designator college before the culmination of these mandates, and made ​​designations take effect until this term ».\n\nIn these circumstances, it is appropriate to consider:\n\n1. That the early elections are not null and void\n\n2. That the new representatives will certainly wait for the expiry of the mandates of Representatives to take office , but still benefit from the statutory protection from the day of their appointment .\n\nThat departure from precedent thus ends the imposed vacancy of the seats, and demonstrates the growing importance of the institution of the HSC in recent years."], ["titre", "Renewal of HSC : anticipation is finally possible !"], ["updated_at", "2014-12-01 20:22:48.162686"], ["veille_type", 2]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "veilles" ("created_at", "langue", "texte", "titre", "updated_at", "veille_type") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 20:22:48.164922"], ["langue", "en"], ["texte", "According to Article R.4613-6 of the Labour Code , the college responsible for appointing the members of the HSC must be met within 15 days of the expiry of the mandates of the representatives of this institution. This provision was literally interpreted by case law since a judgment of 14 January 2004 so that organizing an election just days before the expiration of the term in the nullity of the elections.\n\nIn a judgment of 8 October 2014 ( No. 13-60262 ) , the Supreme Court returns to this rigid law and states that «  if the renewal of the members of HSC may have the effect of ending the current mandates before their date expiry , the employer , to ensure the institution's permanence, may convene the designator college before the culmination of these mandates, and made ​​designations take effect until this term ».\n\nIn these circumstances, it is appropriate to consider:\n\n1. That the early elections are not null and void\n\n2. That the new representatives will certainly wait for the expiry of the mandates of Representatives to take office , but still benefit from the statutory protection from the day of their appointment .\n\nThat departure from precedent thus ends the imposed vacancy of the seats, and demonstrates the growing importance of the institution of the HSC in recent years."], ["titre", "Renewal of HSC : anticipation is finally possible !"], ["updated_at", "2014-12-01 20:22:48.164922"], ["veille_type", 0]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "veilles" ("created_at", "langue", "texte", "titre", "updated_at", "veille_type") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", "2014-12-01 20:22:48.167072"], ["langue", "en"], ["texte", "According to Article R.4613-6 of the Labour Code , the college responsible for appointing the members of the HSC must be met within 15 days of the expiry of the mandates of the representatives of this institution. This provision was literally interpreted by case law since a judgment of 14 January 2004 so that organizing an election just days before the expiration of the term in the nullity of the elections.\n\nIn a judgment of 8 October 2014 ( No. 13-60262 ) , the Supreme Court returns to this rigid law and states that «  if the renewal of the members of HSC may have the effect of ending the current mandates before their date expiry , the employer , to ensure the institution's permanence, may convene the designator college before the culmination of these mandates, and made ​​designations take effect until this term ».\n\nIn these circumstances, it is appropriate to consider:\n\n1. That the early elections are not null and void\n\n2. That the new representatives will certainly wait for the expiry of the mandates of Representatives to take office , but still benefit from the statutory protection from the day of their appointment .\n\nThat departure from precedent thus ends the imposed vacancy of the seats, and demonstrates the growing importance of the institution of the HSC in recent years."], ["titre", "Renewal of HSC : anticipation is finally possible !"], ["updated_at", "2014-12-01 20:22:48.167072"], ["veille_type", 1]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "veilles" ("created_at", "langue", "texte", "titre", "updated_at", "veille_type") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-01 20:22:48.169281"], ["langue", "en"], ["texte", "According to Article R.4613-6 of the Labour Code , the college responsible for appointing the members of the HSC must be met within 15 days of the expiry of the mandates of the representatives of this institution. This provision was literally interpreted by case law since a judgment of 14 January 2004 so that organizing an election just days before the expiration of the term in the nullity of the elections.\n\nIn a judgment of 8 October 2014 ( No. 13-60262 ) , the Supreme Court returns to this rigid law and states that «  if the renewal of the members of HSC may have the effect of ending the current mandates before their date expiry , the employer , to ensure the institution's permanence, may convene the designator college before the culmination of these mandates, and made ​​designations take effect until this term ».\n\nIn these circumstances, it is appropriate to consider:\n\n1. That the early elections are not null and void\n\n2. That the new representatives will certainly wait for the expiry of the mandates of Representatives to take office , but still benefit from the statutory protection from the day of their appointment .\n\nThat departure from precedent thus ends the imposed vacancy of the seats, and demonstrates the growing importance of the institution of the HSC in recent years."], ["titre", "Renewal of HSC : anticipation is finally possible !"], ["updated_at", "2014-12-01 20:22:48.169281"], ["veille_type", 2]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "associes" ("created_at", "description", "link", "name", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-12-01 20:22:48.176629"], ["description", "d'avocat"], ["link", "http://daempartners.com/"], ["name", "Nom"], ["updated_at", "2014-12-01 20:22:48.176629"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/actualite" for 127.0.0.1 at 2014-12-01 21:22:51 +0100
+Processing by HomeController#actualite as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "veilles"  WHERE (langue = 'en')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "veilles"  WHERE (langue = 'en')[0m
+  [1m[35mVeille Load (0.2ms)[0m  SELECT  "veilles".* FROM "veilles"  WHERE (langue = 'en')  ORDER BY updated_at DESC LIMIT 5 OFFSET 0
+  Rendered home/actualite.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 318ms (Views: 312.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 21:22:51 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 21:22:51 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 21:22:51 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-01 21:22:51 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-01 21:22:51 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-01 21:22:51 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-01 21:22:51 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-01 21:22:51 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-01 21:22:51 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-01 21:22:51 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-01 21:22:51 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-01 21:22:51 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-01 21:22:51 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-01 21:22:51 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-01 21:22:51 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-12-01 21:22:51 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-01 21:22:51 +0100
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-12-01 21:22:51 +0100
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-12-01 21:22:51 +0100
+
+
+Started GET "/assets/veille.js?body=1" for 127.0.0.1 at 2014-12-01 21:22:51 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 21:22:51 +0100
+
+
+Started GET "/assets/law1.png" for 127.0.0.1 at 2014-12-01 21:22:51 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 21:22:51 +0100
+Processing by HomeController#index as HTML
+  [1m[36mIndex Load (0.2ms)[0m  [1mSELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVeille Load (0.2ms)[0m  SELECT  "veilles".* FROM "veilles"  WHERE (langue = 'en')  ORDER BY updated_at DESC LIMIT 3
+  Rendered home/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 293ms (Views: 274.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-12-01 21:22:52 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 21:22:55 +0100
+Processing by HomeController#index as HTML
+  [1m[36mIndex Load (0.1ms)[0m  [1mSELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVeille Load (0.2ms)[0m  SELECT  "veilles".* FROM "veilles"  WHERE (langue = 'en')  ORDER BY updated_at DESC LIMIT 3
+  Rendered home/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 293ms (Views: 291.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 21:22:55 +0100
+Processing by HomeController#index as HTML
+  [1m[36mIndex Load (0.1ms)[0m  [1mSELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVeille Load (0.3ms)[0m  SELECT  "veilles".* FROM "veilles"  WHERE (langue = 'en')  ORDER BY updated_at DESC LIMIT 3
+  Rendered home/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 318ms (Views: 316.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/anonyme.jpg" for 127.0.0.1 at 2014-12-01 21:22:55 +0100
+
+
+Started POST "/fr" for 127.0.0.1 at 2014-12-01 21:23:04 +0100
+Processing by HomeController#turn_fr as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"c2V14pC7gmg84z3OoiKcE3yWcd0xWLagZMt/rFWXOdk=", "commit"=>"FR"}
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 21:23:04 +0100
+Processing by HomeController#index as HTML
+  [1m[36mIndex Load (0.1ms)[0m  [1mSELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVeille Load (0.3ms)[0m  SELECT  "veilles".* FROM "veilles"  WHERE (langue = 'fr')  ORDER BY updated_at DESC LIMIT 3
+  Rendered home/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 282ms (Views: 280.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 21:23:04 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 21:23:04 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 21:23:04 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-01 21:23:04 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-01 21:23:04 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-01 21:23:04 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-01 21:23:04 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-01 21:23:04 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-01 21:23:04 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-01 21:23:04 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-01 21:23:04 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-01 21:23:04 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-01 21:23:04 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-01 21:23:04 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-01 21:23:04 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-12-01 21:23:04 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-01 21:23:04 +0100
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-12-01 21:23:04 +0100
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-12-01 21:23:04 +0100
+
+
+Started GET "/assets/veille.js?body=1" for 127.0.0.1 at 2014-12-01 21:23:04 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 21:23:04 +0100
+
+
+Started GET "/assets/law1.png" for 127.0.0.1 at 2014-12-01 21:23:04 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 21:23:04 +0100
+Processing by HomeController#index as HTML
+  [1m[36mIndex Load (0.1ms)[0m  [1mSELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVeille Load (0.3ms)[0m  SELECT  "veilles".* FROM "veilles"  WHERE (langue = 'fr')  ORDER BY updated_at DESC LIMIT 3
+  Rendered home/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 288ms (Views: 285.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/anonyme.jpg" for 127.0.0.1 at 2014-12-01 21:23:05 +0100
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-12-01 21:23:05 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 21:23:25 +0100
+Processing by HomeController#index as HTML
+  [1m[36mIndex Load (0.1ms)[0m  [1mSELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVeille Load (0.3ms)[0m  SELECT  "veilles".* FROM "veilles"  WHERE (langue = 'fr')  ORDER BY updated_at DESC LIMIT 3
+  Rendered home/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 295ms (Views: 293.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 21:23:25 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 21:23:25 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 21:23:25 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-01 21:23:25 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-01 21:23:25 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-01 21:23:25 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-01 21:23:25 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-01 21:23:25 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-01 21:23:25 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-01 21:23:25 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-01 21:23:25 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-01 21:23:25 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-01 21:23:25 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-01 21:23:25 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-01 21:23:25 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-12-01 21:23:25 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-01 21:23:25 +0100
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-12-01 21:23:25 +0100
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-12-01 21:23:25 +0100
+
+
+Started GET "/assets/veille.js?body=1" for 127.0.0.1 at 2014-12-01 21:23:25 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 21:23:25 +0100
+
+
+Started GET "/assets/law1.png" for 127.0.0.1 at 2014-12-01 21:23:25 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 21:23:25 +0100
+Processing by HomeController#index as HTML
+  [1m[36mIndex Load (0.1ms)[0m  [1mSELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVeille Load (0.2ms)[0m  SELECT  "veilles".* FROM "veilles"  WHERE (langue = 'fr')  ORDER BY updated_at DESC LIMIT 3
+  Rendered home/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 297ms (Views: 295.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/anonyme.jpg" for 127.0.0.1 at 2014-12-01 21:23:25 +0100
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-12-01 21:23:25 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 21:28:45 +0100
+Processing by HomeController#index as HTML
+  [1m[36mIndex Load (8.7ms)[0m  [1mSELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVeille Load (0.3ms)[0m  SELECT  "veilles".* FROM "veilles"  WHERE (langue = 'fr')  ORDER BY updated_at DESC LIMIT 3
+  Rendered home/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 3039ms (Views: 3028.9ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 21:28:48 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-01 21:28:48 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 21:28:48 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-01 21:28:48 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-01 21:28:48 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-01 21:28:48 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-01 21:28:48 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-01 21:28:48 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-01 21:28:48 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-01 21:28:48 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 21:28:48 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-12-01 21:28:48 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-01 21:28:48 +0100
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-12-01 21:28:48 +0100
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-12-01 21:28:48 +0100
+
+
+Started GET "/assets/veille.js?body=1" for 127.0.0.1 at 2014-12-01 21:28:48 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 21:28:48 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-01 21:28:48 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-01 21:28:48 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-01 21:28:48 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-01 21:28:48 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 21:28:48 +0100
+Processing by HomeController#index as HTML
+  [1m[36mIndex Load (0.1ms)[0m  [1mSELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVeille Load (0.3ms)[0m  SELECT  "veilles".* FROM "veilles"  WHERE (langue = 'fr')  ORDER BY updated_at DESC LIMIT 3
+  Rendered home/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 310ms (Views: 308.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/law1.png" for 127.0.0.1 at 2014-12-01 21:28:48 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-01 21:28:48 +0100
+
+
+Started GET "/assets/anonyme.jpg" for 127.0.0.1 at 2014-12-01 21:28:48 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 21:28:48 +0100
+Processing by HomeController#index as HTML
+  [1m[36mIndex Load (0.1ms)[0m  [1mSELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVeille Load (0.3ms)[0m  SELECT  "veilles".* FROM "veilles"  WHERE (langue = 'fr')  ORDER BY updated_at DESC LIMIT 3
+  Rendered home/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 379ms (Views: 376.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-12-01 21:28:49 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 21:31:54 +0100
+Processing by HomeController#index as HTML
+  [1m[36mIndex Load (12.4ms)[0m  [1mSELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVeille Load (0.3ms)[0m  SELECT  "veilles".* FROM "veilles"  WHERE (langue = 'fr')  ORDER BY updated_at DESC LIMIT 3
+  Rendered home/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 319ms (Views: 305.1ms | ActiveRecord: 12.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 21:31:54 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-01 21:31:54 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 21:31:54 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 21:31:54 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-01 21:31:54 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-01 21:31:54 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-01 21:31:54 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-01 21:31:54 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-01 21:31:54 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-01 21:31:54 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-01 21:31:54 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-01 21:31:54 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-12-01 21:31:54 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-01 21:31:54 +0100
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-12-01 21:31:54 +0100
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-12-01 21:31:54 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-01 21:31:54 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-01 21:31:54 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-01 21:31:54 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 21:31:54 +0100
+
+
+Started GET "/assets/veille.js?body=1" for 127.0.0.1 at 2014-12-01 21:31:54 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 21:31:54 +0100
+Processing by HomeController#index as HTML
+  [1m[36mIndex Load (0.2ms)[0m  [1mSELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVeille Load (0.4ms)[0m  SELECT  "veilles".* FROM "veilles"  WHERE (langue = 'fr')  ORDER BY updated_at DESC LIMIT 3
+  Rendered home/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 340ms (Views: 338.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/anonyme.jpg" for 127.0.0.1 at 2014-12-01 21:31:55 +0100
+
+
+Started GET "/assets/law1.png" for 127.0.0.1 at 2014-12-01 21:31:55 +0100
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-12-01 21:31:55 +0100
+
+
+Started POST "/en" for 127.0.0.1 at 2014-12-01 21:31:58 +0100
+Processing by HomeController#turn_en as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"c2V14pC7gmg84z3OoiKcE3yWcd0xWLagZMt/rFWXOdk=", "commit"=>"EN"}
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 21:31:58 +0100
+Processing by HomeController#index as HTML
+  [1m[36mIndex Load (0.1ms)[0m  [1mSELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVeille Load (0.3ms)[0m  SELECT  "veilles".* FROM "veilles"  WHERE (langue = 'en')  ORDER BY updated_at DESC LIMIT 3
+  Rendered home/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 297ms (Views: 295.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 21:31:59 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 21:31:59 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 21:31:59 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-01 21:31:59 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-01 21:31:59 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-01 21:31:59 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-01 21:31:59 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-01 21:31:59 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-01 21:31:59 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-01 21:31:59 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-01 21:31:59 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-01 21:31:59 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-01 21:31:59 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-01 21:31:59 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-01 21:31:59 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-12-01 21:31:59 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-01 21:31:59 +0100
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-12-01 21:31:59 +0100
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-12-01 21:31:59 +0100
+
+
+Started GET "/assets/veille.js?body=1" for 127.0.0.1 at 2014-12-01 21:31:59 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 21:31:59 +0100
+
+
+Started GET "/assets/law1.png" for 127.0.0.1 at 2014-12-01 21:31:59 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 21:31:59 +0100
+Processing by HomeController#index as HTML
+  [1m[36mIndex Load (0.2ms)[0m  [1mSELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVeille Load (0.3ms)[0m  SELECT  "veilles".* FROM "veilles"  WHERE (langue = 'en')  ORDER BY updated_at DESC LIMIT 3
+  Rendered home/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 287ms (Views: 285.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/anonyme.jpg" for 127.0.0.1 at 2014-12-01 21:31:59 +0100
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-12-01 21:31:59 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 21:32:27 +0100
+Processing by HomeController#index as HTML
+  [1m[36mIndex Load (0.1ms)[0m  [1mSELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVeille Load (0.3ms)[0m  SELECT  "veilles".* FROM "veilles"  WHERE (langue = 'en')  ORDER BY updated_at DESC LIMIT 3
+  Rendered home/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 309ms (Views: 307.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 21:32:27 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 21:32:27 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 21:32:27 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-01 21:32:27 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-01 21:32:27 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-01 21:32:27 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-01 21:32:27 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-01 21:32:27 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-01 21:32:27 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-01 21:32:27 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-01 21:32:27 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-01 21:32:27 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-01 21:32:27 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-01 21:32:27 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-01 21:32:27 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-12-01 21:32:27 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-01 21:32:27 +0100
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-12-01 21:32:27 +0100
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-12-01 21:32:27 +0100
+
+
+Started GET "/assets/veille.js?body=1" for 127.0.0.1 at 2014-12-01 21:32:27 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 21:32:27 +0100
+
+
+Started GET "/assets/law1.png" for 127.0.0.1 at 2014-12-01 21:32:27 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 21:32:27 +0100
+Processing by HomeController#index as HTML
+  [1m[36mIndex Load (0.1ms)[0m  [1mSELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVeille Load (0.2ms)[0m  SELECT  "veilles".* FROM "veilles"  WHERE (langue = 'en')  ORDER BY updated_at DESC LIMIT 3
+  Rendered home/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 287ms (Views: 285.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/anonyme.jpg" for 127.0.0.1 at 2014-12-01 21:32:28 +0100
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-12-01 21:32:28 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 21:32:41 +0100
+Processing by HomeController#index as HTML
+  [1m[36mIndex Load (0.1ms)[0m  [1mSELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVeille Load (0.3ms)[0m  SELECT  "veilles".* FROM "veilles"  WHERE (langue = 'en')  ORDER BY updated_at DESC LIMIT 3
+  Rendered home/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 299ms (Views: 297.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 21:32:41 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 21:32:41 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 21:32:41 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-01 21:32:41 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-01 21:32:41 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-01 21:32:41 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-01 21:32:42 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-01 21:32:42 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-01 21:32:42 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-01 21:32:42 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-01 21:32:42 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-01 21:32:42 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-01 21:32:42 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-01 21:32:42 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-01 21:32:42 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-12-01 21:32:42 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-01 21:32:42 +0100
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-12-01 21:32:42 +0100
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-12-01 21:32:42 +0100
+
+
+Started GET "/assets/veille.js?body=1" for 127.0.0.1 at 2014-12-01 21:32:42 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 21:32:42 +0100
+
+
+Started GET "/assets/law1.png" for 127.0.0.1 at 2014-12-01 21:32:42 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 21:32:42 +0100
+Processing by HomeController#index as HTML
+  [1m[36mIndex Load (0.1ms)[0m  [1mSELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVeille Load (0.3ms)[0m  SELECT  "veilles".* FROM "veilles"  WHERE (langue = 'en')  ORDER BY updated_at DESC LIMIT 3
+  Rendered home/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 344ms (Views: 342.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/anonyme.jpg" for 127.0.0.1 at 2014-12-01 21:32:42 +0100
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-12-01 21:32:42 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 21:33:06 +0100
+Processing by HomeController#index as HTML
+  [1m[36mIndex Load (0.1ms)[0m  [1mSELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVeille Load (0.3ms)[0m  SELECT  "veilles".* FROM "veilles"  WHERE (langue = 'en')  ORDER BY updated_at DESC LIMIT 3
+  Rendered home/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 307ms (Views: 304.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 21:33:06 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 21:33:06 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 21:33:06 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-01 21:33:06 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-01 21:33:06 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-01 21:33:06 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-01 21:33:06 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-01 21:33:06 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-01 21:33:06 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-01 21:33:06 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-01 21:33:06 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-01 21:33:06 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-01 21:33:06 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-01 21:33:06 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-01 21:33:06 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-12-01 21:33:06 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-01 21:33:07 +0100
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-12-01 21:33:07 +0100
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-12-01 21:33:07 +0100
+
+
+Started GET "/assets/veille.js?body=1" for 127.0.0.1 at 2014-12-01 21:33:07 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 21:33:07 +0100
+
+
+Started GET "/assets/law1.png" for 127.0.0.1 at 2014-12-01 21:33:07 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 21:33:07 +0100
+Processing by HomeController#index as HTML
+  [1m[36mIndex Load (0.2ms)[0m  [1mSELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVeille Load (0.2ms)[0m  SELECT  "veilles".* FROM "veilles"  WHERE (langue = 'en')  ORDER BY updated_at DESC LIMIT 3
+  Rendered home/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 291ms (Views: 289.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/anonyme.jpg" for 127.0.0.1 at 2014-12-01 21:33:07 +0100
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-12-01 21:33:07 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 21:33:45 +0100
+Processing by HomeController#index as HTML
+  [1m[36mIndex Load (0.2ms)[0m  [1mSELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVeille Load (0.3ms)[0m  SELECT  "veilles".* FROM "veilles"  WHERE (langue = 'en')  ORDER BY updated_at DESC LIMIT 3
+  Rendered home/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 293ms (Views: 291.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 21:33:45 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 21:33:45 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 21:33:45 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-01 21:33:45 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-01 21:33:45 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-01 21:33:45 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-01 21:33:45 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-01 21:33:45 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-01 21:33:45 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-01 21:33:45 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-01 21:33:45 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-01 21:33:45 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-01 21:33:45 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-01 21:33:46 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-01 21:33:46 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-12-01 21:33:46 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-01 21:33:46 +0100
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-12-01 21:33:46 +0100
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-12-01 21:33:46 +0100
+
+
+Started GET "/assets/veille.js?body=1" for 127.0.0.1 at 2014-12-01 21:33:46 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 21:33:46 +0100
+
+
+Started GET "/assets/law1.png" for 127.0.0.1 at 2014-12-01 21:33:46 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 21:33:46 +0100
+Processing by HomeController#index as HTML
+  [1m[36mIndex Load (0.1ms)[0m  [1mSELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVeille Load (0.3ms)[0m  SELECT  "veilles".* FROM "veilles"  WHERE (langue = 'en')  ORDER BY updated_at DESC LIMIT 3
+  Rendered home/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 288ms (Views: 286.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/anonyme.jpg" for 127.0.0.1 at 2014-12-01 21:33:46 +0100
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-12-01 21:33:46 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 21:34:01 +0100
+Processing by HomeController#index as HTML
+  [1m[36mIndex Load (0.1ms)[0m  [1mSELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVeille Load (0.3ms)[0m  SELECT  "veilles".* FROM "veilles"  WHERE (langue = 'en')  ORDER BY updated_at DESC LIMIT 3
+  Rendered home/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 301ms (Views: 298.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 21:34:01 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:01 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:01 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:01 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:01 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:01 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:01 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:01 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:01 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:01 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:01 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:01 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:01 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:01 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:01 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:01 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:01 +0100
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:01 +0100
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:01 +0100
+
+
+Started GET "/assets/veille.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:01 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:01 +0100
+
+
+Started GET "/assets/law1.png" for 127.0.0.1 at 2014-12-01 21:34:01 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 21:34:01 +0100
+Processing by HomeController#index as HTML
+  [1m[36mIndex Load (0.1ms)[0m  [1mSELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVeille Load (0.3ms)[0m  SELECT  "veilles".* FROM "veilles"  WHERE (langue = 'en')  ORDER BY updated_at DESC LIMIT 3
+  Rendered home/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 337ms (Views: 335.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/anonyme.jpg" for 127.0.0.1 at 2014-12-01 21:34:02 +0100
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-12-01 21:34:02 +0100
+
+
+Started POST "/fr" for 127.0.0.1 at 2014-12-01 21:34:21 +0100
+Processing by HomeController#turn_fr as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"c2V14pC7gmg84z3OoiKcE3yWcd0xWLagZMt/rFWXOdk=", "commit"=>"FR"}
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 21:34:21 +0100
+Processing by HomeController#index as HTML
+  [1m[36mIndex Load (0.1ms)[0m  [1mSELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVeille Load (0.3ms)[0m  SELECT  "veilles".* FROM "veilles"  WHERE (langue = 'fr')  ORDER BY updated_at DESC LIMIT 3
+  Rendered home/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 327ms (Views: 325.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 21:34:21 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:21 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:21 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:21 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:21 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:21 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:21 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:21 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:21 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:21 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:21 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:21 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:21 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:21 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:21 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:21 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:21 +0100
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:21 +0100
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:21 +0100
+
+
+Started GET "/assets/veille.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:21 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:21 +0100
+
+
+Started GET "/assets/law1.png" for 127.0.0.1 at 2014-12-01 21:34:21 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 21:34:21 +0100
+Processing by HomeController#index as HTML
+  [1m[36mIndex Load (0.1ms)[0m  [1mSELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVeille Load (0.3ms)[0m  SELECT  "veilles".* FROM "veilles"  WHERE (langue = 'fr')  ORDER BY updated_at DESC LIMIT 3
+  Rendered home/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 883ms (Views: 881.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/anonyme.jpg" for 127.0.0.1 at 2014-12-01 21:34:22 +0100
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-12-01 21:34:22 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 21:34:59 +0100
+Processing by HomeController#index as HTML
+  [1m[36mIndex Load (0.1ms)[0m  [1mSELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVeille Load (0.3ms)[0m  SELECT  "veilles".* FROM "veilles"  WHERE (langue = 'fr')  ORDER BY updated_at DESC LIMIT 3
+  Rendered home/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 299ms (Views: 297.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 21:34:59 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:59 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:59 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:59 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:59 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:59 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:59 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:59 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:59 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:59 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:59 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:59 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:59 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:59 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:59 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:59 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:59 +0100
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:59 +0100
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:59 +0100
+
+
+Started GET "/assets/veille.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:59 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 21:34:59 +0100
+
+
+Started GET "/assets/law1.png" for 127.0.0.1 at 2014-12-01 21:34:59 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 21:34:59 +0100
+Processing by HomeController#index as HTML
+  [1m[36mIndex Load (0.1ms)[0m  [1mSELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVeille Load (0.2ms)[0m  SELECT  "veilles".* FROM "veilles"  WHERE (langue = 'fr')  ORDER BY updated_at DESC LIMIT 3
+  Rendered home/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 286ms (Views: 284.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/anonyme.jpg" for 127.0.0.1 at 2014-12-01 21:35:00 +0100
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-12-01 21:35:00 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 21:47:23 +0100
+Processing by HomeController#index as HTML
+  [1m[36mIndex Load (0.1ms)[0m  [1mSELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVeille Load (0.3ms)[0m  SELECT  "veilles".* FROM "veilles"  WHERE (langue = 'fr')  ORDER BY updated_at DESC LIMIT 3
+  Rendered home/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 310ms (Views: 308.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 21:47:23 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 21:47:23 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 21:47:23 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-01 21:47:23 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-01 21:47:23 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-01 21:47:23 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-01 21:47:23 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-01 21:47:23 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-01 21:47:23 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-01 21:47:23 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-01 21:47:23 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-01 21:47:23 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-01 21:47:23 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-01 21:47:23 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-01 21:47:23 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-12-01 21:47:23 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-01 21:47:23 +0100
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-12-01 21:47:23 +0100
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-12-01 21:47:23 +0100
+
+
+Started GET "/assets/veille.js?body=1" for 127.0.0.1 at 2014-12-01 21:47:23 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 21:47:23 +0100
+
+
+Started GET "/assets/law1.png" for 127.0.0.1 at 2014-12-01 21:47:23 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 21:47:23 +0100
+Processing by HomeController#index as HTML
+  [1m[36mIndex Load (0.1ms)[0m  [1mSELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVeille Load (0.3ms)[0m  SELECT  "veilles".* FROM "veilles"  WHERE (langue = 'fr')  ORDER BY updated_at DESC LIMIT 3
+  Rendered home/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 302ms (Views: 300.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/anonyme.jpg" for 127.0.0.1 at 2014-12-01 21:47:24 +0100
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-12-01 21:47:24 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 22:02:11 +0100
+Processing by HomeController#index as HTML
+  [1m[36mIndex Load (10.4ms)[0m  [1mSELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVeille Load (0.3ms)[0m  SELECT  "veilles".* FROM "veilles"  WHERE (langue = 'fr')  ORDER BY updated_at DESC LIMIT 3
+  Rendered home/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 322ms (Views: 310.2ms | ActiveRecord: 10.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 22:02:11 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 22:02:11 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-01 22:02:11 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-01 22:02:11 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-01 22:02:11 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-01 22:02:11 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-01 22:02:11 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-01 22:02:11 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 22:02:11 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-01 22:02:11 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-01 22:02:11 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-01 22:02:11 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-01 22:02:11 +0100
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-12-01 22:02:11 +0100
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-12-01 22:02:11 +0100
+
+
+Started GET "/assets/veille.js?body=1" for 127.0.0.1 at 2014-12-01 22:02:11 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-01 22:02:11 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-01 22:02:11 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-12-01 22:02:11 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 22:02:11 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-01 22:02:11 +0100
+
+
+Started GET "/assets/law1.png" for 127.0.0.1 at 2014-12-01 22:02:11 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 22:02:11 +0100
+Processing by HomeController#index as HTML
+  [1m[36mIndex Load (0.2ms)[0m  [1mSELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVeille Load (0.3ms)[0m  SELECT  "veilles".* FROM "veilles"  WHERE (langue = 'fr')  ORDER BY updated_at DESC LIMIT 3
+  Rendered home/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 482ms (Views: 479.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/anonyme.jpg" for 127.0.0.1 at 2014-12-01 22:02:12 +0100
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-12-01 22:02:12 +0100
+
+
+Started GET "/specialite" for 127.0.0.1 at 2014-12-01 22:16:28 +0100
+Processing by HomeController#specialite as HTML
+  [1m[36mSpecialite Load (26.0ms)[0m  [1mSELECT  "specialites".* FROM "specialites"  WHERE "specialites"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/specialite.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 393ms (Views: 348.1ms | ActiveRecord: 26.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 22:16:28 +0100
+Processing by HomeController#index as HTML
+  [1m[35mIndex Load (0.2ms)[0m  SELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mVeille Load (0.3ms)[0m  [1mSELECT  "veilles".* FROM "veilles"  WHERE (langue = 'fr')  ORDER BY updated_at DESC LIMIT 3[0m
+  Rendered home/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 322ms (Views: 319.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/associe" for 127.0.0.1 at 2014-12-01 22:16:29 +0100
+Processing by HomeController#associe as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "associes"
+  [1m[36mAssocie Load (0.2ms)[0m  [1mSELECT  "associes".* FROM "associes"   ORDER BY updated_at DESC LIMIT 5 OFFSET 0[0m
+  Rendered home/associe.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 309ms (Views: 301.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 22:16:29 +0100
+Processing by HomeController#index as HTML
+  [1m[35mIndex Load (0.2ms)[0m  SELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mVeille Load (0.4ms)[0m  [1mSELECT  "veilles".* FROM "veilles"  WHERE (langue = 'fr')  ORDER BY updated_at DESC LIMIT 3[0m
+  Rendered home/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 321ms (Views: 318.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/actualite" for 127.0.0.1 at 2014-12-01 22:16:30 +0100
+Processing by HomeController#actualite as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "veilles"  WHERE (langue = 'fr')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "veilles"  WHERE (langue = 'fr')[0m
+  [1m[35mVeille Load (0.3ms)[0m  SELECT  "veilles".* FROM "veilles"  WHERE (langue = 'fr')  ORDER BY updated_at DESC LIMIT 5 OFFSET 0
+  Rendered home/actualite.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 363ms (Views: 361.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 22:16:31 +0100
+Processing by HomeController#index as HTML
+  [1m[36mIndex Load (0.1ms)[0m  [1mSELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVeille Load (0.4ms)[0m  SELECT  "veilles".* FROM "veilles"  WHERE (langue = 'fr')  ORDER BY updated_at DESC LIMIT 3
+  Rendered home/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 334ms (Views: 331.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/actualite?page=2" for 127.0.0.1 at 2014-12-01 22:17:03 +0100
+Processing by HomeController#actualite as HTML
+  Parameters: {"page"=>"2"}
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "veilles"  WHERE (langue = 'fr')[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "veilles"  WHERE (langue = 'fr')
+  [1m[36mVeille Load (0.3ms)[0m  [1mSELECT  "veilles".* FROM "veilles"  WHERE (langue = 'fr')  ORDER BY updated_at DESC LIMIT 5 OFFSET 5[0m
+  Rendered home/actualite.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 291ms (Views: 290.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 22:17:03 +0100
+Processing by HomeController#index as HTML
+  [1m[35mIndex Load (0.2ms)[0m  SELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mVeille Load (0.4ms)[0m  [1mSELECT  "veilles".* FROM "veilles"  WHERE (langue = 'fr')  ORDER BY updated_at DESC LIMIT 3[0m
+  Rendered home/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 308ms (Views: 305.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/actualite?page=3" for 127.0.0.1 at 2014-12-01 22:17:04 +0100
+Processing by HomeController#actualite as HTML
+  Parameters: {"page"=>"3"}
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "veilles"  WHERE (langue = 'fr')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "veilles"  WHERE (langue = 'fr')[0m
+  [1m[35mVeille Load (0.3ms)[0m  SELECT  "veilles".* FROM "veilles"  WHERE (langue = 'fr')  ORDER BY updated_at DESC LIMIT 5 OFFSET 10
+  Rendered home/actualite.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 270ms (Views: 268.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 22:17:05 +0100
+Processing by HomeController#index as HTML
+  [1m[36mIndex Load (0.1ms)[0m  [1mSELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVeille Load (0.4ms)[0m  SELECT  "veilles".* FROM "veilles"  WHERE (langue = 'fr')  ORDER BY updated_at DESC LIMIT 3
+  Rendered home/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 300ms (Views: 298.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/actualite?page=4" for 127.0.0.1 at 2014-12-01 22:17:06 +0100
+Processing by HomeController#actualite as HTML
+  Parameters: {"page"=>"4"}
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "veilles"  WHERE (langue = 'fr')[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "veilles"  WHERE (langue = 'fr')
+  [1m[36mVeille Load (0.3ms)[0m  [1mSELECT  "veilles".* FROM "veilles"  WHERE (langue = 'fr')  ORDER BY updated_at DESC LIMIT 5 OFFSET 15[0m
+  Rendered home/actualite.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 291ms (Views: 289.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 22:17:06 +0100
+Processing by HomeController#index as HTML
+  [1m[35mIndex Load (0.1ms)[0m  SELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mVeille Load (0.3ms)[0m  [1mSELECT  "veilles".* FROM "veilles"  WHERE (langue = 'fr')  ORDER BY updated_at DESC LIMIT 3[0m
+  Rendered home/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 300ms (Views: 298.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/actualite?page=4" for 127.0.0.1 at 2014-12-01 22:21:23 +0100
+Processing by HomeController#actualite as HTML
+  Parameters: {"page"=>"4"}
+  [1m[35m (7.2ms)[0m  SELECT COUNT(*) FROM "veilles"  WHERE (langue = 'fr')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "veilles"  WHERE (langue = 'fr')[0m
+  [1m[35mVeille Load (0.3ms)[0m  SELECT  "veilles".* FROM "veilles"  WHERE (langue = 'fr')  ORDER BY updated_at DESC LIMIT 5 OFFSET 15
+  Rendered home/actualite.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 2741ms (Views: 2732.4ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 22:21:26 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-01 22:21:26 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 22:21:26 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-01 22:21:26 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-01 22:21:26 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-01 22:21:26 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 22:21:26 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-01 22:21:26 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-01 22:21:26 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-01 22:21:26 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-01 22:21:26 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-12-01 22:21:26 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-01 22:21:26 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-01 22:21:26 +0100
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-12-01 22:21:26 +0100
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-12-01 22:21:26 +0100
+
+
+Started GET "/assets/veille.js?body=1" for 127.0.0.1 at 2014-12-01 22:21:26 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 22:21:26 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-01 22:21:26 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-01 22:21:26 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-01 22:21:26 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 22:21:26 +0100
+Processing by HomeController#index as HTML
+  [1m[36mIndex Load (0.1ms)[0m  [1mSELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVeille Load (0.3ms)[0m  SELECT  "veilles".* FROM "veilles"  WHERE (langue = 'fr')  ORDER BY updated_at DESC LIMIT 3
+  Rendered home/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 345ms (Views: 343.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/law1.png" for 127.0.0.1 at 2014-12-01 22:21:26 +0100
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-12-01 22:21:26 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 22:22:20 +0100
+Processing by HomeController#index as HTML
+  [1m[36mIndex Load (0.1ms)[0m  [1mSELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVeille Load (0.3ms)[0m  SELECT  "veilles".* FROM "veilles"  WHERE (langue = 'fr')  ORDER BY updated_at DESC LIMIT 3
+  Rendered home/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 320ms (Views: 318.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 22:22:20 +0100
+Processing by HomeController#index as HTML
+  [1m[36mIndex Load (0.1ms)[0m  [1mSELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVeille Load (0.3ms)[0m  SELECT  "veilles".* FROM "veilles"  WHERE (langue = 'fr')  ORDER BY updated_at DESC LIMIT 3
+  Rendered home/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 337ms (Views: 334.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/anonyme.jpg" for 127.0.0.1 at 2014-12-01 22:22:21 +0100
+
+
+Started GET "/actualite" for 127.0.0.1 at 2014-12-01 22:23:08 +0100
+Processing by HomeController#actualite as HTML
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "veilles"  WHERE (langue = 'fr')[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "veilles"  WHERE (langue = 'fr')
+  [1m[36mVeille Load (0.2ms)[0m  [1mSELECT  "veilles".* FROM "veilles"  WHERE (langue = 'fr')  ORDER BY updated_at DESC LIMIT 5 OFFSET 0[0m
+  Rendered home/actualite.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 290ms (Views: 289.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 22:23:08 +0100
+Processing by HomeController#index as HTML
+  [1m[35mIndex Load (0.1ms)[0m  SELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mVeille Load (0.3ms)[0m  [1mSELECT  "veilles".* FROM "veilles"  WHERE (langue = 'fr')  ORDER BY updated_at DESC LIMIT 3[0m
+  Rendered home/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 311ms (Views: 309.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 22:23:24 +0100
+Processing by HomeController#index as HTML
+  [1m[35mIndex Load (0.1ms)[0m  SELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mVeille Load (0.2ms)[0m  [1mSELECT  "veilles".* FROM "veilles"  WHERE (langue = 'fr')  ORDER BY updated_at DESC LIMIT 3[0m
+  Rendered home/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 277ms (Views: 275.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 22:23:24 +0100
+Processing by HomeController#index as HTML
+  [1m[35mIndex Load (0.1ms)[0m  SELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mVeille Load (0.3ms)[0m  [1mSELECT  "veilles".* FROM "veilles"  WHERE (langue = 'fr')  ORDER BY updated_at DESC LIMIT 3[0m
+  Rendered home/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 320ms (Views: 318.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2014-12-01 22:23:25 +0100
+Processing by HomeController#contact as HTML
+  [1m[35mContact Load (9.5ms)[0m  SELECT  "contacts".* FROM "contacts"  WHERE "contacts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/contact.html.erb within layouts/application (19.3ms)
+Completed 200 OK in 324ms (Views: 304.3ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 22:23:25 +0100
+Processing by HomeController#index as HTML
+  [1m[36mIndex Load (0.1ms)[0m  [1mSELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVeille Load (0.3ms)[0m  SELECT  "veilles".* FROM "veilles"  WHERE (langue = 'fr')  ORDER BY updated_at DESC LIMIT 3
+  Rendered home/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 313ms (Views: 311.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2014-12-01 22:23:41 +0100
+Processing by HomeController#contact as HTML
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/contact.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 305ms (Views: 303.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 22:23:41 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 22:23:41 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 22:23:41 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-01 22:23:41 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-01 22:23:41 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-01 22:23:41 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-01 22:23:41 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-01 22:23:41 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-01 22:23:41 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-01 22:23:41 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-01 22:23:41 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-01 22:23:41 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-01 22:23:41 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-01 22:23:41 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-01 22:23:41 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-12-01 22:23:41 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-01 22:23:41 +0100
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-12-01 22:23:41 +0100
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-12-01 22:23:41 +0100
+
+
+Started GET "/assets/veille.js?body=1" for 127.0.0.1 at 2014-12-01 22:23:41 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 22:23:41 +0100
+
+
+Started GET "/assets/law1.png" for 127.0.0.1 at 2014-12-01 22:23:41 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 22:23:41 +0100
+Processing by HomeController#index as HTML
+  [1m[35mIndex Load (0.2ms)[0m  SELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mVeille Load (0.3ms)[0m  [1mSELECT  "veilles".* FROM "veilles"  WHERE (langue = 'fr')  ORDER BY updated_at DESC LIMIT 3[0m
+  Rendered home/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 319ms (Views: 316.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-12-01 22:23:42 +0100
+
+
+Started GET "/actualite" for 127.0.0.1 at 2014-12-01 22:23:56 +0100
+Processing by HomeController#actualite as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "veilles"  WHERE (langue = 'fr')
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "veilles"  WHERE (langue = 'fr')[0m
+  [1m[35mVeille Load (0.3ms)[0m  SELECT  "veilles".* FROM "veilles"  WHERE (langue = 'fr')  ORDER BY updated_at DESC LIMIT 5 OFFSET 0
+  Rendered home/actualite.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 280ms (Views: 279.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 22:23:56 +0100
+Processing by HomeController#index as HTML
+  [1m[36mIndex Load (0.1ms)[0m  [1mSELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVeille Load (0.3ms)[0m  SELECT  "veilles".* FROM "veilles"  WHERE (langue = 'fr')  ORDER BY updated_at DESC LIMIT 3
+  Rendered home/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 316ms (Views: 314.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 22:24:24 +0100
+Processing by HomeController#index as HTML
+  [1m[36mIndex Load (0.1ms)[0m  [1mSELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVeille Load (0.3ms)[0m  SELECT  "veilles".* FROM "veilles"  WHERE (langue = 'fr')  ORDER BY updated_at DESC LIMIT 3
+  Rendered home/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 297ms (Views: 295.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 22:24:24 +0100
+Processing by HomeController#index as HTML
+  [1m[36mIndex Load (0.1ms)[0m  [1mSELECT  "indices".* FROM "indices"  WHERE "indices"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVeille Load (0.3ms)[0m  SELECT  "veilles".* FROM "veilles"  WHERE (langue = 'fr')  ORDER BY updated_at DESC LIMIT 3
+  Rendered home/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 328ms (Views: 325.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/anonyme.jpg" for 127.0.0.1 at 2014-12-01 22:24:24 +0100
