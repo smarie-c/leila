@@ -19,8 +19,8 @@
 			</strong>
 			<div class="separator-article"></div>
 			<div class="veille">
-				<% index = v.texte.index('.', 300) %>
-				<%= v.texte[0,index + 1].bbcode_to_html_with_formatting.html_safe %>
+				<% index = v.texte.index("\n") %>
+				<%= v.texte[0,index].bbcode_to_html_with_formatting.html_safe %>
 			</div>
 			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal<%= v.id %>" data-whatever="@mdo">en savoir plus</button>
 			<p style="text-align:right;"><%= t('category.actualites.created') %><%= v.created_at.strftime("%m/%d/%Y") %></p>
@@ -41,7 +41,7 @@
 							</div>
 					</div>
 					<div class="modal-body">
-					<%= v.texte.bbcode_to_html_with_formatting.html_safe %>
+							<%= v.texte.bbcode_to_html_with_formatting.html_safe %>
 					</div>
 					<div class="modal-footer">
 					Actualité crée le : <%= v.created_at %>
