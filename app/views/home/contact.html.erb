@@ -1,4 +1,7 @@
 <div class="visible-xs fix-mobile"></div>	
+<div class="col-sm-8 bloc-g col-sm-offset-2 map_content">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2624.3342709829817!2d2.2806005!3d48.8709039!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66ff65bb65929%3A0x941559ffac9341c8!2s36+Avenue+Bugeaud%2C+75116+Paris!5e0!3m2!1sen!2sfr!4v1417366295913" class="map"></iframe>
+</div>
 <div class="col-sm-8 bloc-g col-sm-offset-2">
 <% if locale == :en %>
 	<section>
@@ -29,3 +32,43 @@
 					<% end %>
 <% end %>
 </div>
+				<% if locale == :en %>
+					<div class="name">
+					<%= (t('profil.name') + @index.firstnameen + ' ' + @index.nameen).bbcode_to_html_with_formatting.html_safe %>
+					</div>
+					<div class="email">
+					<a data-toggle="modal" data-target="#map" href="#"  target="_blank">
+						<%= (t('profil.addr') + @index.streeten + ' ' + @index.cpen + ' ' + @index.cityen).bbcode_to_html_with_formatting.html_safe %>
+					</a> 
+					</div>
+					<div class="adresse">
+					
+					</div>
+
+					<div class="postal">
+					<%= (t('profil.phone') + @index.phoneen).bbcode_to_html_with_formatting.html_safe %>
+					<%= (t('profil.fax') + @index.faxen).bbcode_to_html_with_formatting.html_safe %>
+					<%= (t('profil.mobil') + @index.mobileen).bbcode_to_html_with_formatting.html_safe %>
+					</div>
+				<% else %>
+					<div class="name">
+					<%= (t('profil.name') + @index.firstname + ' ' + @index.name).bbcode_to_html_with_formatting.html_safe %>
+					</div>
+					<div class="email">
+					<a data-toggle="modal" data-target="#map" href="#"  target="_blank">
+						<%= (t('profil.addr') + @index.street + ' ' + @index.cp + ' ' + @index.city).bbcode_to_html_with_formatting.html_safe %>
+					</a>
+					</div>
+					<div class="adresse">
+					
+					</div>
+					<iframe
+		  				frameborder="0" style="border:0"
+		 				 src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBegs8cCY3HjnUkA7KKxRGKrJkK_YCPYsk&q=<%= @map %>">
+					</iframe> 
+					<div class="postal">
+					<%= (t('profil.phone') + @index.phone).bbcode_to_html_with_formatting.html_safe %>
+					<%= (t('profil.fax') + @index.fax).bbcode_to_html_with_formatting.html_safe %>
+					<%= (t('profil.mobil') + @index.mobile).bbcode_to_html_with_formatting.html_safe %>
+					</div>
+				<% end %>

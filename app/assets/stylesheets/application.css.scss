@@ -236,15 +236,14 @@ body {
 
 
 body {
-	background-color: #f5f5f5;
+	background-color: rgb(247,247,247);
 	.container {
 		padding: 0;
+		background-color: white;		
 	}
 	.bloc-g {
 		background-color: white;
 		border-radius: 1px;
-		border-style: solid;
-		border-color: #dedede;
 		border-width: 1px;
 		padding: 13px;
 		margin-bottom: 20px;
@@ -278,7 +277,7 @@ body {
 			font-weight: '700';
 		}
 		.fix-header{
-			padding-top: 50px;
+			padding-top: 35px;
 		}
 		form {
 			display: inline;
@@ -289,6 +288,8 @@ body {
 	}
 	aside {
 		&.profil {
+			background-color: rgb(242, 241, 237);
+
 			.name {
 				font-family: 'Titillium Web', sans-serif;
 				letter-spacing: 1px;
@@ -364,8 +365,11 @@ body {
 
 .item img {
 	min-height: 500px;
-	max-height: 500px;
 	width: auto;
+	background-size: cover;
+	top: -350px;
+	display: block;
+	position: relative
 }
 
 .center {
@@ -387,9 +391,12 @@ body {
 }
 
 .separator_slide {
-	width: 40px;
-	height: 5px;
-	margin-top: 25px;
+	width: 100%;
+	height: 25px;
+	margin-top: -25px;
+	background: rgba(247,247,247,0.4);
+	position: relative;
+	display: block;
 }
 
 .profil-separator {
@@ -441,8 +448,8 @@ body {
 }
 
 .hidden-xs {
-	background-color: #f5f5f5;
-	border-color: #f5f5f5;
+	background-color: white;
+	border-color: white;
 	border-radius: 0;
 	padding: 0;
 }
@@ -554,7 +561,67 @@ article {
     text-decoration: none;
     color: black; }
     .pagination a:hover, .pagination a:focus {
-      text-decoration: underline; }
+      text-decoration: underline; 
+  }
 
 
 
+/* ------------------------------------------------- *\
+							FOOTER
+	\* ------------------------------------------------- */
+
+	footer {
+		position: relative;
+		float: right;
+		width: 100%;
+		height: 100px;
+		bottom: 0;
+		background-color: #2c2924;
+		.infos_footer {
+			.phone {}
+			.mail {}
+			.adress {}
+			.follow {
+				position: relative;
+				float: right;
+				top: 40px;
+				right: 100px;
+				span {
+					position: relative;
+					display: inline-block;
+					top: -5px;
+					margin-right: 20px;
+					font-size: 20px;
+					color: rgba(255,255,255,0.8);
+					
+				}
+				div {
+					display: inline-block;
+					width: 50px;
+					height: 35px;
+					outline: none;
+					&.twitter {
+						background-image: asset-url("twitter_logo.png", image);
+						background-repeat: no-repeat;
+						background-size: 40px auto;
+						cursor: pointer;
+						opacity: 0.8;
+						&:hover {
+							opacity: 1;
+						}
+					}
+					&.linkedin {
+						background-image: asset-url("linkedin_logo.png", image);
+						background-repeat: no-repeat;
+						background-size: 40px auto;
+						cursor: pointer;
+						opacity: 0.8;
+						&:hover {
+							opacity: 1;
+						}
+
+					}
+				}
+			}
+		}
+	}
