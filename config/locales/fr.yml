@@ -40,6 +40,7 @@ fr:
       site: "site web"
     actualites:
       no_actu:  "Il n'y a pas d'Actualités pour l'instant."
+      created: "créé le : "
   footer:
     follow: "Suivez moi"
 

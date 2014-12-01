@@ -40,6 +40,7 @@ en:
       site: "website"
     actualites:
       no_actu: "there is no News available yet."
+      created: "created at : "
   footer:
     follow: "Follow me"
 
@@ -75,6 +76,7 @@ fr:
       site: "site web"
     actualites:
       no_actu:  "Il n'y a pas d'Actualités pour l'instant."
+      created: "créé le : "
   footer:
     follow: "Suivez moi"
 
