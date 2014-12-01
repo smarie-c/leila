@@ -48,13 +48,7 @@
     </footer>
 end design Karine -->
 
-	<% test_fr = '' %>
-	<% test_en = '' %>
-	<% if locale == :en %>
-		<% test_en = ' test-moi' %>
-	<% elsif locale == :fr %>
-		<% test_fr = ' test-moi' %>
-	<% end %>
+
 	<!-- header admin -->
 	<% if params[:controller] == "admin" %>
 			<p>
@@ -110,10 +104,10 @@ end design Karine -->
 			<div class="title"><%= t('header.name')%></div>
 				<div class="lang pull-right">
 					<%= bootstrap_form_tag url: fr_path, method: "post" do |f| %>
-						<%= f.submit "FR", class: "btn" + test_fr %>
+						<%= f.submit "FR", class: "btn", id: "fr" %>
 					<% end %> |
 					<%= bootstrap_form_tag url: en_path, method: "post" do |f| %>
-						<%= f.submit "EN", class: "btn" + test_en %>
+						<%= f.submit "EN", class: "btn", id: "en" %>
 					<% end %>
 				</div>
 			<div class="subtitle"><%= t("header.sub") %></div>
@@ -154,10 +148,18 @@ end design Karine -->
 	<script type="text/javascript">
 		function ft_add_active_to_header(str)
 		{
-			document.getElementById(str).className += "act";
+			document.getElementById(str).className += " act";
 			document.getElementById(str).childNodes[0].style.color = "black"
 		}
+		function ft_active_languages(str)
+		{
+			if (str == "en")
+				document.getElementById("en").className += " act_lang";
+			else
+				document.getElementById("fr").className += " act_lang";
+		}
 		ft_add_active_to_header("<%= params[:action] %>");
+		ft_active_languages("<%= locale %>");
 	</script>
 
 
