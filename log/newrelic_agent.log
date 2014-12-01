@@ -90,3 +90,256 @@
 [11/29/14 16:37:41 +0100 e2r4p17.42.fr (87583)] INFO : Doing deferred dependency-detection before Rack startup
 [11/29/14 16:37:54 +0100 e2r4p17.42.fr (87583)] ERROR : Unknown license key
 [11/29/14 16:37:54 +0100 e2r4p17.42.fr (87583)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[12/01/14 14:21:47 +0100 e2r2p21.42.fr (87228)] INFO : Starting the New Relic agent in "development" environment.
+[12/01/14 14:21:47 +0100 e2r2p21.42.fr (87228)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[12/01/14 14:21:47 +0100 e2r2p21.42.fr (87228)] WARN : No configuration file found. Working directory = /Volumes/Data/nfs/zfs-student-3/users/2013/lsirigna/main
+[12/01/14 14:21:47 +0100 e2r2p21.42.fr (87228)] WARN : Looked in these locations (based on defaults): /Volumes/Data/nfs/zfs-student-3/users/2013/lsirigna/main/config/newrelic.yml, /Volumes/Data/nfs/zfs-student-3/users/2013/lsirigna/main/newrelic.yml, /Volumes/Data/nfs/zfs-student-3/users/2013/lsirigna/main/config/newrelic.yml, /Volumes/Data/nfs/zfs-student-3/users/2013/lsirigna/main/newrelic.yml, /nfs/zfs-student-3/users/2013/lsirigna/.newrelic/newrelic.yml, /nfs/zfs-student-3/users/2013/lsirigna/newrelic.yml
+[12/01/14 14:21:47 +0100 e2r2p21.42.fr (87228)] INFO : Environment: development
+[12/01/14 14:21:47 +0100 e2r2p21.42.fr (87228)] INFO : No known dispatcher detected.
+[12/01/14 14:21:47 +0100 e2r2p21.42.fr (87228)] INFO : Application: development
+[12/01/14 14:21:47 +0100 e2r2p21.42.fr (87228)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'.
+[12/01/14 14:21:47 +0100 e2r2p21.42.fr (87228)] INFO : Installing ActiveRecord 4 instrumentation
+[12/01/14 14:21:47 +0100 e2r2p21.42.fr (87228)] INFO : Installing Dalli Memcache instrumentation
+[12/01/14 14:21:47 +0100 e2r2p21.42.fr (87228)] INFO : Installing Net instrumentation
+[12/01/14 14:21:47 +0100 e2r2p21.42.fr (87228)] INFO : Installing deferred Rack instrumentation
+[12/01/14 14:21:47 +0100 e2r2p21.42.fr (87228)] INFO : Installing Rack::Builder middleware instrumentation
+[12/01/14 14:21:47 +0100 e2r2p21.42.fr (87228)] INFO : Installing Rails 3+ middleware instrumentation
+[12/01/14 14:21:47 +0100 e2r2p21.42.fr (87228)] INFO : Installing Sidekiq instrumentation
+[12/01/14 14:21:47 +0100 e2r2p21.42.fr (87228)] INFO : Installing Rails 4 Controller instrumentation
+[12/01/14 14:21:47 +0100 e2r2p21.42.fr (87228)] INFO : Installing Rails 4 view instrumentation
+[12/01/14 14:21:47 +0100 e2r2p21.42.fr (87228)] INFO : Installing Rails 4 Error instrumentation
+[12/01/14 14:21:47 +0100 e2r2p21.42.fr (87228)] INFO : Finished instrumentation
+[12/01/14 14:21:47 +0100 e2r2p21.42.fr (87228)] INFO : Doing deferred dependency-detection before Rack startup
+[12/01/14 14:21:51 +0100 e2r2p21.42.fr (87228)] ERROR : Unknown license key
+[12/01/14 14:21:51 +0100 e2r2p21.42.fr (87228)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[12/01/14 14:23:12 +0100 e2r2p21.42.fr (87228)] INFO : Starting Agent shutdown
+[12/01/14 14:23:43 +0100 e2r2p21.42.fr (87268)] INFO : Starting the New Relic agent in "development" environment.
+[12/01/14 14:23:43 +0100 e2r2p21.42.fr (87268)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[12/01/14 14:23:43 +0100 e2r2p21.42.fr (87268)] WARN : No configuration file found. Working directory = /Volumes/Data/nfs/zfs-student-3/users/2013/lsirigna/main
+[12/01/14 14:23:43 +0100 e2r2p21.42.fr (87268)] WARN : Looked in these locations (based on defaults): /Volumes/Data/nfs/zfs-student-3/users/2013/lsirigna/main/config/newrelic.yml, /Volumes/Data/nfs/zfs-student-3/users/2013/lsirigna/main/newrelic.yml, /Volumes/Data/nfs/zfs-student-3/users/2013/lsirigna/main/config/newrelic.yml, /Volumes/Data/nfs/zfs-student-3/users/2013/lsirigna/main/newrelic.yml, /nfs/zfs-student-3/users/2013/lsirigna/.newrelic/newrelic.yml, /nfs/zfs-student-3/users/2013/lsirigna/newrelic.yml
+[12/01/14 14:23:43 +0100 e2r2p21.42.fr (87268)] INFO : Environment: development
+[12/01/14 14:23:43 +0100 e2r2p21.42.fr (87268)] INFO : No known dispatcher detected.
+[12/01/14 14:23:43 +0100 e2r2p21.42.fr (87268)] INFO : Application: development
+[12/01/14 14:23:43 +0100 e2r2p21.42.fr (87268)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'.
+[12/01/14 14:23:43 +0100 e2r2p21.42.fr (87268)] INFO : Installing ActiveRecord 4 instrumentation
+[12/01/14 14:23:43 +0100 e2r2p21.42.fr (87268)] INFO : Installing Dalli Memcache instrumentation
+[12/01/14 14:23:43 +0100 e2r2p21.42.fr (87268)] INFO : Installing Net instrumentation
+[12/01/14 14:23:43 +0100 e2r2p21.42.fr (87268)] INFO : Installing deferred Rack instrumentation
+[12/01/14 14:23:43 +0100 e2r2p21.42.fr (87268)] INFO : Installing Rack::Builder middleware instrumentation
+[12/01/14 14:23:43 +0100 e2r2p21.42.fr (87268)] INFO : Installing Rails 3+ middleware instrumentation
+[12/01/14 14:23:43 +0100 e2r2p21.42.fr (87268)] INFO : Installing Sidekiq instrumentation
+[12/01/14 14:23:43 +0100 e2r2p21.42.fr (87268)] INFO : Installing Rails 4 Controller instrumentation
+[12/01/14 14:23:43 +0100 e2r2p21.42.fr (87268)] INFO : Installing Rails 4 view instrumentation
+[12/01/14 14:23:43 +0100 e2r2p21.42.fr (87268)] INFO : Installing Rails 4 Error instrumentation
+[12/01/14 14:23:43 +0100 e2r2p21.42.fr (87268)] INFO : Finished instrumentation
+[12/01/14 14:23:43 +0100 e2r2p21.42.fr (87268)] INFO : Doing deferred dependency-detection before Rack startup
+[12/01/14 14:23:46 +0100 e2r2p21.42.fr (87268)] ERROR : Unknown license key
+[12/01/14 14:23:46 +0100 e2r2p21.42.fr (87268)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[12/01/14 14:34:11 +0100 e2r2p21.42.fr (87268)] INFO : Starting Agent shutdown
+[12/01/14 14:35:19 +0100 e2r2p21.42.fr (87453)] INFO : Starting the New Relic agent in "development" environment.
+[12/01/14 14:35:19 +0100 e2r2p21.42.fr (87453)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[12/01/14 14:35:19 +0100 e2r2p21.42.fr (87453)] WARN : No configuration file found. Working directory = /Volumes/Data/nfs/zfs-student-3/users/2013/lsirigna/main
+[12/01/14 14:35:19 +0100 e2r2p21.42.fr (87453)] WARN : Looked in these locations (based on defaults): /Volumes/Data/nfs/zfs-student-3/users/2013/lsirigna/main/config/newrelic.yml, /Volumes/Data/nfs/zfs-student-3/users/2013/lsirigna/main/newrelic.yml, /Volumes/Data/nfs/zfs-student-3/users/2013/lsirigna/main/config/newrelic.yml, /Volumes/Data/nfs/zfs-student-3/users/2013/lsirigna/main/newrelic.yml, /nfs/zfs-student-3/users/2013/lsirigna/.newrelic/newrelic.yml, /nfs/zfs-student-3/users/2013/lsirigna/newrelic.yml
+[12/01/14 14:35:19 +0100 e2r2p21.42.fr (87453)] INFO : Environment: development
+[12/01/14 14:35:19 +0100 e2r2p21.42.fr (87453)] INFO : No known dispatcher detected.
+[12/01/14 14:35:19 +0100 e2r2p21.42.fr (87453)] INFO : Application: development
+[12/01/14 14:35:19 +0100 e2r2p21.42.fr (87453)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'.
+[12/01/14 14:35:19 +0100 e2r2p21.42.fr (87453)] INFO : Installing ActiveRecord 4 instrumentation
+[12/01/14 14:35:19 +0100 e2r2p21.42.fr (87453)] INFO : Installing Dalli Memcache instrumentation
+[12/01/14 14:35:19 +0100 e2r2p21.42.fr (87453)] INFO : Installing Net instrumentation
+[12/01/14 14:35:19 +0100 e2r2p21.42.fr (87453)] INFO : Installing deferred Rack instrumentation
+[12/01/14 14:35:19 +0100 e2r2p21.42.fr (87453)] INFO : Installing Rack::Builder middleware instrumentation
+[12/01/14 14:35:19 +0100 e2r2p21.42.fr (87453)] INFO : Installing Rails 3+ middleware instrumentation
+[12/01/14 14:35:19 +0100 e2r2p21.42.fr (87453)] INFO : Installing Sidekiq instrumentation
+[12/01/14 14:35:19 +0100 e2r2p21.42.fr (87453)] INFO : Installing Rails 4 Controller instrumentation
+[12/01/14 14:35:19 +0100 e2r2p21.42.fr (87453)] INFO : Installing Rails 4 view instrumentation
+[12/01/14 14:35:19 +0100 e2r2p21.42.fr (87453)] INFO : Installing Rails 4 Error instrumentation
+[12/01/14 14:35:19 +0100 e2r2p21.42.fr (87453)] INFO : Finished instrumentation
+[12/01/14 14:35:20 +0100 e2r2p21.42.fr (87453)] INFO : Doing deferred dependency-detection before Rack startup
+[12/01/14 14:35:27 +0100 e2r2p21.42.fr (87453)] ERROR : Unknown license key
+[12/01/14 14:35:27 +0100 e2r2p21.42.fr (87453)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[12/01/14 15:03:09 +0100 e2r2p21.42.fr (87453)] INFO : Starting Agent shutdown
+[12/01/14 15:03:58 +0100 e2r2p21.42.fr (87646)] INFO : Starting the New Relic agent in "development" environment.
+[12/01/14 15:03:58 +0100 e2r2p21.42.fr (87646)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[12/01/14 15:03:58 +0100 e2r2p21.42.fr (87646)] WARN : No configuration file found. Working directory = /Volumes/Data/nfs/zfs-student-3/users/2013/lsirigna/main
+[12/01/14 15:03:58 +0100 e2r2p21.42.fr (87646)] WARN : Looked in these locations (based on defaults): /Volumes/Data/nfs/zfs-student-3/users/2013/lsirigna/main/config/newrelic.yml, /Volumes/Data/nfs/zfs-student-3/users/2013/lsirigna/main/newrelic.yml, /Volumes/Data/nfs/zfs-student-3/users/2013/lsirigna/main/config/newrelic.yml, /Volumes/Data/nfs/zfs-student-3/users/2013/lsirigna/main/newrelic.yml, /nfs/zfs-student-3/users/2013/lsirigna/.newrelic/newrelic.yml, /nfs/zfs-student-3/users/2013/lsirigna/newrelic.yml
+[12/01/14 15:03:58 +0100 e2r2p21.42.fr (87646)] INFO : Environment: development
+[12/01/14 15:03:58 +0100 e2r2p21.42.fr (87646)] INFO : No known dispatcher detected.
+[12/01/14 15:03:58 +0100 e2r2p21.42.fr (87646)] INFO : Application: development
+[12/01/14 15:03:58 +0100 e2r2p21.42.fr (87646)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'.
+[12/01/14 15:03:58 +0100 e2r2p21.42.fr (87646)] INFO : Installing ActiveRecord 4 instrumentation
+[12/01/14 15:03:58 +0100 e2r2p21.42.fr (87646)] INFO : Installing Dalli Memcache instrumentation
+[12/01/14 15:03:58 +0100 e2r2p21.42.fr (87646)] INFO : Installing Net instrumentation
+[12/01/14 15:03:58 +0100 e2r2p21.42.fr (87646)] INFO : Installing deferred Rack instrumentation
+[12/01/14 15:03:58 +0100 e2r2p21.42.fr (87646)] INFO : Installing Rack::Builder middleware instrumentation
+[12/01/14 15:03:58 +0100 e2r2p21.42.fr (87646)] INFO : Installing Rails 3+ middleware instrumentation
+[12/01/14 15:03:58 +0100 e2r2p21.42.fr (87646)] INFO : Installing Sidekiq instrumentation
+[12/01/14 15:03:58 +0100 e2r2p21.42.fr (87646)] INFO : Installing Rails 4 Controller instrumentation
+[12/01/14 15:03:58 +0100 e2r2p21.42.fr (87646)] INFO : Installing Rails 4 view instrumentation
+[12/01/14 15:03:58 +0100 e2r2p21.42.fr (87646)] INFO : Installing Rails 4 Error instrumentation
+[12/01/14 15:03:58 +0100 e2r2p21.42.fr (87646)] INFO : Finished instrumentation
+[12/01/14 15:03:59 +0100 e2r2p21.42.fr (87646)] INFO : Doing deferred dependency-detection before Rack startup
+[12/01/14 15:04:01 +0100 e2r2p21.42.fr (87646)] ERROR : Unknown license key
+[12/01/14 15:04:01 +0100 e2r2p21.42.fr (87646)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[12/01/14 15:17:22 +0100 e2r2p21.42.fr (87646)] INFO : Starting Agent shutdown
+[12/01/14 15:18:19 +0100 e2r2p21.42.fr (87705)] INFO : Starting the New Relic agent in "development" environment.
+[12/01/14 15:18:19 +0100 e2r2p21.42.fr (87705)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[12/01/14 15:18:19 +0100 e2r2p21.42.fr (87705)] WARN : No configuration file found. Working directory = /Volumes/Data/nfs/zfs-student-3/users/2013/lsirigna/main
+[12/01/14 15:18:19 +0100 e2r2p21.42.fr (87705)] WARN : Looked in these locations (based on defaults): /Volumes/Data/nfs/zfs-student-3/users/2013/lsirigna/main/config/newrelic.yml, /Volumes/Data/nfs/zfs-student-3/users/2013/lsirigna/main/newrelic.yml, /Volumes/Data/nfs/zfs-student-3/users/2013/lsirigna/main/config/newrelic.yml, /Volumes/Data/nfs/zfs-student-3/users/2013/lsirigna/main/newrelic.yml, /nfs/zfs-student-3/users/2013/lsirigna/.newrelic/newrelic.yml, /nfs/zfs-student-3/users/2013/lsirigna/newrelic.yml
+[12/01/14 15:18:19 +0100 e2r2p21.42.fr (87705)] INFO : Environment: development
+[12/01/14 15:18:19 +0100 e2r2p21.42.fr (87705)] INFO : No known dispatcher detected.
+[12/01/14 15:18:19 +0100 e2r2p21.42.fr (87705)] INFO : Application: development
+[12/01/14 15:18:19 +0100 e2r2p21.42.fr (87705)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'.
+[12/01/14 15:18:19 +0100 e2r2p21.42.fr (87705)] INFO : Installing ActiveRecord 4 instrumentation
+[12/01/14 15:18:19 +0100 e2r2p21.42.fr (87705)] INFO : Installing Dalli Memcache instrumentation
+[12/01/14 15:18:19 +0100 e2r2p21.42.fr (87705)] INFO : Installing Net instrumentation
+[12/01/14 15:18:19 +0100 e2r2p21.42.fr (87705)] INFO : Installing deferred Rack instrumentation
+[12/01/14 15:18:19 +0100 e2r2p21.42.fr (87705)] INFO : Installing Rack::Builder middleware instrumentation
+[12/01/14 15:18:19 +0100 e2r2p21.42.fr (87705)] INFO : Installing Rails 3+ middleware instrumentation
+[12/01/14 15:18:19 +0100 e2r2p21.42.fr (87705)] INFO : Installing Sidekiq instrumentation
+[12/01/14 15:18:19 +0100 e2r2p21.42.fr (87705)] INFO : Installing Rails 4 Controller instrumentation
+[12/01/14 15:18:19 +0100 e2r2p21.42.fr (87705)] INFO : Installing Rails 4 view instrumentation
+[12/01/14 15:18:19 +0100 e2r2p21.42.fr (87705)] INFO : Installing Rails 4 Error instrumentation
+[12/01/14 15:18:19 +0100 e2r2p21.42.fr (87705)] INFO : Finished instrumentation
+[12/01/14 15:18:20 +0100 e2r2p21.42.fr (87705)] INFO : Doing deferred dependency-detection before Rack startup
+[12/01/14 15:18:21 +0100 e2r2p21.42.fr (87705)] ERROR : Unknown license key
+[12/01/14 15:18:21 +0100 e2r2p21.42.fr (87705)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[12/01/14 15:35:54 +0100 e2r2p21.42.fr (87705)] INFO : Starting Agent shutdown
+[12/01/14 15:37:43 +0100 e2r2p21.42.fr (87964)] INFO : Starting the New Relic agent in "development" environment.
+[12/01/14 15:37:43 +0100 e2r2p21.42.fr (87964)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[12/01/14 15:37:43 +0100 e2r2p21.42.fr (87964)] WARN : No configuration file found. Working directory = /Volumes/Data/nfs/zfs-student-3/users/2013/lsirigna/main
+[12/01/14 15:37:43 +0100 e2r2p21.42.fr (87964)] WARN : Looked in these locations (based on defaults): /Volumes/Data/nfs/zfs-student-3/users/2013/lsirigna/main/config/newrelic.yml, /Volumes/Data/nfs/zfs-student-3/users/2013/lsirigna/main/newrelic.yml, /Volumes/Data/nfs/zfs-student-3/users/2013/lsirigna/main/config/newrelic.yml, /Volumes/Data/nfs/zfs-student-3/users/2013/lsirigna/main/newrelic.yml, /nfs/zfs-student-3/users/2013/lsirigna/.newrelic/newrelic.yml, /nfs/zfs-student-3/users/2013/lsirigna/newrelic.yml
+[12/01/14 15:37:43 +0100 e2r2p21.42.fr (87964)] INFO : Environment: development
+[12/01/14 15:37:43 +0100 e2r2p21.42.fr (87964)] INFO : No known dispatcher detected.
+[12/01/14 15:37:43 +0100 e2r2p21.42.fr (87964)] INFO : Application: development
+[12/01/14 15:37:43 +0100 e2r2p21.42.fr (87964)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'.
+[12/01/14 15:37:43 +0100 e2r2p21.42.fr (87964)] INFO : Installing ActiveRecord 4 instrumentation
+[12/01/14 15:37:43 +0100 e2r2p21.42.fr (87964)] INFO : Installing Dalli Memcache instrumentation
+[12/01/14 15:37:43 +0100 e2r2p21.42.fr (87964)] INFO : Installing Net instrumentation
+[12/01/14 15:37:43 +0100 e2r2p21.42.fr (87964)] INFO : Installing deferred Rack instrumentation
+[12/01/14 15:37:43 +0100 e2r2p21.42.fr (87964)] INFO : Installing Rack::Builder middleware instrumentation
+[12/01/14 15:37:43 +0100 e2r2p21.42.fr (87964)] INFO : Installing Rails 3+ middleware instrumentation
+[12/01/14 15:37:43 +0100 e2r2p21.42.fr (87964)] INFO : Installing Sidekiq instrumentation
+[12/01/14 15:37:43 +0100 e2r2p21.42.fr (87964)] INFO : Installing Rails 4 Controller instrumentation
+[12/01/14 15:37:43 +0100 e2r2p21.42.fr (87964)] INFO : Installing Rails 4 view instrumentation
+[12/01/14 15:37:43 +0100 e2r2p21.42.fr (87964)] INFO : Installing Rails 4 Error instrumentation
+[12/01/14 15:37:43 +0100 e2r2p21.42.fr (87964)] INFO : Finished instrumentation
+[12/01/14 15:37:44 +0100 e2r2p21.42.fr (87964)] INFO : Doing deferred dependency-detection before Rack startup
+[12/01/14 15:37:45 +0100 e2r2p21.42.fr (87964)] ERROR : Unknown license key
+[12/01/14 15:37:45 +0100 e2r2p21.42.fr (87964)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[12/01/14 15:46:01 +0100 e2r2p21.42.fr (87964)] INFO : Starting Agent shutdown
+[12/01/14 15:46:52 +0100 e2r2p21.42.fr (88081)] INFO : Starting the New Relic agent in "development" environment.
+[12/01/14 15:46:52 +0100 e2r2p21.42.fr (88081)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[12/01/14 15:46:52 +0100 e2r2p21.42.fr (88081)] WARN : No configuration file found. Working directory = /Volumes/Data/nfs/zfs-student-3/users/2013/lsirigna/main
+[12/01/14 15:46:52 +0100 e2r2p21.42.fr (88081)] WARN : Looked in these locations (based on defaults): /Volumes/Data/nfs/zfs-student-3/users/2013/lsirigna/main/config/newrelic.yml, /Volumes/Data/nfs/zfs-student-3/users/2013/lsirigna/main/newrelic.yml, /Volumes/Data/nfs/zfs-student-3/users/2013/lsirigna/main/config/newrelic.yml, /Volumes/Data/nfs/zfs-student-3/users/2013/lsirigna/main/newrelic.yml, /nfs/zfs-student-3/users/2013/lsirigna/.newrelic/newrelic.yml, /nfs/zfs-student-3/users/2013/lsirigna/newrelic.yml
+[12/01/14 15:46:52 +0100 e2r2p21.42.fr (88081)] INFO : Environment: development
+[12/01/14 15:46:52 +0100 e2r2p21.42.fr (88081)] INFO : No known dispatcher detected.
+[12/01/14 15:46:52 +0100 e2r2p21.42.fr (88081)] INFO : Application: development
+[12/01/14 15:46:52 +0100 e2r2p21.42.fr (88081)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'.
+[12/01/14 15:46:52 +0100 e2r2p21.42.fr (88081)] INFO : Installing ActiveRecord 4 instrumentation
+[12/01/14 15:46:52 +0100 e2r2p21.42.fr (88081)] INFO : Installing Dalli Memcache instrumentation
+[12/01/14 15:46:52 +0100 e2r2p21.42.fr (88081)] INFO : Installing Net instrumentation
+[12/01/14 15:46:52 +0100 e2r2p21.42.fr (88081)] INFO : Installing deferred Rack instrumentation
+[12/01/14 15:46:52 +0100 e2r2p21.42.fr (88081)] INFO : Installing Rack::Builder middleware instrumentation
+[12/01/14 15:46:52 +0100 e2r2p21.42.fr (88081)] INFO : Installing Rails 3+ middleware instrumentation
+[12/01/14 15:46:52 +0100 e2r2p21.42.fr (88081)] INFO : Installing Sidekiq instrumentation
+[12/01/14 15:46:52 +0100 e2r2p21.42.fr (88081)] INFO : Installing Rails 4 Controller instrumentation
+[12/01/14 15:46:52 +0100 e2r2p21.42.fr (88081)] INFO : Installing Rails 4 view instrumentation
+[12/01/14 15:46:52 +0100 e2r2p21.42.fr (88081)] INFO : Installing Rails 4 Error instrumentation
+[12/01/14 15:46:52 +0100 e2r2p21.42.fr (88081)] INFO : Finished instrumentation
+[12/01/14 15:46:52 +0100 e2r2p21.42.fr (88081)] INFO : Doing deferred dependency-detection before Rack startup
+[12/01/14 15:47:15 +0100 e2r2p21.42.fr (88081)] ERROR : Unknown license key
+[12/01/14 15:47:15 +0100 e2r2p21.42.fr (88081)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[12/01/14 16:33:37 +0100 e2r2p21.42.fr (88081)] INFO : Starting Agent shutdown
+[12/01/14 16:35:23 +0100 e2r2p21.42.fr (88370)] INFO : Starting the New Relic agent in "development" environment.
+[12/01/14 16:35:23 +0100 e2r2p21.42.fr (88370)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[12/01/14 16:35:23 +0100 e2r2p21.42.fr (88370)] WARN : No configuration file found. Working directory = /Volumes/Data/nfs/zfs-student-3/users/2013/lsirigna/main
+[12/01/14 16:35:23 +0100 e2r2p21.42.fr (88370)] WARN : Looked in these locations (based on defaults): /Volumes/Data/nfs/zfs-student-3/users/2013/lsirigna/main/config/newrelic.yml, /Volumes/Data/nfs/zfs-student-3/users/2013/lsirigna/main/newrelic.yml, /Volumes/Data/nfs/zfs-student-3/users/2013/lsirigna/main/config/newrelic.yml, /Volumes/Data/nfs/zfs-student-3/users/2013/lsirigna/main/newrelic.yml, /nfs/zfs-student-3/users/2013/lsirigna/.newrelic/newrelic.yml, /nfs/zfs-student-3/users/2013/lsirigna/newrelic.yml
+[12/01/14 16:35:23 +0100 e2r2p21.42.fr (88370)] INFO : Environment: development
+[12/01/14 16:35:23 +0100 e2r2p21.42.fr (88370)] INFO : No known dispatcher detected.
+[12/01/14 16:35:23 +0100 e2r2p21.42.fr (88370)] INFO : Application: development
+[12/01/14 16:35:23 +0100 e2r2p21.42.fr (88370)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'.
+[12/01/14 16:35:23 +0100 e2r2p21.42.fr (88370)] INFO : Installing ActiveRecord 4 instrumentation
+[12/01/14 16:35:23 +0100 e2r2p21.42.fr (88370)] INFO : Installing Dalli Memcache instrumentation
+[12/01/14 16:35:23 +0100 e2r2p21.42.fr (88370)] INFO : Installing Net instrumentation
+[12/01/14 16:35:23 +0100 e2r2p21.42.fr (88370)] INFO : Installing deferred Rack instrumentation
+[12/01/14 16:35:23 +0100 e2r2p21.42.fr (88370)] INFO : Installing Rack::Builder middleware instrumentation
+[12/01/14 16:35:23 +0100 e2r2p21.42.fr (88370)] INFO : Installing Rails 3+ middleware instrumentation
+[12/01/14 16:35:23 +0100 e2r2p21.42.fr (88370)] INFO : Installing Sidekiq instrumentation
+[12/01/14 16:35:23 +0100 e2r2p21.42.fr (88370)] INFO : Installing Rails 4 Controller instrumentation
+[12/01/14 16:35:23 +0100 e2r2p21.42.fr (88370)] INFO : Installing Rails 4 view instrumentation
+[12/01/14 16:35:23 +0100 e2r2p21.42.fr (88370)] INFO : Installing Rails 4 Error instrumentation
+[12/01/14 16:35:23 +0100 e2r2p21.42.fr (88370)] INFO : Finished instrumentation
+[12/01/14 16:35:23 +0100 e2r2p21.42.fr (88370)] INFO : Doing deferred dependency-detection before Rack startup
+[12/01/14 16:35:24 +0100 e2r2p21.42.fr (88370)] ERROR : Unknown license key
+[12/01/14 16:35:24 +0100 e2r2p21.42.fr (88370)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[12/01/14 16:36:31 +0100 e2r2p21.42.fr (88370)] INFO : Starting Agent shutdown
+[12/01/14 16:40:10 +0100 e2r2p21.42.fr (88384)] INFO : Starting the New Relic agent in "development" environment.
+[12/01/14 16:40:10 +0100 e2r2p21.42.fr (88384)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[12/01/14 16:40:10 +0100 e2r2p21.42.fr (88384)] WARN : No configuration file found. Working directory = /Volumes/Data/nfs/zfs-student-3/users/2013/lsirigna/main
+[12/01/14 16:40:10 +0100 e2r2p21.42.fr (88384)] WARN : Looked in these locations (based on defaults): /Volumes/Data/nfs/zfs-student-3/users/2013/lsirigna/main/config/newrelic.yml, /Volumes/Data/nfs/zfs-student-3/users/2013/lsirigna/main/newrelic.yml, /Volumes/Data/nfs/zfs-student-3/users/2013/lsirigna/main/config/newrelic.yml, /Volumes/Data/nfs/zfs-student-3/users/2013/lsirigna/main/newrelic.yml, /nfs/zfs-student-3/users/2013/lsirigna/.newrelic/newrelic.yml, /nfs/zfs-student-3/users/2013/lsirigna/newrelic.yml
+[12/01/14 16:40:10 +0100 e2r2p21.42.fr (88384)] INFO : Environment: development
+[12/01/14 16:40:10 +0100 e2r2p21.42.fr (88384)] INFO : No known dispatcher detected.
+[12/01/14 16:40:10 +0100 e2r2p21.42.fr (88384)] INFO : Application: development
+[12/01/14 16:40:10 +0100 e2r2p21.42.fr (88384)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'.
+[12/01/14 16:40:10 +0100 e2r2p21.42.fr (88384)] INFO : Installing ActiveRecord 4 instrumentation
+[12/01/14 16:40:10 +0100 e2r2p21.42.fr (88384)] INFO : Installing Dalli Memcache instrumentation
+[12/01/14 16:40:10 +0100 e2r2p21.42.fr (88384)] INFO : Installing Net instrumentation
+[12/01/14 16:40:10 +0100 e2r2p21.42.fr (88384)] INFO : Installing deferred Rack instrumentation
+[12/01/14 16:40:10 +0100 e2r2p21.42.fr (88384)] INFO : Installing Rack::Builder middleware instrumentation
+[12/01/14 16:40:10 +0100 e2r2p21.42.fr (88384)] INFO : Installing Rails 3+ middleware instrumentation
+[12/01/14 16:40:10 +0100 e2r2p21.42.fr (88384)] INFO : Installing Sidekiq instrumentation
+[12/01/14 16:40:10 +0100 e2r2p21.42.fr (88384)] INFO : Installing Rails 4 Controller instrumentation
+[12/01/14 16:40:10 +0100 e2r2p21.42.fr (88384)] INFO : Installing Rails 4 view instrumentation
+[12/01/14 16:40:10 +0100 e2r2p21.42.fr (88384)] INFO : Installing Rails 4 Error instrumentation
+[12/01/14 16:40:10 +0100 e2r2p21.42.fr (88384)] INFO : Finished instrumentation
+[12/01/14 16:40:11 +0100 e2r2p21.42.fr (88384)] INFO : Doing deferred dependency-detection before Rack startup
+[12/01/14 16:40:13 +0100 e2r2p21.42.fr (88384)] ERROR : Unknown license key
+[12/01/14 16:40:13 +0100 e2r2p21.42.fr (88384)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[12/01/14 16:46:40 +0100 e2r2p21.42.fr (88384)] INFO : Starting Agent shutdown
+[12/01/14 16:49:04 +0100 e2r2p21.42.fr (88424)] INFO : Starting the New Relic agent in "development" environment.
+[12/01/14 16:49:04 +0100 e2r2p21.42.fr (88424)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[12/01/14 16:49:04 +0100 e2r2p21.42.fr (88424)] WARN : No configuration file found. Working directory = /Volumes/Data/nfs/zfs-student-3/users/2013/lsirigna/main
+[12/01/14 16:49:04 +0100 e2r2p21.42.fr (88424)] WARN : Looked in these locations (based on defaults): /Volumes/Data/nfs/zfs-student-3/users/2013/lsirigna/main/config/newrelic.yml, /Volumes/Data/nfs/zfs-student-3/users/2013/lsirigna/main/newrelic.yml, /Volumes/Data/nfs/zfs-student-3/users/2013/lsirigna/main/config/newrelic.yml, /Volumes/Data/nfs/zfs-student-3/users/2013/lsirigna/main/newrelic.yml, /nfs/zfs-student-3/users/2013/lsirigna/.newrelic/newrelic.yml, /nfs/zfs-student-3/users/2013/lsirigna/newrelic.yml
+[12/01/14 16:49:04 +0100 e2r2p21.42.fr (88424)] INFO : Environment: development
+[12/01/14 16:49:04 +0100 e2r2p21.42.fr (88424)] INFO : No known dispatcher detected.
+[12/01/14 16:49:04 +0100 e2r2p21.42.fr (88424)] INFO : Application: development
+[12/01/14 16:49:04 +0100 e2r2p21.42.fr (88424)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'.
+[12/01/14 16:49:04 +0100 e2r2p21.42.fr (88424)] INFO : Installing ActiveRecord 4 instrumentation
+[12/01/14 16:49:04 +0100 e2r2p21.42.fr (88424)] INFO : Installing Dalli Memcache instrumentation
+[12/01/14 16:49:04 +0100 e2r2p21.42.fr (88424)] INFO : Installing Net instrumentation
+[12/01/14 16:49:04 +0100 e2r2p21.42.fr (88424)] INFO : Installing deferred Rack instrumentation
+[12/01/14 16:49:04 +0100 e2r2p21.42.fr (88424)] INFO : Installing Rack::Builder middleware instrumentation
+[12/01/14 16:49:04 +0100 e2r2p21.42.fr (88424)] INFO : Installing Rails 3+ middleware instrumentation
+[12/01/14 16:49:04 +0100 e2r2p21.42.fr (88424)] INFO : Installing Sidekiq instrumentation
+[12/01/14 16:49:04 +0100 e2r2p21.42.fr (88424)] INFO : Installing Rails 4 Controller instrumentation
+[12/01/14 16:49:04 +0100 e2r2p21.42.fr (88424)] INFO : Installing Rails 4 view instrumentation
+[12/01/14 16:49:04 +0100 e2r2p21.42.fr (88424)] INFO : Installing Rails 4 Error instrumentation
+[12/01/14 16:49:04 +0100 e2r2p21.42.fr (88424)] INFO : Finished instrumentation
+[12/01/14 16:49:05 +0100 e2r2p21.42.fr (88424)] INFO : Doing deferred dependency-detection before Rack startup
+[12/01/14 16:49:08 +0100 e2r2p21.42.fr (88424)] ERROR : Unknown license key
+[12/01/14 16:49:08 +0100 e2r2p21.42.fr (88424)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[12/01/14 16:54:57 +0100 e2r2p21.42.fr (88424)] INFO : Starting Agent shutdown
+[12/01/14 16:55:14 +0100 e2r2p21.42.fr (88479)] INFO : Starting the New Relic agent in "development" environment.
+[12/01/14 16:55:14 +0100 e2r2p21.42.fr (88479)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[12/01/14 16:55:14 +0100 e2r2p21.42.fr (88479)] WARN : No configuration file found. Working directory = /Volumes/Data/nfs/zfs-student-3/users/2013/lsirigna/main
+[12/01/14 16:55:14 +0100 e2r2p21.42.fr (88479)] WARN : Looked in these locations (based on defaults): /Volumes/Data/nfs/zfs-student-3/users/2013/lsirigna/main/config/newrelic.yml, /Volumes/Data/nfs/zfs-student-3/users/2013/lsirigna/main/newrelic.yml, /Volumes/Data/nfs/zfs-student-3/users/2013/lsirigna/main/config/newrelic.yml, /Volumes/Data/nfs/zfs-student-3/users/2013/lsirigna/main/newrelic.yml, /nfs/zfs-student-3/users/2013/lsirigna/.newrelic/newrelic.yml, /nfs/zfs-student-3/users/2013/lsirigna/newrelic.yml
+[12/01/14 16:55:14 +0100 e2r2p21.42.fr (88479)] INFO : Environment: development
+[12/01/14 16:55:14 +0100 e2r2p21.42.fr (88479)] INFO : No known dispatcher detected.
+[12/01/14 16:55:14 +0100 e2r2p21.42.fr (88479)] INFO : Application: development
+[12/01/14 16:55:14 +0100 e2r2p21.42.fr (88479)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'.
+[12/01/14 16:55:14 +0100 e2r2p21.42.fr (88479)] INFO : Installing ActiveRecord 4 instrumentation
+[12/01/14 16:55:14 +0100 e2r2p21.42.fr (88479)] INFO : Installing Dalli Memcache instrumentation
+[12/01/14 16:55:14 +0100 e2r2p21.42.fr (88479)] INFO : Installing Net instrumentation
+[12/01/14 16:55:14 +0100 e2r2p21.42.fr (88479)] INFO : Installing deferred Rack instrumentation
+[12/01/14 16:55:14 +0100 e2r2p21.42.fr (88479)] INFO : Installing Rack::Builder middleware instrumentation
+[12/01/14 16:55:14 +0100 e2r2p21.42.fr (88479)] INFO : Installing Rails 3+ middleware instrumentation
+[12/01/14 16:55:14 +0100 e2r2p21.42.fr (88479)] INFO : Installing Sidekiq instrumentation
+[12/01/14 16:55:14 +0100 e2r2p21.42.fr (88479)] INFO : Installing Rails 4 Controller instrumentation
+[12/01/14 16:55:14 +0100 e2r2p21.42.fr (88479)] INFO : Installing Rails 4 view instrumentation
+[12/01/14 16:55:14 +0100 e2r2p21.42.fr (88479)] INFO : Installing Rails 4 Error instrumentation
+[12/01/14 16:55:14 +0100 e2r2p21.42.fr (88479)] INFO : Finished instrumentation
+[12/01/14 16:55:15 +0100 e2r2p21.42.fr (88479)] INFO : Doing deferred dependency-detection before Rack startup
+[12/01/14 16:55:18 +0100 e2r2p21.42.fr (88479)] ERROR : Unknown license key
+[12/01/14 16:55:18 +0100 e2r2p21.42.fr (88479)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[12/01/14 17:29:39 +0100 e2r2p21.42.fr (88479)] INFO : Starting Agent shutdown

@@ -1,5 +1,5 @@
 	<div class="col-sm-offset-2"> 
-	<%= will_paginate @veilles %>
+<%= will_paginate @veilles, class: "pagination" %>
 <% if @veilles.count == 0 %>
 <%= t('category.actualites.no_actu') %>
 <% end %>
@@ -15,15 +15,47 @@
 					<div class="atitle actu_news">
 				<% end %>
 					<%= v.titre.bbcode_to_html_with_formatting.html_safe %><br/>
-				</div>
+
+				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal<%= v.id %>" data-whatever="@mdo">en savoir plus</button>
+
+
+ 				</div>
 			</strong>
 			<div class="separator-article"></div>
 			<div class="veille">
 				<%= v.texte.bbcode_to_html_with_formatting.html_safe %><br/>
 			</div>
+				<!-- modal start -->
+				<div class="modal fade" id="exampleModal<%= v.id %>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+					<div class="modal-content">
+					<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+							<% if v.veille_type == 0 %>
+								<div class="atitle actu_idee">
+							<% elsif v.veille_type == 1 %>
+								<div class="atitle actu_info">
+							<% else %>
+								<div class="atitle actu_news">
+							<% end %>
+								<%= v.titre.bbcode_to_html_with_formatting.html_safe %>
+							</div>
+					</div>
+					<div class="modal-body">
+					<%= v.texte.bbcode_to_html_with_formatting.html_safe %>
+					</div>
+					<div class="modal-footer">
+					Actualité crée le : <%= v.created_at %>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+					</div>
+					</div>
+				</div>
+				<!-- modal end -->
 		</article>
 	</section>
 	<% end %>
-	<%= will_paginate @veilles %>
+<%= will_paginate @veilles, class: "pagination" %>
 </div>
+
 
