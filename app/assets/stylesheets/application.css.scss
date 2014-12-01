@@ -288,8 +288,34 @@ body {
 	}
 	aside {
 		&.profil {
-			background-color: rgb(242, 241, 237);
+			background-color: #efeee9;
+			margin-bottom: 30px;
+			padding: 14px;
+			border-color: #d9d7d2;
+			border-top-width: 1px;
+			border-bottom-width: 1px;
+			border-left: 0;
+			border-right: 0;
+			border-style: solid;
+			.cv {
+				font-family: 'Titillium Web', sans-serif;
+				.cv-name {
+					font-size: 24px;
+					color: #6F6F6D;
+					text-transform: uppercase;
 
+				}
+				.cv-skills {
+					letter-spacing: 2px;
+					text-transform: uppercase;
+					color: #A29F8E;
+				}
+				.cv-mail {
+					text-transform: uppercase;
+					color: #6F6F6D;
+					
+				}
+			}
 			.name {
 				font-family: 'Titillium Web', sans-serif;
 				letter-spacing: 1px;
@@ -495,7 +521,6 @@ article {
 	/*background-image: -webkit-linear-gradient(left, rgba(0, 255, 255, 0.5) 100%, rgba(0, 0, 255, 0.00001) 0%);*/
 	background-color: #2EAFC0;
 }
-
 
 //panel_admin
 .admin_class {

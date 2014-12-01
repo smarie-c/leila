@@ -6,6 +6,7 @@ class HomeController < ApplicationController
        else
          @map = @index.street
        end
+       @veilles = Veille.where("langue = '#{I18n.locale}'").order('updated_at DESC').limit(3)
   end
 
   def associe
@@ -18,6 +19,12 @@ class HomeController < ApplicationController
 
   def contact
         @contact = Contact.find(1)
+        @index = Index.find(1)
+       if I18n.locale == :en
+         @map = @index.streeten
+       else
+         @map = @index.street
+       end
   end
 
   def specialite

@@ -14,17 +14,16 @@
 				<% else %>
 					<div class="atitle actu_news">
 				<% end %>
-					<%= v.titre.bbcode_to_html_with_formatting.html_safe %><br/>
-
-				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal<%= v.id %>" data-whatever="@mdo">en savoir plus</button>
-
-
+					<%= v.titre.bbcode_to_html_with_formatting.html_safe %>
  				</div>
 			</strong>
 			<div class="separator-article"></div>
 			<div class="veille">
-				<%= v.texte.bbcode_to_html_with_formatting.html_safe %><br/>
+				<% index = v.texte.index("\n") %>
+				<%= v.texte[0,index].bbcode_to_html_with_formatting.html_safe %>
 			</div>
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal<%= v.id %>" data-whatever="@mdo">en savoir plus</button>
+			<p style="text-align:right;"><%= t('category.actualites.created') %><%= v.created_at.strftime("%d/%m/%Y") %></p>
 				<!-- modal start -->
 				<div class="modal fade" id="exampleModal<%= v.id %>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 					<div class="modal-dialog">
@@ -42,10 +41,17 @@
 							</div>
 					</div>
 					<div class="modal-body">
-					<%= v.texte.bbcode_to_html_with_formatting.html_safe %>
+							<%= v.texte.bbcode_to_html_with_formatting.html_safe %>
 					</div>
 					<div class="modal-footer">
-					Actualité crée le : <%= v.created_at %>
+						<a class="twitter-share-button"
+   href="https://twitter.com/share"
+  data-url="http://goo.gl/TD7rai"
+  data-counturl="https://dev.twitter.com/web/tweet-button"
+  data-count="vertical">
+Tweet
+</a>
+					Actualité crée le : <%= v.created_at.strftime("%d/%m/%Y") %>
 					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 					</div>
 					</div>
@@ -59,3 +65,6 @@
 </div>
 
 
+<script type="text/javascript">
+window.twttr=(function(d,s,id){var t,js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return}js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);return window.twttr||(t={_e:[],ready:function(f){t._e.push(f)}})}(document,"script","twitter-wjs"));
+</script>
