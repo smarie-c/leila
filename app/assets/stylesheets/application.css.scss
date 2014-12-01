@@ -20,11 +20,32 @@
 body {
 	background-color: #f4f7f7;
 	header {
-		background: #ffffff;
-		font-family: 'Oswald', sans-serif;
-		text-transform: uppercase;
-		min-height: 100px;
-		color: #2c2526 !important;
+		nav {
+			background-color: #ffffff;
+			font-family: 'Oswald', sans-serif;
+			text-transform: uppercase;
+			color: #2c2526 !important;
+			&.navbar-default {
+				border-color: white;
+				background-color: white;
+			}
+			.container-fluid {
+				min-height: 100px;
+			}
+			.navbar-brand {
+				color: #2c2526 !important;
+				padding-top: 25px;
+				padding: 0;
+			}
+			.nom-laila	{
+				font-weight: 700;
+				letter-spacing: 2px;
+			}
+			.job-laila {
+				letter-spacing: 1px;
+				font-weight: 300;
+			}
+		} // Nav
 		.id {
 			padding: 30px;
 			.nom-laila {
@@ -34,6 +55,8 @@ body {
 				display: block;
 			}
 			.job-laila {
+			color: #2c2526 !important;
+
 				letter-spacing: 1px;
 				font-weight: 300;
 				display: block;
@@ -72,37 +95,9 @@ body {
 			}
 	} // Header
 	.separator {
-		margin-bottom: 200px;
+		margin-bottom: 40px;
 	}
 
-	// .email {
-
-	// 	.e-adresse {
-	// 		font-weight: 400;
-	// 		letter-spacing: 2px;
-	// 		color: #2c2526 !important;
-	// 	}
-	// }
-	.contact-header {
-		text-align: right;
-		margin-bottom: 20px;
-		margin-top: 30px;
-		.contact-each {
-			text-transform: uppercase;
-			font-family: 'Oswald', sans-serif;
-			font-weight: 400;
-			letter-spacing: 1px;
-			margin-bottom: 3px;
-			color: #c8c0b6;
-			font-size: 18px;
-			display: block;
-			.infos {
-				font-weight: 400;
-				color: #786568 !important;
-				letter-spacing: 2px;
-			}
-		}
-	}
 	section {
 		background-color: #ffffff;
 		.carousel{
@@ -115,37 +110,89 @@ body {
 			}
 	} // Carousel
 		nav {
-			text-transform: uppercase;
-			font-family: 'Open Sans', sans-serif;
-			font-weight: 500;
-			padding-top: 50px;
-			font-size: 30px;
-			.nav-article {
-				color: #c8c0b6;
-				&.act {
-					color: #2c2526 !important;
+			&.header {
+				text-transform: uppercase;
+				font-family: 'Open Sans', sans-serif;
+				font-weight: 500;
+				padding-top: 50px;
+				font-size: 30px;
+				.nav-article {
+					color: #c8c0b6;
+					&.act {
+						color: #2c2526 !important;
 
+					}
 				}
-			}
-			.article-separator {
-				width: 2px;
-				height: 55px;
-				background: #eae9e4;
-				float: left;
-			}
+				.article-separator {
+					width: 2px;
+					height: 55px;
+					background: #eae9e4;
+					float: left;
+				}
+			} // Header
 		} // Nav
 	article {
+		padding-top: 100px;
 		height: 920px;
+		padding-left: 30px;
+		.titre {
+			font-family: 'Oswald', sans-serif;
+			font-weight: 400;
+			font-size: 24px;
+			margin-bottom: 15px;
+		}
+		.light-off {
+			color: #32589C;
+		}
+		.news {
+			color: #E96B56;
+		}
+		.actu {
+			padding-left: 5px;
+		}
+		.separator-article {
+			height: 3px;
+			width: 30px;
+			background: #eae9e4;
+			margin-bottom: 30px;
+		}
 
 		} // Article
 
 
 	} // Section
-			footer {
-			bottom: 0;
-			min-height: 200px;
-			background-color: #6C7A89;
-		}
+	footer {
+	bottom: 0;
+	background-color: #6C7A89;
+	.contact-footer {
+		text-align: right;
+		.contact-bot {
+			text-transform: uppercase;
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 400;
+			letter-spacing: 1px;
+			margin-bottom: 3px;
+			font-size: 18px;
+			padding-top: 40px;
+			padding-right: 20px;
+			color: #BEC9D5;
+			.email{
+				font-weight: 400;
+				letter-spacing: 2px;
+			}
+			.infos {
+				margin-right: 600px;				
+				text-transform: uppercase;
+				text-align: left;
+				font-family: 'Open Sans', sans-serif;
+				font-weight: 700;
+				line-height: 100px;
+				color: #BEC9D5;
+				} 
+			} // Contact Bot
+		} // Contact Footer
+
+	} // Footer
 } // Body
 
 
