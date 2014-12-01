@@ -388,3 +388,67 @@
 [12/01/14 21:17:07 +0100 e2r1p7.42.fr (42855)] ERROR : Unknown license key
 [12/01/14 21:17:07 +0100 e2r1p7.42.fr (42855)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
 [12/01/14 23:08:13 +0100 e2r1p7.42.fr (42855)] INFO : Starting Agent shutdown
+[12/01/14 23:34:56 +0100 e2r2p19.42.fr (16021)] INFO : Starting the New Relic agent in "development" environment.
+[12/01/14 23:34:56 +0100 e2r2p19.42.fr (16021)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[12/01/14 23:34:56 +0100 e2r2p19.42.fr (16021)] WARN : No configuration file found. Working directory = /Volumes/Data/nfs/zfs-student-4/users/2013/smarie-c/letmp
+[12/01/14 23:34:56 +0100 e2r2p19.42.fr (16021)] WARN : Looked in these locations (based on defaults): /Volumes/Data/nfs/zfs-student-4/users/2013/smarie-c/letmp/config/newrelic.yml, /Volumes/Data/nfs/zfs-student-4/users/2013/smarie-c/letmp/newrelic.yml, /Volumes/Data/nfs/zfs-student-4/users/2013/smarie-c/letmp/config/newrelic.yml, /Volumes/Data/nfs/zfs-student-4/users/2013/smarie-c/letmp/newrelic.yml, /nfs/zfs-student-4/users/2013/smarie-c/.newrelic/newrelic.yml, /nfs/zfs-student-4/users/2013/smarie-c/newrelic.yml
+[12/01/14 23:34:56 +0100 e2r2p19.42.fr (16021)] INFO : Environment: development
+[12/01/14 23:34:56 +0100 e2r2p19.42.fr (16021)] INFO : No known dispatcher detected.
+[12/01/14 23:34:56 +0100 e2r2p19.42.fr (16021)] INFO : Application: development
+[12/01/14 23:34:56 +0100 e2r2p19.42.fr (16021)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'.
+[12/01/14 23:34:56 +0100 e2r2p19.42.fr (16021)] INFO : Installing ActiveRecord 4 instrumentation
+[12/01/14 23:34:56 +0100 e2r2p19.42.fr (16021)] INFO : Installing Dalli Memcache instrumentation
+[12/01/14 23:34:56 +0100 e2r2p19.42.fr (16021)] INFO : Installing Net instrumentation
+[12/01/14 23:34:56 +0100 e2r2p19.42.fr (16021)] INFO : Installing deferred Rack instrumentation
+[12/01/14 23:34:56 +0100 e2r2p19.42.fr (16021)] INFO : Installing Rack::Builder middleware instrumentation
+[12/01/14 23:34:56 +0100 e2r2p19.42.fr (16021)] INFO : Installing Rails 3+ middleware instrumentation
+[12/01/14 23:34:56 +0100 e2r2p19.42.fr (16021)] INFO : Installing Sidekiq instrumentation
+[12/01/14 23:34:56 +0100 e2r2p19.42.fr (16021)] INFO : Installing Rails 4 Controller instrumentation
+[12/01/14 23:34:56 +0100 e2r2p19.42.fr (16021)] INFO : Installing Rails 4 view instrumentation
+[12/01/14 23:34:56 +0100 e2r2p19.42.fr (16021)] INFO : Installing Rails 4 Error instrumentation
+[12/01/14 23:34:56 +0100 e2r2p19.42.fr (16021)] INFO : Finished instrumentation
+[12/01/14 23:34:56 +0100 e2r2p19.42.fr (16021)] INFO : Doing deferred dependency-detection before Rack startup
+[12/01/14 23:36:25 +0100 e2r2p19.42.fr (16021)] ERROR : Unknown license key
+[12/01/14 23:36:25 +0100 e2r2p19.42.fr (16021)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[12/02/14 00:11:02 +0100 e2r2p19.42.fr (16021)] INFO : Starting Agent shutdown
+[12/02/14 00:12:01 +0100 e2r2p19.42.fr (16304)] INFO : Starting the New Relic agent in "development" environment.
+[12/02/14 00:12:01 +0100 e2r2p19.42.fr (16304)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[12/02/14 00:12:01 +0100 e2r2p19.42.fr (16304)] WARN : No configuration file found. Working directory = /Volumes/Data/nfs/zfs-student-4/users/2013/smarie-c/letmp
+[12/02/14 00:12:01 +0100 e2r2p19.42.fr (16304)] WARN : Looked in these locations (based on defaults): /Volumes/Data/nfs/zfs-student-4/users/2013/smarie-c/letmp/config/newrelic.yml, /Volumes/Data/nfs/zfs-student-4/users/2013/smarie-c/letmp/newrelic.yml, /Volumes/Data/nfs/zfs-student-4/users/2013/smarie-c/letmp/config/newrelic.yml, /Volumes/Data/nfs/zfs-student-4/users/2013/smarie-c/letmp/newrelic.yml, /nfs/zfs-student-4/users/2013/smarie-c/.newrelic/newrelic.yml, /nfs/zfs-student-4/users/2013/smarie-c/newrelic.yml
+[12/02/14 00:12:01 +0100 e2r2p19.42.fr (16304)] INFO : Environment: development
+[12/02/14 00:12:01 +0100 e2r2p19.42.fr (16304)] INFO : No known dispatcher detected.
+[12/02/14 00:12:01 +0100 e2r2p19.42.fr (16304)] INFO : Application: development
+[12/02/14 00:12:01 +0100 e2r2p19.42.fr (16304)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'.
+[12/02/14 00:12:01 +0100 e2r2p19.42.fr (16304)] INFO : Installing ActiveRecord 4 instrumentation
+[12/02/14 00:12:01 +0100 e2r2p19.42.fr (16304)] INFO : Installing Dalli Memcache instrumentation
+[12/02/14 00:12:01 +0100 e2r2p19.42.fr (16304)] INFO : Installing Net instrumentation
+[12/02/14 00:12:01 +0100 e2r2p19.42.fr (16304)] INFO : Installing deferred Rack instrumentation
+[12/02/14 00:12:01 +0100 e2r2p19.42.fr (16304)] INFO : Installing Rack::Builder middleware instrumentation
+[12/02/14 00:12:01 +0100 e2r2p19.42.fr (16304)] INFO : Installing Rails 3+ middleware instrumentation
+[12/02/14 00:12:01 +0100 e2r2p19.42.fr (16304)] INFO : Installing Sidekiq instrumentation
+[12/02/14 00:12:01 +0100 e2r2p19.42.fr (16304)] INFO : Installing Rails 4 Controller instrumentation
+[12/02/14 00:12:01 +0100 e2r2p19.42.fr (16304)] INFO : Installing Rails 4 view instrumentation
+[12/02/14 00:12:01 +0100 e2r2p19.42.fr (16304)] INFO : Installing Rails 4 Error instrumentation
+[12/02/14 00:12:01 +0100 e2r2p19.42.fr (16304)] INFO : Finished instrumentation
+[12/02/14 00:12:01 +0100 e2r2p19.42.fr (16304)] INFO : Doing deferred dependency-detection before Rack startup
+[12/02/14 00:12:13 +0100 e2r2p19.42.fr (16304)] ERROR : Unknown license key
+[12/02/14 00:12:13 +0100 e2r2p19.42.fr (16304)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[12/02/14 00:13:05 +0100 e2r2p19.42.fr (16317)] INFO : Starting the New Relic agent in "development" environment.
+[12/02/14 00:13:05 +0100 e2r2p19.42.fr (16317)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[12/02/14 00:13:05 +0100 e2r2p19.42.fr (16317)] WARN : No configuration file found. Working directory = /Volumes/Data/nfs/zfs-student-4/users/2013/smarie-c/letmp
+[12/02/14 00:13:05 +0100 e2r2p19.42.fr (16317)] WARN : Looked in these locations (based on defaults): /Volumes/Data/nfs/zfs-student-4/users/2013/smarie-c/letmp/config/newrelic.yml, /Volumes/Data/nfs/zfs-student-4/users/2013/smarie-c/letmp/newrelic.yml, /Volumes/Data/nfs/zfs-student-4/users/2013/smarie-c/letmp/config/newrelic.yml, /Volumes/Data/nfs/zfs-student-4/users/2013/smarie-c/letmp/newrelic.yml, /nfs/zfs-student-4/users/2013/smarie-c/.newrelic/newrelic.yml, /nfs/zfs-student-4/users/2013/smarie-c/newrelic.yml
+[12/02/14 00:13:05 +0100 e2r2p19.42.fr (16317)] INFO : Environment: development
+[12/02/14 00:13:05 +0100 e2r2p19.42.fr (16317)] INFO : No known dispatcher detected.
+[12/02/14 00:13:05 +0100 e2r2p19.42.fr (16317)] INFO : Application: development
+[12/02/14 00:13:05 +0100 e2r2p19.42.fr (16317)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'.
+[12/02/14 00:13:05 +0100 e2r2p19.42.fr (16317)] INFO : Installing ActiveRecord 4 instrumentation
+[12/02/14 00:13:05 +0100 e2r2p19.42.fr (16317)] INFO : Installing Dalli Memcache instrumentation
+[12/02/14 00:13:05 +0100 e2r2p19.42.fr (16317)] INFO : Installing Net instrumentation
+[12/02/14 00:13:05 +0100 e2r2p19.42.fr (16317)] INFO : Installing deferred Rack instrumentation
+[12/02/14 00:13:05 +0100 e2r2p19.42.fr (16317)] INFO : Installing Rack::Builder middleware instrumentation
+[12/02/14 00:13:05 +0100 e2r2p19.42.fr (16317)] INFO : Installing Rails 3+ middleware instrumentation
+[12/02/14 00:13:05 +0100 e2r2p19.42.fr (16317)] INFO : Installing Sidekiq instrumentation
+[12/02/14 00:13:05 +0100 e2r2p19.42.fr (16317)] INFO : Installing Rails 4 Controller instrumentation
+[12/02/14 00:13:05 +0100 e2r2p19.42.fr (16317)] INFO : Installing Rails 4 view instrumentation
+[12/02/14 00:13:05 +0100 e2r2p19.42.fr (16317)] INFO : Installing Rails 4 Error instrumentation
+[12/02/14 00:13:05 +0100 e2r2p19.42.fr (16317)] INFO : Finished instrumentation

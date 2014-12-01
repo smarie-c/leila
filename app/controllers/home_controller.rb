@@ -33,6 +33,9 @@ class HomeController < ApplicationController
 
   def actualite
   	@veilles = Veille.where("langue = '#{I18n.locale}'").order('updated_at DESC').paginate(:page => params[:page])
+    @type0 = Veille.where("langue = '#{I18n.locale}' and veille_type = 0").order('updated_at DESC').paginate(:page => params[:page])
+    @type1 = Veille.where("langue = '#{I18n.locale}' and veille_type = 1").order('updated_at DESC').paginate(:page => params[:page])
+    @type2 = Veille.where("langue = '#{I18n.locale}' and veille_type = 2").order('updated_at DESC').paginate(:page => params[:page])
   end
 
   def turn_en

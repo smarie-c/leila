@@ -1,67 +1,298 @@
 	<div class="col-sm-offset-2"> 
-<%= will_paginate @veilles, class: "pagination" %>
-<% if @veilles.count == 0 %>
-<%= t('category.actualites.no_actu') %>
-<% end %>
-	<% @veilles.each do |v| %>
-	<section class="bloc-g veille">
-		<article>
-			<strong>
-				<% if v.veille_type == 0 %>
-					<div class="atitle actu_idee">
-				<% elsif v.veille_type == 1 %>
-					<div class="atitle actu_info">
-				<% else %>
-					<div class="atitle actu_news">
-				<% end %>
-					<%= v.titre.bbcode_to_html_with_formatting.html_safe %>
- 				</div>
-			</strong>
-			<div class="separator-article"></div>
-			<div class="veille">
-				<% index = v.texte.index("\n") %>
-				<%= v.texte[0,index].bbcode_to_html_with_formatting.html_safe %>
-			</div>
-			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal<%= v.id %>" data-whatever="@mdo">en savoir plus</button>
-			<p style="text-align:right;"><%= t('category.actualites.created') %><%= v.created_at.strftime("%d/%m/%Y") %></p>
-				<!-- modal start -->
-				<div class="modal fade" id="exampleModal<%= v.id %>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-					<div class="modal-dialog">
-					<div class="modal-content">
-					<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-							<% if v.veille_type == 0 %>
-								<div class="atitle actu_idee">
-							<% elsif v.veille_type == 1 %>
-								<div class="atitle actu_info">
-							<% else %>
-								<div class="atitle actu_news">
+
+		<div role="tabpanel">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#all" aria-controls="all" role="tab" data-toggle="tab">all</a></li>
+    <li role="presentation"><a href="#type0" aria-controls="type0" role="tab" data-toggle="tab">type0</a></li>
+    <li role="presentation"><a href="#type1" aria-controls="type1" role="tab" data-toggle="tab">type1</a></li>
+    <li role="presentation"><a href="#type2" aria-controls="type2" role="tab" data-toggle="tab">type2</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="all">
+
+															<!-- veille start -->
+															<%= will_paginate @veilles, class: "pagination" %>
+															<% if @veilles.count == 0 %>
+															<%= t('category.actualites.no_actu') %>
+															<% end %>
+
+																<% @veilles.each do |v| %>
+																<section class="bloc-g veille">
+																	<article>
+																		<strong>
+																			<% if v.veille_type == 0 %>
+																				<div class="atitle actu_idee">
+																			<% elsif v.veille_type == 1 %>
+																				<div class="atitle actu_info">
+																			<% else %>
+																				<div class="atitle actu_news">
+																			<% end %>
+																				<%= v.titre.bbcode_to_html_with_formatting.html_safe %>
+															 				</div>
+																		</strong>
+																		<div class="separator-article"></div>
+																		<div class="veille">
+																			<% index = v.texte.index("\n") %>
+																			<%= v.texte[0,index].bbcode_to_html_with_formatting.html_safe %>
+																		</div>
+																		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal<%= v.id %>" data-whatever="@mdo">en savoir plus</button>
+																		<p style="text-align:right;"><%= t('category.actualites.created') %><%= v.created_at.strftime("%d/%m/%Y") %></p>
+																			<!-- modal start -->
+																			<div class="modal fade" id="exampleModal<%= v.id %>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+																				<div class="modal-dialog">
+																				<div class="modal-content">
+																				<div class="modal-header">
+																				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+																						<% if v.veille_type == 0 %>
+																							<div class="atitle actu_idee">
+																						<% elsif v.veille_type == 1 %>
+																							<div class="atitle actu_info">
+																						<% else %>
+																							<div class="atitle actu_news">
+																						<% end %>
+																							<%= v.titre.bbcode_to_html_with_formatting.html_safe %>
+																						</div>
+																				</div>
+																				<div class="modal-body">
+																						<%= v.texte.bbcode_to_html_with_formatting.html_safe %>
+																				</div>
+																				<div class="modal-footer">
+																					<a class="twitter-share-button"
+															   href="https://twitter.com/share"
+															  data-url="http://goo.gl/TD7rai"
+															  data-counturl="https://dev.twitter.com/web/tweet-button"
+															  data-count="vertical">
+															Tweet
+															</a>
+																				Actualité crée le : <%= v.created_at.strftime("%d/%m/%Y") %>
+																				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+																				</div>
+																				</div>
+																				</div>
+																			</div>
+																			<!-- modal end -->
+																	</article>
+																</section>
+																<% end %>
+
+															<%= will_paginate @veilles, class: "pagination" %>
+															<!-- veille end -->
+    </div>
+    <div role="tabpanel" class="tab-pane" id="type0">
+
+							<!-- type0 start -->
+							<%= will_paginate @type0, class: "pagination" %>
+							<% if @type0.count == 0 %>
+							<%= t('category.actualites.no_actu') %>
 							<% end %>
-								<%= v.titre.bbcode_to_html_with_formatting.html_safe %>
-							</div>
-					</div>
-					<div class="modal-body">
-							<%= v.texte.bbcode_to_html_with_formatting.html_safe %>
-					</div>
-					<div class="modal-footer">
-						<a class="twitter-share-button"
-   href="https://twitter.com/share"
-  data-url="http://goo.gl/TD7rai"
-  data-counturl="https://dev.twitter.com/web/tweet-button"
-  data-count="vertical">
-Tweet
-</a>
-					Actualité crée le : <%= v.created_at.strftime("%d/%m/%Y") %>
-					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					</div>
-					</div>
-					</div>
-				</div>
-				<!-- modal end -->
-		</article>
-	</section>
-	<% end %>
-<%= will_paginate @veilles, class: "pagination" %>
+
+								<% @type0.each do |v| %>
+								<section class="bloc-g veille">
+									<article>
+										<strong>
+											<% if v.veille_type == 0 %>
+												<div class="atitle actu_idee">
+											<% elsif v.veille_type == 1 %>
+												<div class="atitle actu_info">
+											<% else %>
+												<div class="atitle actu_news">
+											<% end %>
+												<%= v.titre.bbcode_to_html_with_formatting.html_safe %>
+							 				</div>
+										</strong>
+										<div class="separator-article"></div>
+										<div class="veille">
+											<% index = v.texte.index("\n") %>
+											<%= v.texte[0,index].bbcode_to_html_with_formatting.html_safe %>
+										</div>
+										<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal<%= v.id %>" data-whatever="@mdo">en savoir plus</button>
+										<p style="text-align:right;"><%= t('category.actualites.created') %><%= v.created_at.strftime("%d/%m/%Y") %></p>
+											<!-- modal start -->
+											<div class="modal fade" id="exampleModal<%= v.id %>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+												<div class="modal-dialog">
+												<div class="modal-content">
+												<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+														<% if v.veille_type == 0 %>
+															<div class="atitle actu_idee">
+														<% elsif v.veille_type == 1 %>
+															<div class="atitle actu_info">
+														<% else %>
+															<div class="atitle actu_news">
+														<% end %>
+															<%= v.titre.bbcode_to_html_with_formatting.html_safe %>
+														</div>
+												</div>
+												<div class="modal-body">
+														<%= v.texte.bbcode_to_html_with_formatting.html_safe %>
+												</div>
+												<div class="modal-footer">
+													<a class="twitter-share-button"
+							   href="https://twitter.com/share"
+							  data-url="http://goo.gl/TD7rai"
+							  data-counturl="https://dev.twitter.com/web/tweet-button"
+							  data-count="vertical">
+							Tweet
+							</a>
+												Actualité crée le : <%= v.created_at.strftime("%d/%m/%Y") %>
+												<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+												</div>
+												</div>
+												</div>
+											</div>
+											<!-- modal end -->
+									</article>
+								</section>
+								<% end %>
+
+							<%= will_paginate @type0, class: "pagination" %>
+							<!-- type0 end -->
+    </div>
+    <div role="tabpanel" class="tab-pane" id="type1">
+			    								<!-- type1 start -->
+										<%= will_paginate @type1, class: "pagination" %>
+										<% if @type1.count == 0 %>
+										<%= t('category.actualites.no_actu') %>
+										<% end %>
+
+											<% @type1.each do |v| %>
+											<section class="bloc-g veille">
+												<article>
+													<strong>
+														<% if v.veille_type == 0 %>
+															<div class="atitle actu_idee">
+														<% elsif v.veille_type == 1 %>
+															<div class="atitle actu_info">
+														<% else %>
+															<div class="atitle actu_news">
+														<% end %>
+															<%= v.titre.bbcode_to_html_with_formatting.html_safe %>
+										 				</div>
+													</strong>
+													<div class="separator-article"></div>
+													<div class="veille">
+														<% index = v.texte.index("\n") %>
+														<%= v.texte[0,index].bbcode_to_html_with_formatting.html_safe %>
+													</div>
+													<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal<%= v.id %>" data-whatever="@mdo">en savoir plus</button>
+													<p style="text-align:right;"><%= t('category.actualites.created') %><%= v.created_at.strftime("%d/%m/%Y") %></p>
+														<!-- modal start -->
+														<div class="modal fade" id="exampleModal<%= v.id %>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+															<div class="modal-dialog">
+															<div class="modal-content">
+															<div class="modal-header">
+															<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+																	<% if v.veille_type == 0 %>
+																		<div class="atitle actu_idee">
+																	<% elsif v.veille_type == 1 %>
+																		<div class="atitle actu_info">
+																	<% else %>
+																		<div class="atitle actu_news">
+																	<% end %>
+																		<%= v.titre.bbcode_to_html_with_formatting.html_safe %>
+																	</div>
+															</div>
+															<div class="modal-body">
+																	<%= v.texte.bbcode_to_html_with_formatting.html_safe %>
+															</div>
+															<div class="modal-footer">
+																<a class="twitter-share-button"
+										   href="https://twitter.com/share"
+										  data-url="http://goo.gl/TD7rai"
+										  data-counturl="https://dev.twitter.com/web/tweet-button"
+										  data-count="vertical">
+										Tweet
+										</a>
+															Actualité crée le : <%= v.created_at.strftime("%d/%m/%Y") %>
+															<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+															</div>
+															</div>
+															</div>
+														</div>
+														<!-- modal end -->
+												</article>
+											</section>
+											<% end %>
+
+										<%= will_paginate @type1, class: "pagination" %>
+										<!-- type1 end -->
+    </div>
+    <div role="tabpanel" class="tab-pane" id="type2">
+			    								<!-- type2 start -->
+										<%= will_paginate @type2, class: "pagination" %>
+										<% if @type2.count == 0 %>
+										<%= t('category.actualites.no_actu') %>
+										<% end %>
+
+											<% @type2.each do |v| %>
+											<section class="bloc-g veille">
+												<article>
+													<strong>
+														<% if v.veille_type == 0 %>
+															<div class="atitle actu_idee">
+														<% elsif v.veille_type == 1 %>
+															<div class="atitle actu_info">
+														<% else %>
+															<div class="atitle actu_news">
+														<% end %>
+															<%= v.titre.bbcode_to_html_with_formatting.html_safe %>
+										 				</div>
+													</strong>
+													<div class="separator-article"></div>
+													<div class="veille">
+														<% index = v.texte.index("\n") %>
+														<%= v.texte[0,index].bbcode_to_html_with_formatting.html_safe %>
+													</div>
+													<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal<%= v.id %>" data-whatever="@mdo">en savoir plus</button>
+													<p style="text-align:right;"><%= t('category.actualites.created') %><%= v.created_at.strftime("%d/%m/%Y") %></p>
+														<!-- modal start -->
+														<div class="modal fade" id="exampleModal<%= v.id %>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+															<div class="modal-dialog">
+															<div class="modal-content">
+															<div class="modal-header">
+															<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+																	<% if v.veille_type == 0 %>
+																		<div class="atitle actu_idee">
+																	<% elsif v.veille_type == 1 %>
+																		<div class="atitle actu_info">
+																	<% else %>
+																		<div class="atitle actu_news">
+																	<% end %>
+																		<%= v.titre.bbcode_to_html_with_formatting.html_safe %>
+																	</div>
+															</div>
+															<div class="modal-body">
+																	<%= v.texte.bbcode_to_html_with_formatting.html_safe %>
+															</div>
+															<div class="modal-footer">
+																<a class="twitter-share-button"
+										   href="https://twitter.com/share"
+										  data-url="http://goo.gl/TD7rai"
+										  data-counturl="https://dev.twitter.com/web/tweet-button"
+										  data-count="vertical">
+										Tweet
+										</a>
+															Actualité crée le : <%= v.created_at.strftime("%d/%m/%Y") %>
+															<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+															</div>
+															</div>
+															</div>
+														</div>
+														<!-- modal end -->
+												</article>
+											</section>
+											<% end %>
+
+										<%= will_paginate @type2, class: "pagination" %>
+										<!-- type2 end -->
+    </div>
+  </div>
+
+</div>
 </div>
 
 

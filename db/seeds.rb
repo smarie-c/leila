@@ -25,7 +25,7 @@ Index.create(:firstname => "laila",:name => "EL HALFI",:street => "36 Avenue Bug
 	:titre5en => "en example 1 14",:contenu5en => "en example 1 15")
 
 i = 0
-20.times do
+50.times do
 Veille.create(:titre => "Renouvellement du CHSCT : l’anticipation est enfin possible !", :texte => "Selon l’article R.4613-6 du code du travail, le collège chargé de désigner les membres du CHSCT doit être réuni dans les 15 jours de l’expiration des mandats des représentants de cette institution. Cette disposition était interprétée littéralement par la jurisprudence depuis un arrêt du 14 janvier 2004 de sorte qu’organiser un scrutin quelques jours avant l’échéance des mandats emportait la nullité des élections.
 
 Dans un arrêt du 8 octobre 2014 (n°13-60.262), la Cour de cassation revient sur cette jurisprudence rigide et précise que  « si le renouvellement des membres du CHSCT ne peut avoir pour effet de mettre fin aux mandats en cours avant leur date d’expiration, l’employeur, afin d’assurer la permanence de l’institution, peut réunir le collège désignatif avant le terme ultime de ces mandats, les désignations ainsi effectuées ne prenant effet qu’à ce terme ».
@@ -40,7 +40,7 @@ Ce revirement de jurisprudence met donc fin à la vacance imposée des sièges, 
 i = i + 1
 end
 
-10.times do
+30.times do
 Veille.create(:titre => "Renewal of HSC : anticipation is finally possible !", :texte => "According to Article R.4613-6 of the Labour Code , the college responsible for appointing the members of the HSC must be met within 15 days of the expiry of the mandates of the representatives of this institution. This provision was literally interpreted by case law since a judgment of 14 January 2004 so that organizing an election just days before the expiration of the term in the nullity of the elections.
 
 In a judgment of 8 October 2014 ( No. 13-60262 ) , the Supreme Court returns to this rigid law and states that «  if the renewal of the members of HSC may have the effect of ending the current mandates before their date expiry , the employer , to ensure the institution's permanence, may convene the designator college before the culmination of these mandates, and made ​​designations take effect until this term ».
