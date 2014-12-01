@@ -6,8 +6,21 @@
 	<% @veilles.each do |v| %>
 	<section class="bloc-g veille">
 		<article>
-			<strong><div class="vtitle"><%= v.titre.bbcode_to_html_with_formatting.html_safe %><br/></div></strong><div class="separator-article"></div>
-			<div class="veille"><%= v.texte.bbcode_to_html_with_formatting.html_safe %><br/></div>
+			<strong>
+				<% if v.veille_type == 0 %>
+					<div class="atitle actu_idee">
+				<% elsif v.veille_type == 1 %>
+					<div class="atitle actu_info">
+				<% else %>
+					<div class="atitle actu_new">
+				<% end %>
+					<%= v.titre.bbcode_to_html_with_formatting.html_safe %><br/>
+				</div>
+			</strong>
+			<div class="separator-article"></div>
+			<div class="veille">
+				<%= v.texte.bbcode_to_html_with_formatting.html_safe %><br/>
+			</div>
 		</article>
 	</section>
 	<% end %>
