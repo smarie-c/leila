@@ -6,7 +6,7 @@
 @import "bootstrap";
 
 @import url(http://fonts.googleapis.com/css?family=Titillium+Web:400,600,200,700);
-@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,400italic);
+@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700);
 
 
 @import "compass";
@@ -287,43 +287,7 @@ body {
 		}
 	}
 	aside {
-		&.profil {
-			background-color: #efeee9;
-			margin-bottom: 30px;
-			padding: 14px;
-			border-color: #d9d7d2;
-			border-top-width: 1px;
-			border-bottom-width: 1px;
-			border-left: 0;
-			border-right: 0;
-			border-style: solid;
-			.cv {
-				font-family: 'Titillium Web', sans-serif;
-				.cv-name {
-					font-size: 24px;
-					color: #6F6F6D;
-					text-transform: uppercase;
 
-				}
-				.cv-skills {
-					letter-spacing: 2px;
-					text-transform: uppercase;
-					color: #A29F8E;
-				}
-				.cv-mail {
-					text-transform: uppercase;
-					color: #6F6F6D;
-					
-				}
-			}
-			.name {
-				font-family: 'Titillium Web', sans-serif;
-				letter-spacing: 1px;
-			}
-			.mail {
-				font-weight: 700;
-			}
-		}
 	}
 	section {
 		h3 {
@@ -404,8 +368,10 @@ body {
 }
 
 .carousel {
-	width: 100%;
+	max-width: 1920px;
 	height: 355px;
+	margin: auto;
+	padding: auto;
 	overflow: hidden;
 }
 
@@ -515,7 +481,6 @@ li:hover {
 
 
 article {
-	margin-top: 20px;
 }
 .carousel-inner {
 	/*background-image: -webkit-linear-gradient(left, rgba(0, 255, 255, 0.5) 100%, rgba(0, 0, 255, 0.00001) 0%);*/
@@ -534,32 +499,14 @@ article {
 	position: right, top;
 }
 
+
+
 .act_lang {
 	 text-decoration:underline;
 }
 
 //actualite
-.atitle {
-	font-weight: 400;
-	font-size: 24px;
-	text-align: center;
-	margin-bottom: 15px;
-}
-.actu_idee {
-	font-family: 'PT Serif', sans-serif;
-	color: #32589C;
-}
-.actu_info {
-	font-family: 'Oswald', sans-serif;
-	color: #551A8B;
-}
-.actu_news {
-	font-family: 'Titillium Web', sans-serif;
-	color: #E96B56;
-}
-.actu_text {
-	padding-left: 5px;
-}
+
 .pagination {
   background: #f1f1f1;
   border: 1px solid #e5e5e5;
@@ -592,61 +539,145 @@ article {
 
 
 /* ------------------------------------------------- *\
-							FOOTER
-	\* ------------------------------------------------- */
+						Actualité
+\* ------------------------------------------------- */
 
-	footer {
-		position: relative;
-		float: right;
-		width: 100%;
-		height: 100px;
-		bottom: 0;
-		background-color: #2c2924;
-		.infos_footer {
-			.phone {}
-			.mail {}
-			.adress {}
-			.follow {
-				position: relative;
-				float: right;
-				top: 40px;
-				right: 100px;
-				span {
-					position: relative;
-					display: inline-block;
-					top: -5px;
-					margin-right: 20px;
-					font-size: 20px;
-					color: rgba(255,255,255,0.8);
+		.atitle {
+			font-weight: 700;
+			font-size: 24px;
+			text-align: center;
+			margin-bottom: 15px;
+			font-family: 'PT Serif', serif;
+			font-style: italic;
+		}
+		.actu_idee {
+			color: #94AA5E;
+		}
+		.actu_info {
+			color: #B87F93;
+		}
+		.actu_news {
+			color: #699CA9;
+		.actu_text {
+		}
+			padding-left: 5px;
+		}
+
+/* ------------------------------------------------- *\
+						Profil
+\* ------------------------------------------------- */
+
+		.profil {
+			background-color: #efeee9;
+			margin-bottom: 30px;
+			padding: 14px;
+			border-color: #d9d7d2;
+			border-top-width: 1px;
+			border-bottom-width: 1px;
+			border-left: 0;
+			border-right: 0;
+			border-style: solid;
+			height: 200px;
+			.cv {
+				font-family: 'Titillium Web', sans-serif;
+				.cv-name {
+					font-size: 24px;
+					color: #6F6F6D;
+					text-transform: uppercase;
+
+				}
+				.cv-skills {
+					letter-spacing: 2px;
+					text-transform: uppercase;
+					color: #A29F8E;
+				}
+				.cv-mail {
+					text-transform: uppercase;
+					color: #6F6F6D;
 					
 				}
-				div {
-					display: inline-block;
-					width: 50px;
-					height: 35px;
-					outline: none;
-					&.twitter {
-						background-image: asset-url("twitter_logo.png", image);
-						background-repeat: no-repeat;
-						background-size: 40px auto;
-						cursor: pointer;
-						opacity: 0.8;
-						&:hover {
-							opacity: 1;
-						}
-					}
-					&.linkedin {
-						background-image: asset-url("linkedin_logo.png", image);
-						background-repeat: no-repeat;
-						background-size: 40px auto;
-						cursor: pointer;
-						opacity: 0.8;
-						&:hover {
-							opacity: 1;
-						}
+			}
+			.name {
+				font-family: 'Titillium Web', sans-serif;
+				letter-spacing: 1px;
+			}
+			.mail {
+				font-weight: 700;
+			}
 
-					}
-				}
+			.lorem {
+				font-family: 'PT Serif', serif;
+				font-weight: '400';
+				font-style: italic;
+				font-size: 1.5em;
+				max-height: 170px;
 			}
 		}
-	}
+
+
+/* ------------------------------------------------- *\
+						Twitter
+\* ------------------------------------------------- */
+
+#fix-twitter {
+	padding-right: 20px;
+}
+
+
+/* ------------------------------------------------- *\
+						FOOTER
+\* ------------------------------------------------- */
+
+footer {
+	height: 100px;
+	bottom: 0;
+	font-family: 'PT Serif', serif;
+	background-color: #404040;
+	.infos_footer {
+		.phone {}
+		.mail {}
+		.adress {}
+		.follow {
+			position: relative;
+			float: right;
+			top: 40px;
+			right: 100px;
+			span {
+				position: relative;
+				display: inline-block;
+				top: -5px;
+				margin-right: 20px;
+				font-size: 20px;
+				color: rgba(255,255,255,0.8);
+				
+			}
+			div {
+				display: inline-block;
+				width: 50px;
+				height: 35px;
+				outline: none;
+				&.twitter {
+					background-image: asset-url("twitter_logo.png", image);
+					background-repeat: no-repeat;
+					background-size: 40px auto;
+					cursor: pointer;
+					opacity: 0.8;
+					&:hover {
+						opacity: 1;
+					}
+				}
+				&.linkedin {
+					background-image: asset-url("linkedin_logo.png", image);
+					background-repeat: no-repeat;
+					background-size: 40px auto;
+					cursor: pointer;
+					opacity: 0.8;
+					&:hover {
+						opacity: 1;
+					}
+
+				}
+			}
+		} // Infos-Footer 
+	} // Footer
+}  
